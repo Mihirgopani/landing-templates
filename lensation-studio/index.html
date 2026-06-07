@@ -1,21 +1,101 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Lensation Studio</title><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-      <div class="cine-wrapper">
-        <div class="cine-bg"><img src="assets/hero.png" alt="Cinematic"></div>
-        <div class="cine-overlay"></div>
-        <div class="cine-content">
-          <header class="cine-head">Lensation Studio</header>
-          <div class="cine-main">
-            <div class="rating-strip">★ 4.9 / 168 REVIEWS</div>
-            <h1>Through Our Lens. Your Story Unfolds.</h1>
-            <p>New Mankapur's creative photography studio.</p>
-            <div class="cine-actions">
-              <a href="tel:+918237299935" class="c-btn">START THE STORY</a>
-            </div>
-            <div class="cine-footer">Flat 308, Anandsagar Appt, New Mankapur, Nagpur</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lensation Studio | Cinematic Photography Nagpur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cine-wrapper">
+    <div class="cine-bg"><img src="assets/hero.png" alt="Cinematic Photo Art"></div>
+    <div class="cine-overlay"></div>
+
+    <div class="cine-content">
+      <header class="cine-head">
+        <div class="logo">LENSATION STUDIO</div>
+        <nav class="cine-nav">
+          <a href="#about">Philosophy</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why Us</a>
+          <a href="#reviews">Testimonials</a>
+          <a href="#contact">Location</a>
+        </nav>
+      </header>
+
+      <!-- FLOATING TICKER BANNER -->
+      <div class="cine-promo-bar">
+        ✦ CINEMATIC ALERT: RESERVE WEDDING OR CINEMA PORTFOLIO VIA WHATSAPP TODAY FOR 10% COMPLIMENTARY REDUCTION
+      </div>
+
+      <main class="cine-main" id="home">
+        <div class="rating-strip">★ 4.9 RATING / 168 GOOGLE TESTIMONIALS</div>
+        <h1>Through Our Lens.<br><span class="text-gradient">Your Story Unfolds.</span></h1>
+        <p class="cine-sub">New Mankapur's creative photography studio. Wedding, pre-wedding, and portrait photography with a unique artistic vision.</p>
+        <div class="cine-actions">
+          <a href="tel:+918237299935" class="c-btn">INQUIRE SESSION</a>
+          <a href="https://wa.me/918237299935" class="c-btn outline">WHATSAPP</a>
+        </div>
+      </main>
+
+      <section class="cine-panel" id="about">
+        <h2>01 / THE VISION</h2>
+        <p>Lensation Studio captures pre-wedding, cinematic films, and wedding portraits in New Mankapur, Nagpur. We map frames under creative lighting parameters to preserve your emotional moments forever.</p>
+        <div class="stats-row">
+          <div><h3>168</h3><span>Clients Happy</span></div>
+          <div><h3>4.9★</h3><span>Google Stars</span></div>
+        </div>
+      </section>
+
+      <section class="cine-panel" id="services">
+        <h2>02 / THE FRAMEWORKS</h2>
+        <div class="services-grid">
+          <div class="svc-box">
+            <h3>Cinematic Films</h3>
+            <p>Emotional slow-motion films, customized background grading, drone frames.</p>
+          </div>
+          <div class="svc-box">
+            <h3>Portrait Design</h3>
+            <p>Stunning studio shoots under tailored key-lights.</p>
           </div>
         </div>
-        <div class="cine-bars">
-          <div class="bar top"></div><div class="bar bottom"></div>
+      </section>
+
+      <section class="cine-panel" id="why">
+        <h2>03 / WHY LENSATION</h2>
+        <ul class="bullet-list">
+          <li>✓ High-spec lenses and camera bodies.</li>
+          <li>✓ Modern post-production and color grading.</li>
+          <li>✓ Prompt digital delivery pipelines.</li>
+        </ul>
+      </section>
+
+      <section class="cine-panel" id="reviews">
+        <h2>04 / TESTIMONIAL</h2>
+        <blockquote>"Outstanding wedding films. The color grading and music integration brought tears to our family's eyes. Very professional team."</blockquote>
+        <cite>— Pooja Deshpande</cite>
+      </section>
+
+      <section class="cine-panel" id="contact">
+        <h2>05 / THE LOCATION</h2>
+        <p>Flat No 308, Anandsagar Appt, 2, New Mankapur, Nagpur 440030</p>
+        <div class="map-wrap">
+          <iframe src="https://maps.google.com/maps?q=Flat%20No%20308%2C%20Anandsagar%20Appt%2C%202%2C%20New%20Mankapur%2C%20Nagpur%20440030&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-      </div>
-    </body></html>
+      </section>
+
+      <footer class="footer">
+        <p>© 2025 LENSATION STUDIO. Cinematic Stories.</p>
+      </footer>
+    </div>
+
+    <!-- Letterbox movie bars -->
+    <div class="cine-bars">
+      <div class="bar top"></div><div class="bar bottom"></div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/918237299935" class="wa-float-cine" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+</body>
+</html>

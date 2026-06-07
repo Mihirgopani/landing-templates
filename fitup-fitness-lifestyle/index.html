@@ -1,24 +1,105 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fitup Fitness Lifestyle</title><link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-      <div class="app-layout">
-        <aside class="sidebar">
-          <div class="brand">
-            <h2>Fitup Fitness Lifestyle</h2>
-            <div class="stars">Rating: 4.9 / 5</div>
-          </div>
-          <nav>
-            <p>Welcome to the ultimate boutique fitness experience in Jaipur.</p>
-            <div class="contact-info">
-              <p><strong>Address:</strong><br>Bhagadiya Bhawan, C Scheme, Jaipur 302001</p>
-            </div>
-            <a href="tel:+919571995817" class="side-btn">Call +919571995817</a>
-          </nav>
-        </aside>
-        <main class="main-view">
-          <div class="hero-image" style="background-image:url('assets/hero.png')"></div>
-          <div class="bottom-bar">
-            <h1>Level Up Your Lifestyle.</h1>
-            <p>C-Scheme's boutique fitness experience.</p>
-          </div>
-        </main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitup Fitness Lifestyle | Sidebar Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <h2>Fitup Fitness Lifestyle</h2>
+        <div class="sidebar-rating">★ 4.9 (157 reviews)</div>
       </div>
-    </body></html>
+      <nav class="sidebar-menu">
+        <a href="#home">Home</a>
+        <a href="#about">Philosophy</a>
+        <a href="#programs">Experience</a>
+        <a href="#choose">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Location</a>
+      </nav>
+      <div class="sidebar-cta">
+        <a href="tel:+919571995817" class="sidebar-btn">Call Clinic</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <!-- STATIC HIGHLIGHT STRIP -->
+      <div class="highlight-strip">
+        🔥 EXCLUSIVE C-SCHEME OFFER: REGISTER VIA WHATSAPP TODAY FOR A FREE 3-DAY PASS
+      </div>
+
+      <section id="home" class="hero-section">
+        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-body">
+          <h1>Level Up Your<br><span class="text-gradient">Fitness Lifestyle.</span></h1>
+          <p>C-Scheme's boutique fitness experience. Premium personal training, modern equipment, and a lifestyle-first approach to health.</p>
+          <div class="actions">
+            <a href="tel:+919571995817" class="btn btn-primary">Call Now</a>
+            <a href="https://wa.me/919571995817" class="btn btn-outline">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <h2 class="sec-title">THE PHILOSOPHY</h2>
+        <p class="lead-text">Fitup Fitness Lifestyle stands for bespoke training. Operating out of Subhash Marg, C Scheme, we offer a sanctuary for focused training. Our space limits the active count of trainees, giving you total space to lift.</p>
+        <div class="about-grid">
+          <div class="about-box"><h3>Boutique Setup</h3><p>Never overcrowded. Total control over your environment.</p></div>
+          <div class="about-box"><h3>Personal Design</h3><p>Routines built around your body and metabolic indexes.</p></div>
+        </div>
+      </section>
+
+      <section id="programs" class="content-section bg-dark">
+        <h2 class="sec-title">THE EXPERIENCE</h2>
+        <div class="experience-grid">
+          <div class="card">
+            <h3>Personal Coaching</h3>
+            <p>1-on-1 sessions focusing on strength metrics and posture safety.</p>
+          </div>
+          <div class="card">
+            <h3>Custom Nutrition</h3>
+            <p>Weekly dietary reviews based on biometric parameters.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="choose" class="content-section">
+        <h2 class="sec-title">WHY MEMBERS LEVEL UP WITH US</h2>
+        <ul class="bullet-list">
+          <li><strong>Elite Trainers:</strong> Hand-picked, qualified coaching team.</li>
+          <li><strong>Clean Space:</strong> Sanitized space with premium ventilation setups.</li>
+          <li><strong>Modern Methods:</strong> No outdated generic routines.</li>
+        </ul>
+      </section>
+
+      <section id="reviews" class="content-section bg-dark">
+        <h2 class="sec-title">REVIEWS</h2>
+        <div class="review-box">
+          <p>"Outstanding boutique gym experience. Meticulous gear and amazing guides."</p>
+          <strong>— Rohan Gupta</strong>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section">
+        <h2 class="sec-title">THE STUDIO</h2>
+        <p class="addr-text">Bhagadiya Bhawan, J-33, Subhash Marg, C Scheme, Jaipur 302001</p>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Bhagadiya%20Bhawan%2C%20J-33%2C%20Subhash%20Marg%2C%20C%20Scheme%2C%20Jaipur%20302001&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2025 Fitup Fitness Lifestyle. Crafted with focus.</p>
+      </footer>
+    </main>
+  </div>
+
+  <a href="https://wa.me/919571995817" class="wa-float-sidebar" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+</body>
+</html>
