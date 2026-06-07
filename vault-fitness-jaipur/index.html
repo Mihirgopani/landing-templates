@@ -1,119 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vault Fitness Jaipur | Luxury Personal Training</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vault Fitness Jaipur | Exclusive Personal Training Studio in Hawa Sadak</title>
+<meta name="description" content="Jaipur's most exclusive personal training studio. Bespoke 1-on-1 coaching, elite equipment, and a private environment in Ramnagar. Rated 4.9★ by 58+ clients." />
+<meta name="keywords" content="personal training Jaipur, Vault Fitness, best gym Hawa Sadak, private gym Ramnagar, fitness studio Jaipur, 1-on-1 coaching Jaipur" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Vault Fitness Jaipur | Exclusive Personal Training Studio" />
+<meta property="og:description" content="Engineering physiques and mindsets. Jaipur's premier appointment-only fitness studio." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Vault Fitness Jaipur",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "@id": "https://vaultfitnessjaipur.in",
+  "url": "https://vaultfitnessjaipur.in",
+  "telephone": "+918387875233",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3rd floor, A-40, Chabra Rd, near BJP office, Hawa Sadak, Ramnagar",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302019",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "58"
+  }
+}
+</script>
 </head>
 <body>
-  <!-- STATIC ELEGANT BANNER -->
-  <div class="elegant-alert-strip">
-    ✦ EXCLUSIVE HAWA SADAK CLUB: PERSONAL ASSESSMENT COMPLIMENTARY WITH ALL QUERIES ✦
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner container">
+    <a href="#top" class="logo">VAULT<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Philosophy</a></li>
+      <li><a href="#programs">Protocols</a></li>
+      <li><a href="#reviews">Results</a></li>
+      <li><a href="#contact">Visit</a></li>
+    </ul>
+    <a href="https://wa.me/918387875233" class="nav-cta" target="_blank" rel="noopener">Book Session</a>
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
   </div>
+</header>
 
-  <div class="elegant-wrapper">
-    <header class="navbar">
-      <div class="logo">VAULT FITNESS JAIPUR</div>
-      <nav class="links">
-        <a href="#about">Philosophy</a>
-        <a href="#programs">Arsenal</a>
-        <a href="#choose">Why Vault</a>
-        <a href="#reviews">Testimonials</a>
-        <a href="#contact">Location</a>
-      </nav>
-      <a href="tel:+918387875233" class="nav-cta">INQUIRE</a>
-    </header>
-
-    <section class="hero-section" id="home">
-      <div class="text-content">
-        <span class="badge">PRIVATE STUDIO</span>
-        <h1>Unlock Your<br><span class="text-gradient">True Potential.</span></h1>
-        <p class="subtitle">Hawa Sadak's best personal training studio. Intimate setting, expert guidance, and results-driven training that transforms.</p>
-        <div class="rating-box">
-          <span class="stars">★★★★★</span>
-          <span>4.9 Rating (58 Reviews)</span>
-        </div>
-        <div class="actions">
-          <a href="tel:+918387875233" class="gold-btn">REQUEST INVITE</a>
-          <a href="https://wa.me/918387875233" class="gold-btn btn-outline">WHATSAPP</a>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-grid container">
+    <div class="hero-left reveal-up">
+      <div class="hero-tag">[ PERSONAL TRAINING STUDIO ]</div>
+      <h1 class="hero-title">
+        UNLOCK YOUR <br>
+        <span class="outline">MAXIMUM</span> <br>
+        POTENTIAL.
+      </h1>
+      <p class="hero-sub">
+        Jaipur's most exclusive personal training studio. Located in the heart of Hawa Sadak, we engineer bespoke fitness protocols for those who refuse to settle for average.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/918387875233" class="btn btn-accent" target="_blank" rel="noopener">
+          Start Your Transformation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#programs" class="btn btn-ghost">View Protocols</a>
+      </div>
+    </div>
+    <div class="hero-right reveal-up" style="--delay: 0.2s">
+      <div class="hero-img-wrap">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Vault Fitness Studio Interior" loading="eager" />
+        <div class="hero-img-overlay">
+          <span class="overlay-text">STUDIO</span>
         </div>
       </div>
-      <div class="image-frame">
-        <img src="assets/hero.png" alt="Luxury Gym Interior Decor">
-      </div>
-    </section>
-
-    <section class="about-section" id="about">
-      <div class="split">
-        <div class="left">
-          <h2>The Vault Philosophy</h2>
+      <div class="hero-badge">
+        <span class="badge-star">★</span>
+        <div>
+          <strong>4.9/5.0</strong>
+          <small>58+ Reviews</small>
         </div>
-        <div class="right">
-          <p>Vault Fitness provides personal coaching loops at Hawa Sadak. We design intimate sessions for clients who value focused performance guidance, meticulous sanitization, and structured fat tracking.</p>
-          <div class="stats-grid">
-            <div class="stat-unit"><h3>58+</h3><p>MEMBERS</p></div>
-            <div class="stat-unit"><h3>6</h3><p>COACHES</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>PERSONAL TRAINING</span><span class="dot">◆</span>
+    <span>STRENGTH COACHING</span><span class="dot">◆</span>
+    <span>MOBILITY & REHAB</span><span class="dot">◆</span>
+    <span>NUTRITION PROTOCOLS</span><span class="dot">◆</span>
+    <span>PERSONAL TRAINING</span><span class="dot">◆</span>
+    <span>STRENGTH COACHING</span><span class="dot">◆</span>
+    <span>MOBILITY & REHAB</span><span class="dot">◆</span>
+    <span>NUTRITION PROTOCOLS</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-item reveal-up">
+      <span class="stat-num">58+</span>
+      <span class="stat-label">5-Star Reviews</span>
+    </div>
+    <div class="stat-item reveal-up" style="--delay: 0.1s">
+      <span class="stat-num">4.9</span>
+      <span class="stat-label">Average Rating</span>
+    </div>
+    <div class="stat-item reveal-up" style="--delay: 0.2s">
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Customized Plans</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / PHILOSOPHY ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-left reveal-up">
+      <span class="section-tag">01 / PHILOSOPHY</span>
+      <h2 class="section-title">WE DON'T DO <br><span class="accent">CROWDED GYMS.</span></h2>
+    </div>
+    <div class="about-right reveal-up" style="--delay: 0.1s">
+      <p class="lede">Vault Fitness is an exclusive, appointment-only personal training studio in Ramnagar, Jaipur.</p>
+      <p>We stripped away the distractions, the wait times, and the generic group classes. What remains is a pure, focused environment dedicated entirely to your individual progress. Every session is coached, every rep is counted, and every program is engineered specifically for your biomechanics and goals.</p>
+      <div class="about-features">
+        <div class="feat">
+          <span class="feat-icon">→</span>
+          <div>
+            <h4>1-on-1 Coaching</h4>
+            <p>Undivided attention from elite certified trainers.</p>
+          </div>
+        </div>
+        <div class="feat">
+          <span class="feat-icon">→</span>
+          <div>
+            <h4>Private Environment</h4>
+            <p>No waiting for equipment. No intimidation. Just work.</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="programs-section" id="programs">
-      <h2 class="section-center-title">THE ARSENAL</h2>
-      <div class="programs-grid">
-        <div class="prog-card">
-          <h3>Private Training</h3>
-          <p>1-on-1 biological alignment and tracking modules.</p>
-        </div>
-        <div class="prog-card">
-          <h3>Body Recomposition</h3>
-          <p>Precision fat loss and skeletal alignment programs.</p>
-        </div>
-        <div class="prog-card">
-          <h3>Postural Safety</h3>
-          <p>Structural stretching and spine support exercises.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="choose-section" id="choose">
-      <div class="split">
-        <div class="left">
-          <h2>THE BENCHMARKS</h2>
-        </div>
-        <div class="right">
-          <ul class="bullet-list">
-            <li>✦ <strong>Privacy:</strong> Single active slot limits.</li>
-            <li>✦ <strong>Hygiene:</strong> Private shower cabins sanitized hourly.</li>
-            <li>✦ <strong>Excellence:</strong> Coaches are metabolic experts.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews-section" id="reviews">
-      <h2 class="section-center-title">MEMBERS REVIEWS</h2>
-      <div class="quote-scroller">
-        <blockquote>"Jaipur's best personal studio. Very private, elite coaches, clean atmosphere."</blockquote>
-        <cite>— Vikram Shah</cite>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <h2 class="section-center-title">THE LOCATION</h2>
-      <p class="address-text">3rd floor, A-40, Chabra Rd, Hawa Sadak, Ramnagar, Jaipur 302019</p>
-      <div class="map-wrap">
-        <iframe src="https://maps.google.com/maps?q=3rd%20floor%2C%20A-40%2C%20Chabra%20Rd%2C%20Hawa%20Sadak%2C%20Ramnagar%2C%20Jaipur%20302019&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>© 2025 Vault Fitness Jaipur. Managed elegantly.</p>
-    </footer>
+    </div>
   </div>
+</section>
 
-  <a href="https://wa.me/918387875233" class="wa-luxury" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+<!-- ============ PROGRAMS ============ -->
+<section class="section programs" id="programs">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">02 / PROTOCOLS</span>
+      <h2 class="section-title">ENGINEERED FOR <br><span class="accent">RESULTS.</span></h2>
+    </div>
+    <div class="prog-list">
+      <a href="https://wa.me/918387875233" class="prog-item reveal-up" target="_blank" rel="noopener">
+        <span class="prog-num">01</span>
+        <div class="prog-info">
+          <h3>Elite Personal Training</h3>
+          <p>Bespoke 1-on-1 coaching focusing on hypertrophy, strength, and athletic performance.</p>
+        </div>
+        <span class="prog-arrow">↗</span>
+      </a>
+      <a href="https://wa.me/918387875233" class="prog-item reveal-up" style="--delay: 0.05s" target="_blank" rel="noopener">
+        <span class="prog-num">02</span>
+        <div class="prog-info">
+          <h3>Body Recomposition</h3>
+          <p>Strategic training and nutrition protocols designed to strip fat and build lean muscle simultaneously.</p>
+        </div>
+        <span class="prog-arrow">↗</span>
+      </a>
+      <a href="https://wa.me/918387875233" class="prog-item reveal-up" style="--delay: 0.1s" target="_blank" rel="noopener">
+        <span class="prog-num">03</span>
+        <div class="prog-info">
+          <h3>Mobility & Longevity</h3>
+          <p>Corrective exercises and mobility flows to bulletproof your joints and enhance movement quality.</p>
+        </div>
+        <span class="prog-arrow">↗</span>
+      </a>
+      <a href="https://wa.me/918387875233" class="prog-item reveal-up" style="--delay: 0.15s" target="_blank" rel="noopener">
+        <span class="prog-num">04</span>
+        <div class="prog-info">
+          <h3>Nutrition Architecture</h3>
+          <p>Custom macro-based diet plans and supplement guidance to fuel your training and accelerate recovery.</p>
+        </div>
+        <span class="prog-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">03 / RESULTS</span>
+      <h2 class="section-title">VOICES FROM <br><span class="accent">THE VAULT.</span></h2>
+    </div>
+    <div class="review-grid">
+      <div class="review-card reveal-up">
+        <div class="review-quote">"</div>
+        <p>The best personal training experience in Jaipur. The coaches at Vault actually understand biomechanics. I've made more progress in 3 months here than in 3 years at a commercial gym.</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>★ ★ ★ ★ ★</span>
+        </div>
+      </div>
+      <div class="review-card featured reveal-up" style="--delay: 0.1s">
+        <div class="review-quote">"</div>
+        <p>Vault Fitness lives up to its name. It's a sanctuary for serious lifters. The privacy, the equipment, and the expertise are unmatched. If you want real results, this is the place.</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>★ ★ ★ ★ ★</span>
+        </div>
+      </div>
+      <div class="review-card reveal-up" style="--delay: 0.2s">
+        <div class="review-quote">"</div>
+        <p>Finally, a studio that focuses on form and actual strength rather than just making you sweat. The nutrition guidance was a game-changer for my body recomposition.</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>★ ★ ★ ★ ★</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-left reveal-up">
+      <span class="section-tag">04 / INQUIRIES</span>
+      <h2 class="section-title">GOT <br><span class="accent">QUESTIONS?</span></h2>
+      <p>Everything you need to know about training at Vault Fitness. Can't find your answer? Reach out directly.</p>
+      <a href="https://wa.me/918387875233" class="btn btn-accent" target="_blank" rel="noopener">Chat with us</a>
+    </div>
+    <div class="faq-right">
+      <details class="faq-item reveal-up" open>
+        <summary>How is Vault Fitness different from a regular gym? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Unlike commercial gyms, Vault is an exclusive, appointment-only studio. You won't wait for equipment, deal with crowds, or navigate a sea of distractions. Every minute of your session is coached and optimized for your specific goals.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal-up" style="--delay: 0.05s">
+        <summary>Do I need to be fit to join? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Not at all. Our personal training programs are scaled to your current fitness level. Whether you're a complete beginner or an advanced athlete, we engineer the protocol to meet you exactly where you are.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal-up" style="--delay: 0.1s">
+        <summary>Where exactly are you located? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>We are located on the 3rd floor of A-40, Chabra Rd, near the BJP office in Hawa Sadak, Ramnagar, Jaipur. It's easily accessible with ample parking nearby.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal-up" style="--delay: 0.15s">
+        <summary>Do you provide diet and nutrition plans? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Yes. Training is only half the equation. We provide comprehensive nutrition architecture, including custom macro calculations, meal timing strategies, and supplement guidance tailored to your objectives.</p>
+        </div>
+      </details>
+      <details class="faq-item reveal-up" style="--delay: 0.2s">
+        <summary>How do I book a session or tour? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Simply click the WhatsApp button or call us at +91 83878 75233. We'll schedule a quick consultation to discuss your goals and give you a tour of the studio.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="section location" id="contact">
+  <div class="container">
+    <div class="location-wrap reveal-up">
+      <div class="location-card">
+        <span class="section-tag light">05 / FIND US</span>
+        <h2 class="section-title light">ENTER <br><span class="accent">THE VAULT.</span></h2>
+        <div class="loc-details">
+          <div class="loc-item">
+            <strong>Address</strong>
+            <p>3rd floor, A-40, Chabra Rd, near BJP office, Hawa Sadak, Ramnagar, Jaipur, 302019</p>
+          </div>
+          <div class="loc-item">
+            <strong>Phone</strong>
+            <a href="tel:+918387875233">+91 83878 75233</a>
+          </div>
+          <div class="loc-item">
+            <strong>Hours</strong>
+            <p>By Appointment Only</p>
+          </div>
+        </div>
+        <div class="loc-btns">
+          <a href="https://wa.me/918387875233" class="btn btn-accent" target="_blank" rel="noopener">Book via WhatsApp</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Vault%20Fitness%20Jaipur%20(Best%20Personal%20Training%20Studio)&query_place_id=ChIJJ70xdlm1bTkR_dq8iX0QNsU" class="btn btn-ghost-light" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+      <div class="location-map">
+        <iframe src="https://maps.google.com/maps?q=Vault%20Fitness%20Jaipur%20Hawa%20Sadak%20Ramnagar&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Vault Fitness Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo large">VAULT<span>.</span></a>
+        <p>Jaipur's premier personal training studio. Engineering physiques and mindsets in Ramnagar.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="#about">Philosophy</a></li>
+          <li><a href="#programs">Protocols</a></li>
+          <li><a href="#reviews">Results</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="tel:+918387875233">+91 83878 75233</a></li>
+          <li><a href="https://wa.me/918387875233" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Vault%20Fitness%20Jaipur%20(Best%20Personal%20Training%20Studio)&query_place_id=ChIJJ70xdlm1bTkR_dq8iX0QNsU" target="_blank" rel="noopener">Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vault Fitness Jaipur. All rights reserved.</p>
+      <p>Engineered for the relentless.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/918387875233" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="tel:+918387875233" class="mbtn mbtn-call">Call</a>
+  <a href="https://wa.me/918387875233" class="mbtn mbtn-wa" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (burger && navLinks) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal
+  const revealElements = document.querySelectorAll('.reveal-up');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar Scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>

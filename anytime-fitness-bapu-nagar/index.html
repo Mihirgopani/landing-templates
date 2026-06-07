@@ -1,90 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anytime Fitness Bapu Nagar | Bento Grid Gym</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anytime Fitness Bapu Nagar | 24/7 Premium Gym in Jaipur</title>
+<meta name="description" content="Train on your terms at Anytime Fitness Bapu Nagar. Jaipur's premier 24/7 gym on Tonk Road. State-of-the-art equipment, secure access, and zero judgment. Rated 4.5★." />
+<meta name="keywords" content="gym in Jaipur, Anytime Fitness Bapu Nagar, 24/7 gym Jaipur, gym Tonk Road, fitness center Bapu Nagar, best gym near me Jaipur" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Anytime Fitness Bapu Nagar | 24/7 Premium Gym in Jaipur" />
+<meta property="og:description" content="Train on your terms. Jaipur's premier 24/7 fitness destination. Rated 4.5★ by 141+ members." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:site_name" content="Anytime Fitness Bapu Nagar" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Anytime Fitness Bapu Nagar",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "@id": "https://anytimefitnessbapunagar.in",
+  "url": "https://anytimefitnessbapunagar.in",
+  "telephone": "+919057403330",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5th Floor, Pavilion, Tonk Rd, Bapu Nagar",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302015",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.9043,
+    "longitude": 75.8090
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "141"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }]
+}
+</script>
 </head>
 <body>
-  <div class="bento-wrap">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-glass" id="nav">
+  <nav class="nav-container container">
+    <a href="#top" class="logo" aria-label="Anytime Fitness Home">
+      ANYTIME<span class="logo-dot">.</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Visit</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://wa.me/919057403330" class="nav-cta" target="_blank" rel="noopener">Get Access</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-grid container">
+    <div class="hero-content reveal-up">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        OPEN 24/7 · BAPU NAGAR
+      </div>
+      <h1 class="hero-title">
+        Fitness<br/>
+        Without<br/>
+        <span class="gradient-text">Limits.</span>
+      </h1>
+      <p class="hero-sub">
+        Train on your terms. Jaipur's premier 24/7 fitness destination in Bapu Nagar. State-of-the-art equipment, zero judgment, pure results.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/919057403330" class="btn btn-primary" target="_blank" rel="noopener">
+          Start Free Trial
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#programs" class="btn btn-glass">Explore Facility</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-up" style="--delay: 0.2s">
+      <div class="hero-art">
+        <div class="hero-art-inner">24/7</div>
+      </div>
+      <div class="floating-stat stat-1">
+        <span class="fs-num">24/7</span>
+        <span class="fs-label">Open Always</span>
+      </div>
+      <div class="floating-stat stat-2">
+        <span class="fs-num">4.5★</span>
+        <span class="fs-label">141+ Reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>24/7 ACCESS</span><span class="dot">◆</span>
+    <span>BAPU NAGAR</span><span class="dot">◆</span>
+    <span>PREMIUM EQUIPMENT</span><span class="dot">◆</span>
+    <span>SECURE & SAFE</span><span class="dot">◆</span>
+    <span>24/7 ACCESS</span><span class="dot">◆</span>
+    <span>BAPU NAGAR</span><span class="dot">◆</span>
+    <span>PREMIUM EQUIPMENT</span><span class="dot">◆</span>
+    <span>SECURE & SAFE</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-text reveal-up">
+      <span class="section-tag">01 — THE PHILOSOPHY</span>
+      <h2 class="section-title">Engineered for <span class="gradient-text">your schedule.</span></h2>
+      <p class="lede">Life doesn't stop, and neither does your progress.</p>
+      <p>Anytime Fitness Bapu Nagar is designed for the modern achiever who refuses to let time dictate their health. Located on the 5th Floor of Pavilion, Tonk Road, we provide a secure, premium, and fully equipped sanctuary available every single hour of the year. Whether you're an early bird or a night owl, your fitness journey has no boundaries here.</p>
+    </div>
+    <div class="about-cards reveal-up" style="--delay: 0.1s">
+      <div class="glass-card card-1">
+        <div class="gc-icon">⚡</div>
+        <h4>Keyless Entry</h4>
+        <p>Secure 24/7 access with our advanced fob system. Your gym, your time.</p>
+      </div>
+      <div class="glass-card card-2">
+        <div class="gc-icon">🛡️</div>
+        <h4>Safe & Secure</h4>
+        <p>24/7 CCTV surveillance and emergency panic buttons for your peace of mind.</p>
+      </div>
+      <div class="glass-card card-3">
+        <div class="gc-icon">🌍</div>
+        <h4>Global Access</h4>
+        <p>Work out at any Anytime Fitness club worldwide with your single membership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section class="section programs" id="programs">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">02 — TRAINING ZONES</span>
+      <h2 class="section-title">Everything you need, <span class="gradient-text">under one roof.</span></h2>
+    </div>
+
     <div class="bento-grid">
-      <!-- Grid Item 1: Brand -->
-      <div class="cell logo-cell">
-        <h2>Anytime Fitness Bapu Nagar</h2>
-        <div class="nav-links">
-          <a href="#about">Philosophy</a>
-          <a href="#programs">Offerings</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#contact">Location</a>
+      <a href="https://wa.me/919057403330" class="bento-item bento-large reveal-up" target="_blank" rel="noopener">
+        <div class="bi-num">01</div>
+        <h3>Strength & Free Weights</h3>
+        <p>A comprehensive range of dumbbells, barbells, Olympic plates, and premium machines for serious lifters. Build raw power and sculpt your physique in our dedicated strength zone.</p>
+        <span class="bi-arrow">→</span>
+      </a>
+      <a href="https://wa.me/919057403330" class="bento-item reveal-up" style="--delay: 0.05s" target="_blank" rel="noopener">
+        <div class="bi-num">02</div>
+        <h3>Cardio Deck</h3>
+        <p>Premium treadmills, ellipticals, and bikes with personal entertainment screens.</p>
+        <span class="bi-arrow">→</span>
+      </a>
+      <a href="https://wa.me/919057403330" class="bento-item reveal-up" style="--delay: 0.1s" target="_blank" rel="noopener">
+        <div class="bi-num">03</div>
+        <h3>Functional Zone</h3>
+        <p>Kettlebells, battle ropes, and turf for dynamic, full-body workouts.</p>
+        <span class="bi-arrow">→</span>
+      </a>
+      <a href="https://wa.me/919057403330" class="bento-item bento-wide reveal-up" style="--delay: 0.15s" target="_blank" rel="noopener">
+        <div class="bi-num">04</div>
+        <h3>Personal Training & Coaching</h3>
+        <p>Certified coaches to design bespoke programs, correct form, and accelerate your results with science-backed methodologies tailored to your unique physiology.</p>
+        <span class="bi-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section features" id="features">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">03 — WHY ANYTIME</span>
+      <h2 class="section-title">The <span class="gradient-text">unfair advantage.</span></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item reveal-up">
+        <div class="fi-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Never Closed</h3>
+        <p>Early bird or night owl. Our doors are always open for you, 365 days a year.</p>
+      </div>
+      <div class="feature-item reveal-up" style="--delay: 0.05s">
+        <div class="fi-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Premium Machines</h3>
+        <p>Biomechanically optimized equipment from global leaders for maximum results and safety.</p>
+      </div>
+      <div class="feature-item reveal-up" style="--delay: 0.1s">
+        <div class="fi-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Zero Crowds</h3>
+        <p>Enjoy a spacious, well-ventilated environment with ample equipment, even during peak hours.</p>
+      </div>
+      <div class="feature-item reveal-up" style="--delay: 0.15s">
+        <div class="fi-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Judgment-Free</h3>
+        <p>A welcoming, supportive community where everyone is focused on their own personal growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-header reveal-up">
+      <div>
+        <span class="section-tag">04 — COMMUNITY</span>
+        <h2 class="section-title">Loved by the <span class="gradient-text">Bapu Nagar</span> community.</h2>
+      </div>
+      <div class="rating-block">
+        <span class="rb-score">4.5</span>
+        <div class="rb-stars">★★★★½</div>
+        <span class="rb-count">Based on 141+ Google Reviews</span>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card glass reveal-up">
+        <div class="rc-stars">★★★★★</div>
+        <p>"Best decision I made for my health. The 24/7 access is a game-changer for my erratic work schedule. The equipment is top-notch and always clean."</p>
+        <div class="rc-author">
+          <strong>Rahul S.</strong>
+          <span>Member · Bapu Nagar</span>
         </div>
       </div>
-
-      <!-- Grid Item 2: Hero Image -->
-      <div class="cell hero-img-cell">
-        <img src="assets/hero.png" alt="Bento Box Gym Display">
+      <div class="review-card glass reveal-up" style="--delay: 0.05s">
+        <div class="rc-stars">★★★★★</div>
+        <p>"Love the vibe here. It's never overly crowded, the AC is perfect, and the staff is super helpful. The fob access makes me feel safe even during late-night workouts."</p>
+        <div class="rc-author">
+          <strong>Priya M.</strong>
+          <span>Member · Tonk Road</span>
+        </div>
       </div>
-
-      <!-- Grid Item 3: Header Hero -->
-      <div class="cell main-text-cell">
-        <div class="stars">★ 4.5 Rating | 141 Google feed</div>
-        <h1>Fitness on<br><span class="text-gradient">Your Schedule.</span></h1>
-        <p>Bapu Nagar's 24/7 fitness solution at Pavilion, Tonk Road. World-class franchise equipment, flexible hours, real results.</p>
-      </div>
-
-      <!-- Grid Item 4: CTA Action -->
-      <div class="cell action-cell">
-        <a href="tel:+919057403330">JOIN TODAY →</a>
-      </div>
-
-      <!-- Grid Item 5: Promo Strip -->
-      <div class="cell promo-cell">
-        <p>🔥 BAPU NAGAR ANNOUNCEMENT: NO INITIATION FEE & FREE 1 WEEK ON WHATSAPP CONTACT</p>
-      </div>
-
-      <!-- Grid Item 6: About -->
-      <div class="cell about-cell" id="about">
-        <h3>24/7 MODERN TRAINING</h3>
-        <p>Anytime Fitness Bapu Nagar brings dynamic, flexible training parameters directly to Pavilion Mall. We offer secure, round-the-clock entry, high-spec functional setups, and certified guides to adjust your movement profiles.</p>
-      </div>
-
-      <!-- Grid Item 7: Services -->
-      <div class="cell equip-cell" id="programs">
-        <h3>OFFERINGS</h3>
-        <ul>
-          <li>💪 Advanced Strength Turf</li>
-          <li>💪 High-Intensity Zones</li>
-          <li>💪 Personal Coaching Guides</li>
-        </ul>
-      </div>
-
-      <!-- Grid Item 8: Choose -->
-      <div class="cell choose-cell">
-        <h3>WHY BAPU NAGAR</h3>
-        <p>✓ Open 24 Hours, 365 Days.</p>
-        <p>✓ Global franchise standards.</p>
-        <p>✓ Expert coaching programs.</p>
-      </div>
-
-      <!-- Grid Item 9: Reviews -->
-      <div class="cell reviews-cell" id="reviews">
-        <h3>TESTIMONIALS</h3>
-        <blockquote>"Fantastic machinery, open 24/7 which fits my schedule, and has extremely decent crowd."</blockquote>
-        <span>— Neeraj Rawat</span>
-      </div>
-
-      <!-- Grid Item 10: Location -->
-      <div class="cell address-cell" id="contact">
-        <p class="lbl">LOCATION</p>
-        <h3>5th Floor, Pavilion, Tonk Rd, Bapu Nagar, Jaipur 302015</h3>
-        <div class="map-container">
-          <iframe src="https://maps.google.com/maps?q=5th%20Floor%2C%20Pavilion%2C%20Tonk%20Rd%2C%20Bapu%20Nagar%2C%20Jaipur%20302015&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="review-card glass reveal-up" style="--delay: 0.1s">
+        <div class="rc-stars">★★★★☆</div>
+        <p>"Great facility with all the modern machines you could ask for. The personal trainers are knowledgeable and push you just the right amount. Highly recommend!"</p>
+        <div class="rc-author">
+          <strong>Amit K.</strong>
+          <span>Member · Malviya Nagar</span>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <a href="https://wa.me/919057403330" class="bento-wa" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-left reveal-up">
+      <span class="section-tag">05 — INQUIRIES</span>
+      <h2 class="section-title">Got <span class="gradient-text">questions?</span></h2>
+      <p>Find quick answers below or reach out to our team directly. We're always here to help.</p>
+      <a href="https://wa.me/919057403330" class="btn btn-primary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+    <div class="faq-right reveal-up" style="--delay: 0.1s">
+      <details class="faq-item glass" open>
+        <summary>
+          <span>What are the membership plans and pricing?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>We offer flexible monthly, quarterly, and annual membership plans to suit your commitment level. We also have specialized packages for personal training. Reach out via WhatsApp for our current pricing and any ongoing introductory offers.</p>
+        </div>
+      </details>
+      <details class="faq-item glass">
+        <summary>
+          <span>Is the gym really open 24/7?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes! As an Anytime Fitness club, we are open 24 hours a day, 365 days a year. Members have secure, keyless fob access to the facility at any time, day or night.</p>
+        </div>
+      </details>
+      <details class="faq-item glass">
+        <summary>
+          <span>Do you provide personal training?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Absolutely. Our certified personal trainers offer one-on-one coaching with customized workout plans, form correction, progress tracking, and complete nutrition guidance to accelerate your results.</p>
+        </div>
+      </details>
+      <details class="faq-item glass">
+        <summary>
+          <span>Is parking available at Pavilion?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, the Pavilion building on Tonk Road offers ample dedicated parking space for both two-wheelers and four-wheelers, making your visit hassle-free.</p>
+        </div>
+      </details>
+      <details class="faq-item glass">
+        <summary>
+          <span>Can I use my membership at other locations?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes! One of the biggest benefits of Anytime Fitness is our global access. Your membership allows you to work out at any of our thousands of clubs worldwide.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="section location" id="contact">
+  <div class="container">
+    <div class="location-wrap reveal-up">
+      <div class="location-map">
+        <iframe src="https://maps.google.com/maps?q=Anytime%20Fitness%20Bapu%20Nagar%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Anytime Fitness Location"></iframe>
+      </div>
+      <div class="location-card glass">
+        <span class="section-tag light">06 — FIND US</span>
+        <h2 class="section-title">Visit the <span class="gradient-text">facility.</span></h2>
+        <div class="lc-details">
+          <div class="lc-item">
+            <strong>Address</strong>
+            <p>5th Floor, Pavilion, Tonk Rd, Bapu Nagar, Jaipur, Rajasthan 302015</p>
+          </div>
+          <div class="lc-item">
+            <strong>Phone</strong>
+            <a href="tel:+919057403330">+91 90574 03330</a>
+          </div>
+          <div class="lc-item">
+            <strong>Hours</strong>
+            <p>Open 24 Hours · 7 Days a Week</p>
+          </div>
+        </div>
+        <div class="lc-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=Anytime%20Fitness%20Bapu%20Nagar&query_place_id=ChIJS4O4q8u3bTkReH1Cv7Xu284" class="btn btn-primary" target="_blank" rel="noopener">Get Directions</a>
+          <a href="tel:+919057403330" class="btn btn-glass">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-bg-text" aria-hidden="true">ANYTIME</div>
+  <div class="footer-content container">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <a href="#top" class="logo">ANYTIME<span class="logo-dot">.</span></a>
+        <p>Jaipur's premier 24/7 fitness destination. Empowering your health journey, every hour of every day.</p>
+        <div class="ft-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="ft-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="ft-links">
+        <h5>Programs</h5>
+        <ul>
+          <li><a href="#programs">Strength Training</a></li>
+          <li><a href="#programs">Cardio Deck</a></li>
+          <li><a href="#programs">Functional Zone</a></li>
+          <li><a href="#programs">Personal Training</a></li>
+        </ul>
+      </div>
+      <div class="ft-contact">
+        <h5>Contact</h5>
+        <ul>
+          <li>5th Floor, Pavilion, Tonk Rd, Bapu Nagar, Jaipur 302015</li>
+          <li><a href="tel:+919057403330">+91 90574 03330</a></li>
+          <li><a href="https://wa.me/919057403330" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Anytime%20Fitness%20Bapu%20Nagar&query_place_id=ChIJS4O4q8u3bTkReH1Cv7Xu284" target="_blank" rel="noopener">View on Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Anytime Fitness Bapu Nagar. All rights reserved.</p>
+      <p>Designed for the relentless.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/919057403330" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="tel:+919057403330" class="mbtn mbtn-call">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/919057403330" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    Get Access
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isActive = navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal
+  const revealElements = document.querySelectorAll('.reveal-up');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar Scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>

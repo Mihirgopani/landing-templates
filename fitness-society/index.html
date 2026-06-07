@@ -1,104 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Society | Glassmorphism Gym</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fitness Society | Premium Gym & Fitness Center in Subhash Nagar, Jaipur</title>
+<meta name="description" content="Experience the art of physical excellence at Fitness Society. Jaipur's most exclusive fitness destination in Subhash Nagar. World-class equipment, elite coaching, and a curated environment." />
+<meta name="keywords" content="gym in Jaipur, Fitness Society Jaipur, best gym Subhash Nagar, premium fitness center Jaipur, personal training Jaipur, gym opposite Science Park" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Fitness Society | Premium Gym & Fitness Center in Jaipur" />
+<meta property="og:description" content="Where ambition meets iron. Join Jaipur's most exclusive fitness society in Subhash Nagar." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:site_name" content="Fitness Society" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Fitness Society",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "@id": "https://fitnesssocietyjaipur.com",
+  "url": "https://fitnesssocietyjaipur.com",
+  "telephone": "+918947845748",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot no. A 17, opposite Science Park, Subhash Nagar",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302016",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.9043,
+    "longitude": 75.7895
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "234"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "05:30",
+    "closes": "22:30"
+  }]
+}
+</script>
 </head>
 <body>
-  <div class="fixed-background" style="background-image: url('assets/hero.png');"></div>
-  <div class="screen-overlay"></div>
 
-  <div class="layout-container">
-    <header class="glass-navbar">
-      <div class="logo">⚡ FITNESS SOCIETY</div>
-      <nav class="links">
-        <a href="#about">About</a>
-        <a href="#services">Experience</a>
-        <a href="#choose">Why Us</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Locate</a>
-      </nav>
-      <a href="tel:+918947845748" class="glass-cta-btn">CALL NOW</a>
-    </header>
-
-    <!-- FLOATING TOP BANNER -->
-    <div class="floating-alert-banner">
-      ⚡ SPECIAL DISCOUNT: SHOW THIS BANNER ON PHONE FOR 10% TRIAL WEEK REDUCTION!
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="top">
+  <nav class="nav container" aria-label="Primary">
+    <a href="#top" class="brand" aria-label="Fitness Society home">
+      <span class="brand-mark">F</span>
+      <span class="brand-name">Fitness Society</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">The Society</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Visit</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+918947845748" class="nav-link-desktop" aria-label="Call us">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="hide-mobile">+91 89478 45748</span>
+      </a>
+      <a href="https://wa.me/918947845748" class="btn btn-accent" target="_blank" rel="noopener">Join Society</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </div>
+  </nav>
+</header>
 
-    <section class="glass-hero" id="home">
-      <div class="rating-strip">★ 4.8 Rating | 234 Google Testimonials</div>
-      <h1>Where Fitness<br><span class="text-gradient">Meets Community.</span></h1>
-      <p class="sub">Subhash Nagar's best gym and fitness center. Modern equipment, supportive community, and programs designed for every fitness level.</p>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content reveal-fade">
+      <span class="eyebrow">
+        <span class="eyebrow-line"></span>
+        Est. Subhash Nagar, Jaipur
+      </span>
+      <h1 class="hero-title">
+        The Art of <br/>
+        <em>Physical</em> <br/>
+        Excellence.
+      </h1>
+      <p class="hero-sub">
+        Welcome to Fitness Society — Jaipur's most curated fitness destination. We blend world-class infrastructure, elite coaching, and a refined atmosphere to elevate your standard of living.
+      </p>
       <div class="hero-actions">
-        <a href="tel:+918947845748" class="solid-btn">Join Fitness Society</a>
-        <a href="https://wa.me/918947845748" class="trans-btn">Chat On WhatsApp</a>
+        <a href="https://wa.me/918947845748" class="btn btn-dark btn-lg" target="_blank" rel="noopener">
+          Claim Your Invitation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#programs" class="btn btn-outline-dark btn-lg">Explore Programs</a>
       </div>
-    </section>
-
-    <div class="glass-panel" id="about">
-      <h2>OUR MISSION</h2>
-      <p>Welcome to Fitness Society. Located near Science Park, Subhash Nagar, we focus on holistic wellness, intense functional strength training, and building a community that cares for your physical targets. Experience premium gear in a supportive setup.</p>
-      <div class="stats-grid">
-        <div class="stat-unit"><strong>30+</strong><span>Classes Weekly</span></div>
-        <div class="stat-unit"><strong>12+</strong><span>Certified Guides</span></div>
-        <div class="stat-unit"><strong>24/7</strong><span>App Tracking</span></div>
-      </div>
-    </div>
-
-    <div class="glass-panel" id="services">
-      <h2>THE EXPERIENCE</h2>
-      <div class="experience-list">
-        <div class="exp-row">
-          <h3>[01] Functional Turf</h3>
-          <p>Battle ropes, kettlebells, tire flips, and functional rigs for athletic training.</p>
+      <div class="hero-meta">
+        <div class="hero-rating">
+          <div class="stars">★★★★★</div>
+          <span><strong>4.8</strong> Rating · 234+ Reviews</span>
         </div>
-        <div class="exp-row">
-          <h3>[02] Strength Section</h3>
-          <p>Isolated heavy-duty machinery from premium worldwide developers.</p>
-        </div>
-        <div class="exp-row">
-          <h3>[03] Mind-Body Studios</h3>
-          <p>Yoga, dynamic pilates, and breathing classes led by veteran guides.</p>
+        <div class="hero-divider"></div>
+        <div class="hero-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Opp. Science Park</span>
         </div>
       </div>
     </div>
 
-    <div class="glass-panel" id="choose">
-      <h2>WHY MEMBERS CHOOSE US</h2>
-      <ul class="why-bullet-list">
-        <li>⚡ <strong>Community-First:</strong> Everyone knows your name. Supportive coaches.</li>
-        <li>⚡ <strong>Top-Tier Cleanliness:</strong> Premium sanitation protocols executed hourly.</li>
-        <li>⚡ <strong>Progress Centric:</strong> Weekly physical assessments.</li>
-      </ul>
-    </div>
-
-    <div class="glass-panel" id="reviews">
-      <h2>REVIEWS</h2>
-      <div class="review-scroller">
-        <div class="rev-card">
-          <p>"Extremely pleasant, supportive trainers, and amazing machinery layout."</p>
-          <strong>— Kavita Sharma</strong>
-        </div>
+    <div class="hero-visual reveal-fade" style="--delay: 0.2s">
+      <div class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Premium interior of Fitness Society Jaipur" loading="eager" />
+        <div class="hero-img-overlay"></div>
+      </div>
+      <div class="hero-img-secondary">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80" alt="Personal training session" loading="eager" />
+      </div>
+      <div class="hero-badge">
+        <span class="badge-num">4.8</span>
+        <span class="badge-text">Google<br/>Rated</span>
       </div>
     </div>
-
-    <div class="glass-panel" id="contact">
-      <h2>THE LOCATION</h2>
-      <p class="address-paragraph">Plot no. A 17, opposite Science Park, Subhash Nagar, Jaipur 302016</p>
-      <div class="map-container">
-        <iframe src="https://maps.google.com/maps?q=Plot%20no.%20A%2017%2C%20opposite%20Science%20Park%2C%20Subhash%20Nagar%2C%20Jaipur%20302016&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-
-    <footer class="glass-footer">
-      <p>© 2025 Fitness Society. Crafted beautifully.</p>
-    </footer>
   </div>
+</section>
 
-  <a href="https://wa.me/918947845748" class="wa-float-widget" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+<!-- ============ MARQUEE ============ -->
+<section class="marquee" aria-label="Features">
+  <div class="marquee-track">
+    <span>Premium Equipment</span>
+    <span class="marquee-dot">◆</span>
+    <span>Elite Coaching</span>
+    <span class="marquee-dot">◆</span>
+    <span>Subhash Nagar</span>
+    <span class="marquee-dot">◆</span>
+    <span>Curated Environment</span>
+    <span class="marquee-dot">◆</span>
+    <span>Premium Equipment</span>
+    <span class="marquee-dot">◆</span>
+    <span>Elite Coaching</span>
+    <span class="marquee-dot">◆</span>
+    <span>Subhash Nagar</span>
+    <span class="marquee-dot">◆</span>
+    <span>Curated Environment</span>
+    <span class="marquee-dot">◆</span>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal-up">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80" alt="Fitness Society training zone" loading="lazy" />
+      </div>
+      <div class="about-stats-float">
+        <div class="stat-item">
+          <span class="stat-num">234+</span>
+          <span class="stat-label">Happy Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4.8</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content reveal-up" style="--delay: 0.1s">
+      <span class="eyebrow">
+        <span class="eyebrow-line"></span>
+        The Society
+      </span>
+      <h2 class="section-title">More than a gym. <br/><em>A society of achievers.</em></h2>
+      <p class="lede">
+        Fitness Society was founded on a simple principle: your environment dictates your results. 
+      </p>
+      <p>
+        Located in the heart of Subhash Nagar, opposite Science Park, we have crafted a space that transcends the traditional gym experience. From our biomechanically optimized equipment to our pristine, climate-controlled floors, every detail is designed to help you focus on what matters — your transformation.
+      </p>
+      <div class="about-features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h4>World-Class Infrastructure</h4>
+            <p>Imported machines, premium flooring, and immaculate hygiene standards.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4>Elite Coaching Staff</h4>
+            <p>Certified experts who design science-backed programs tailored to your goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS ============ -->
+<section class="section programs" id="programs">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">
+        <span class="eyebrow-line"></span>
+        Our Programs
+      </span>
+      <h2 class="section-title">Curated training <br/><em>for every ambition.</em></h2>
+    </div>
+
+    <div class="program-list">
+      <a href="https://wa.me/918947845748" class="program-item reveal-up" target="_blank" rel="noopener">
+        <div class="prog-left">
+          <span class="prog-num">01</span>
+          <h3>Bespoke Personal Training</h3>
+        </div>
+        <p class="prog-desc">One-on-one coaching with certified experts. Customized workout splits, form correction, and complete nutrition guidance.</p>
+        <span class="prog-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="https://wa.me/918947845748" class="program-item reveal-up" style="--delay: 0.05s" target="_blank" rel="noopener">
+        <div class="prog-left">
+          <span class="prog-num">02</span>
+          <h3>Strength & Hypertrophy</h3>
+        </div>
+        <p class="prog-desc">Build raw muscle and functional strength with our premium free weights and biomechanical machines.</p>
+        <span class="prog-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="https://wa.me/918947845748" class="program-item reveal-up" style="--delay: 0.1s" target="_blank" rel="noopener">
+        <div class="prog-left">
+          <span class="prog-num">03</span>
+          <h3>Functional Mobility & Core</h3>
+        </div>
+        <p class="prog-desc">Improve agility, balance, and real-world strength with dynamic functional training protocols.</p>
+        <span class="prog-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="https://wa.me/918947845748" class="program-item reveal-up" style="--delay: 0.15s" target="_blank" rel="noopener">
+        <div class="prog-left">
+          <span class="prog-num">04</span>
+          <h3>Women's Exclusive Fitness</h3>
+        </div>
+        <p class="prog-desc">Dedicated timings and specialized programs designed for women in a comfortable, empowering environment.</p>
+        <span class="prog-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a href="https://wa.me/918947845748" class="program-item reveal-up" style="--delay: 0.2s" target="_blank" rel="noopener">
+        <div class="prog-left">
+          <span class="prog-num">05</span>
+          <h3>Athletic Performance</h3>
+        </div>
+        <p class="prog-desc">Sport-specific conditioning to enhance speed, power, and endurance for competitive athletes.</p>
+        <span class="prog-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="container experience-grid">
+    <div class="exp-left reveal-up">
+      <span class="eyebrow">
+        <span class="eyebrow-line"></span>
+        The Experience
+      </span>
+      <h2 class="section-title">Why Jaipur's elite <br/><em>choose us.</em></h2>
+      <p>We don't just provide equipment; we provide an ecosystem. From the moment you walk in, you are surrounded by a culture of discipline, respect, and relentless self-improvement.</p>
+      <a href="https://wa.me/918947845748" class="btn btn-dark" target="_blank" rel="noopener">Book a Private Tour</a>
+    </div>
+
+    <div class="exp-right">
+      <div class="exp-card reveal-up" style="--delay: 0.1s">
+        <div class="exp-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h4>Pristine Ambience</h4>
+        <p>Fully air-conditioned floors, premium ventilation, and immaculate cleanliness. A space that respects your senses.</p>
+      </div>
+      <div class="exp-card reveal-up" style="--delay: 0.2s">
+        <div class="exp-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h4>Flexible Timings</h4>
+        <p>Open from 5:30 AM to 10:30 PM, 7 days a week. Train on your schedule, without compromise.</p>
+      </div>
+      <div class="exp-card reveal-up" style="--delay: 0.3s">
+        <div class="exp-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h4>Prime Location</h4>
+        <p>Located at Plot A-17, opposite Science Park in Subhash Nagar. Ample parking and seamless connectivity.</p>
+      </div>
+      <div class="exp-card reveal-up" style="--delay: 0.4s">
+        <div class="exp-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h4>Community & Culture</h4>
+        <p>Surround yourself with driven individuals. Our society thrives on mutual respect and collective growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-head reveal-up">
+      <div>
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Member Testimonials
+        </span>
+        <h2 class="section-title">Voices from <br/><em>the society.</em></h2>
+      </div>
+      <div class="reviews-rating">
+        <div class="big-rating">4.8</div>
+        <div class="big-stars">★★★★★</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Fitness%20Society%20-%20The%20best%20gym%20and%20fitness%20center%20in%20Jaipur&query_place_id=ChIJRwVDeyC1bTkReoC82RRwnpg" target="_blank" rel="noopener" class="reviews-link">Read all 234 reviews on Google →</a>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal-up">
+        <div class="review-quote">"</div>
+        <p>An absolute sanctuary for fitness in Jaipur. The ambiance is unmatched, and the trainers truly understand the science of body transformation. Best decision I've made.</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>Subhash Nagar</span>
+        </div>
+      </div>
+
+      <div class="review-card reveal-up" style="--delay: 0.1s">
+        <div class="review-quote">"</div>
+        <p>Finally, a gym in Jaipur that feels premium. The equipment is top-tier, the floors are always clean, and the community is incredibly motivating. Highly recommend Fitness Society.</p>
+        <div class="review-author">
+          <strong>Fitness Enthusiast</strong>
+          <span>Google Review</span>
+        </div>
+      </div>
+
+      <div class="review-card reveal-up" style="--delay: 0.2s">
+        <div class="review-quote">"</div>
+        <p>Fitness Society lives up to its name. It's a society of dedicated individuals pushing each other to be better. The personal training sessions are worth every penny.</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>Jaipur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-layout">
+    <div class="faq-left reveal-up">
+      <span class="eyebrow">
+        <span class="eyebrow-line"></span>
+        Inquiries
+      </span>
+      <h2 class="section-title">Frequently <br/><em>asked questions.</em></h2>
+      <p>Can't find the answer you're looking for? Our team is available on WhatsApp to assist you.</p>
+      <a href="https://wa.me/918947845748" class="btn btn-outline-dark" target="_blank" rel="noopener">Chat with Us</a>
+    </div>
+
+    <div class="faq-right">
+      <details class="faq-item reveal-up" open>
+        <summary>
+          <span>What are the membership options at Fitness Society?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>We offer flexible monthly, quarterly, and annual membership plans tailored to your commitment level. We also provide specialized packages for personal training and group sessions. Reach out to us for our current pricing and any ongoing introductory offers.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.05s">
+        <summary>
+          <span>Do you provide certified personal training?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Absolutely. Our personal trainers are certified experts who design bespoke workout and nutrition plans. They focus on biomechanics, progressive overload, and injury prevention to ensure you achieve your goals safely and efficiently.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.1s">
+        <summary>
+          <span>Are there specific timings for women?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, we have dedicated women-only batch timings to ensure a comfortable and empowering environment. We also offer specialized programs tailored specifically for women's fitness goals, including strength, toning, and flexibility.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.15s">
+        <summary>
+          <span>Is parking available at the facility?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, Plot no. A-17 offers ample dedicated parking space for both two-wheelers and four-wheelers. Being located opposite Science Park on a wide road in Subhash Nagar, we ensure a hassle-free arrival experience for all our members.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.2s">
+        <summary>
+          <span>What makes Fitness Society different from other gyms?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Our focus on a curated, premium environment. From our imported biomechanical equipment and pristine hygiene standards to our elite coaching staff and respectful community, every detail is designed to elevate your fitness journey beyond the ordinary.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="section location" id="contact">
+  <div class="container">
+    <div class="location-wrap reveal-up">
+      <div class="location-info">
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Visit The Society
+        </span>
+        <h2 class="section-title">Find your <br/><em>new standard.</em></h2>
+
+        <div class="location-details">
+          <div class="loc-item">
+            <div class="loc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <p>Plot no. A 17, opposite Science Park,<br/>Subhash Nagar, Jaipur, Rajasthan 302016</p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+918947845748">+91 89478 45748</a>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Operating Hours</strong>
+              <p>Monday – Sunday · 5:30 AM to 10:30 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-actions">
+          <a href="https://wa.me/918947845748" class="btn btn-dark" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Fitness%20Society%20-%20The%20best%20gym%20and%20fitness%20center%20in%20Jaipur&query_place_id=ChIJRwVDeyC1bTkReoC82RRwnpg" class="btn btn-outline-dark" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="location-map">
+        <iframe src="https://maps.google.com/maps?q=Fitness%20Society%20Subhash%20Nagar%20Jaipur&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fitness Society Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="container">
+    <div class="cta-content reveal-up">
+      <span class="eyebrow light">
+        <span class="eyebrow-line light"></span>
+        Your Transformation Awaits
+      </span>
+      <h2 class="cta-title">Elevate your <em>standard.</em></h2>
+      <p>Join a society of individuals who refuse to compromise on their health, aesthetics, and performance. Claim your complimentary consultation today.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/918947845748" class="btn btn-light btn-lg" target="_blank" rel="noopener">
+          Claim Free Consultation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+918947845748" class="btn btn-outline-light btn-lg">Call +91 89478 45748</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">F</span>
+          <span class="brand-name">Fitness Society</span>
+        </a>
+        <p>Jaipur's most curated fitness destination. Elevating standards in Subhash Nagar through world-class infrastructure and elite coaching.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">The Society</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Programs</h5>
+        <ul>
+          <li><a href="#programs">Personal Training</a></li>
+          <li><a href="#programs">Strength & Hypertrophy</a></li>
+          <li><a href="#programs">Functional Mobility</a></li>
+          <li><a href="#programs">Women's Fitness</a></li>
+          <li><a href="#programs">Athletic Performance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact">
+          <li>Plot no. A 17, opposite Science Park, Subhash Nagar, Jaipur, Rajasthan 302016</li>
+          <li><a href="tel:+918947845748">+91 89478 45748</a></li>
+          <li><a href="https://wa.me/918947845748" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Fitness%20Society%20-%20The%20best%20gym%20and%20fitness%20center%20in%20Jaipur&query_place_id=ChIJRwVDeyC1bTkReoC82RRwnpg" target="_blank" rel="noopener">View on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Fitness Society. All rights reserved.</p>
+      <p>Curated for excellence in Jaipur.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/918947845748" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bottom-bar">
+  <a href="tel:+918947845748" class="mbtn mbtn-call">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Us
+  </a>
+  <a href="https://wa.me/918947845748" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    Join Society
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isActive = navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal Animation
+  const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar background on scroll
+  const navWrap = document.querySelector('.nav-wrap');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navWrap.classList.add('scrolled');
+    } else {
+      navWrap.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>

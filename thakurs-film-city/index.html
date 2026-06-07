@@ -1,124 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thakur's Film City | Katol Road Nagpur</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thakur's Film City | Premier Wedding Photography & Cinematography in Nagpur</title>
+<meta name="description" content="Capture your love story with Nagpur's most sought-after wedding photographers. Thakur's Film City offers cinematic films, candid shots, and timeless portraits. Rated 4.8★." />
+<meta name="keywords" content="photographer in Nagpur, Thakur's Film City, wedding photographer Nagpur, candid photography Nagpur, pre-wedding shoot, cinematography Nagpur, best photographer Katol Rd" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Thakur's Film City | Premier Wedding Photography in Nagpur" />
+<meta property="og:description" content="Archiving the raw and the romantic. Cinematic wedding photography and films in Nagpur." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:site_name" content="Thakur's Film City" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Photographer",
+  "name": "Thakur's Film City - Best Photographer in Nagpur",
+  "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200",
+  "@id": "https://thakursfilmcity.in",
+  "url": "https://thakursfilmcity.in",
+  "telephone": "+919699161108",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "PLOT NO. 203, Katol Rd, Pension Nagar, Police Line Takli",
+    "addressLocality": "Nagpur",
+    "addressRegion": "Maharashtra",
+    "postalCode": "440013",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "81"
+  }
+}
+</script>
 </head>
 <body>
-  <!-- TEXT SCROLLING ticker -->
-  <div class="film-ticker">
-    <span>🎬 THAKURS FILM CITY TIMELINES • WEDDINGS • PRE-WEDDINGS • CINEMA WORKS • REGISTER TODAY 🎬</span>
-  </div>
 
-  <div class="film-layout">
-    <div class="film-strip">
-      <!-- Frame 1: Brand -->
-      <div class="frame frame-brand">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h1>Thakur's Film City</h1>
-          <div class="badge">★ 4.8 Rating (81 Reviews)</div>
-          <nav class="frame-nav">
-            <a href="#about">Philosophy</a>
-            <a href="#services">Services</a>
-            <a href="#why">Why Us</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#contact">Location</a>
-          </nav>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="nav">
+  <nav class="nav-inner container">
+    <a href="#top" class="logo" aria-label="Thakur's Film City Home">
+      <span class="logo-icon">◉</span>
+      <span class="logo-text">Thakur's <em>Film City</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#archive">The Archive</a></li>
+      <li><a href="#reel">The Reel</a></li>
+      <li><a href="#postcards">Postcards</a></li>
+      <li><a href="#index">Index</a></li>
+      <li><a href="#studio">Studio</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://wa.me/919699161108" class="btn-nav" target="_blank" rel="noopener">Book Date</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-text reveal-up">
+      <span class="mono-tag">◉ VOL. 01 / NAGPUR / EST. 2015</span>
+      <h1 class="hero-title">
+        Framing the <br/>
+        <em>Raw & The</em> <br/>
+        Romantic.
+      </h1>
+      <p class="hero-desc">
+        We don't just shoot weddings; we archive the fleeting glances, the nervous laughter, and the quiet moments in between. Welcome to Thakur's Film City.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/919699161108" class="btn btn-burgundy" target="_blank" rel="noopener">
+          Book Your Date
+          <span>→</span>
+        </a>
+        <a href="#archive" class="btn btn-outline">View The Archive</a>
       </div>
-
-      <!-- Frame 2: Hero -->
-      <div class="frame frame-hero" id="home">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h2>Cinematic Vision.<br><span class="text-gradient">Timeless Frames.</span></h2>
-          <p>Katol Road's best photography studio. Wedding photography, pre-wedding shoots, and cinematic wedding films with a personal touch.</p>
-          <div class="actions">
-            <a href="tel:+919699161108" class="f-btn">BOOK NOW</a>
-            <a href="https://wa.me/919699161108" class="f-btn outline">WHATSAPP</a>
-          </div>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    
+    <div class="hero-visual reveal-up" style="--delay: 0.2s">
+      <div class="polaroid p1">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding Couple Portrait" loading="eager" />
+        <span class="polaroid-caption">The Vows, 2023</span>
+        <div class="tape t1"></div>
       </div>
-
-      <!-- Frame 3: Image -->
-      <div class="frame frame-img">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <img src="assets/hero.png" alt="Film Production Set">
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="polaroid p2">
+        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Candid Wedding Moment" loading="eager" />
+        <span class="polaroid-caption">Unscripted Joy</span>
+        <div class="tape t2"></div>
       </div>
-
-      <!-- Frame 4: About -->
-      <div class="frame frame-about" id="about">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h3>[01] THE STUDIO</h3>
-          <p>Thakur's Film City on Katol Road is Nagpur's premier wedding film developer. We design cinema-grade pre-wedding shoots, wedding reels, and family photo portfolios using state-of-the-art camera machinery.</p>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
-      </div>
-
-      <!-- Frame 5: Services -->
-      <div class="frame frame-services" id="services">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h3>[02] ARSENAL</h3>
-          <ul>
-            <li>✦ Cinematic Wedding Films</li>
-            <li>✦ Candid Pre-Wedding Shoots</li>
-            <li>✦ Premium Album Prints</li>
-          </ul>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
-      </div>
-
-      <!-- Frame 6: Why Us -->
-      <div class="frame frame-why" id="why">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h3>[03] PROTOCOLS</h3>
-          <p>✓ High-spec mirrorless camera modules.</p>
-          <p>✓ Personalized creative location setups.</p>
-          <p>✓ Fast cloud digital gallery delivery.</p>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
-      </div>
-
-      <!-- Frame 7: Testimonial -->
-      <div class="frame frame-reviews" id="reviews">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h3>[04] TALK</h3>
-          <blockquote>"Amazing wedding video. The framing feels like a real movie set. Highly recommend Katol Road team."</blockquote>
-          <span>— Sandeep K.</span>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
-      </div>
-
-      <!-- Frame 8: Location -->
-      <div class="frame frame-contact" id="contact">
-        <div class="sprockets top"><span></span><span></span><span></span><span></span><span></span></div>
-        <div class="frame-content">
-          <h3>[05] ADDRESS</h3>
-          <p class="addr">Plot No. 203, Katol Rd, Pension Nagar, Police Line Takli, Nagpur 440013</p>
-          <div class="map-wrap">
-            <iframe src="https://maps.google.com/maps?q=Plot%20No.%20203%2C%20Katol%20Rd%2C%20Pension%20Nagar%2C%20Police%20Line%20Takli%2C%20Nagpur%20440013&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-        <div class="sprockets bottom"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="polaroid p3">
+        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=600&q=80" alt="Pre-wedding Shoot" loading="eager" />
+        <span class="polaroid-caption">The Journey</span>
+        <div class="tape t3"></div>
       </div>
     </div>
   </div>
+</section>
 
-  <footer class="footer">
-    <p>© 2025 Thakur's Film City. Wrapped on film.</p>
-  </footer>
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>◉ 35MM ANALOG</span>
+    <span>◉ CINEMATIC FILMS</span>
+    <span>◉ CANDID STORIES</span>
+    <span>◉ NAGPUR</span>
+    <span>◉ DESTINATION WEDDINGS</span>
+    <span>◉ 35MM ANALOG</span>
+    <span>◉ CINEMATIC FILMS</span>
+    <span>◉ CANDID STORIES</span>
+    <span>◉ NAGPUR</span>
+    <span>◉ DESTINATION WEDDINGS</span>
+  </div>
+</div>
 
-  <a href="https://wa.me/919699161108" class="wa-float-film" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+<!-- ============ THE ARCHIVE (ABOUT) ============ -->
+<section class="section archive" id="archive">
+  <div class="container archive-grid">
+    <div class="archive-visual reveal-up">
+      <div class="film-stack">
+        <div class="film-edge"></div>
+        <div class="stack-img">
+          <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=800&q=80" alt="Photographer at work" loading="lazy" />
+        </div>
+        <div class="film-edge"></div>
+      </div>
+      <div class="archive-badge">
+        <span class="ab-num">81+</span>
+        <span class="ab-text">Happy Couples<br/>Rated 4.8★</span>
+      </div>
+    </div>
+    <div class="archive-content reveal-up" style="--delay: 0.1s">
+      <span class="mono-tag">◉ THE ARCHIVE / ABOUT US</span>
+      <h2 class="section-title">More than pictures. <br/><em>We archive feelings.</em></h2>
+      <p class="lead-text">
+        At Thakur's Film City, we believe a wedding isn't just an event; it's a fleeting masterpiece of emotions, traditions, and raw human connection.
+      </p>
+      <p>
+        Based in the heart of Nagpur on Katol Road, our team of visual storytellers blends the nostalgic warmth of analog film aesthetics with modern cinematic precision. We step back, observe, and capture the unscripted magic of your day, ensuring your album feels less like a portfolio and more like a time capsule.
+      </p>
+      <div class="archive-stats">
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Weddings Archived</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Destinations Covered</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE REEL (SERVICES) ============ -->
+<section class="section reel" id="reel">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="mono-tag">◉ THE REEL / SERVICES</span>
+      <h2 class="section-title">What we <em>capture.</em></h2>
+      <p class="section-sub">From the quiet preparations to the grand celebrations, we offer a comprehensive suite of visual storytelling services.</p>
+    </div>
+
+    <div class="film-strip reveal-up" style="--delay: 0.1s">
+      <div class="film-edge"></div>
+      <div class="reel-grid">
+        <div class="reel-card">
+          <span class="rc-num">01</span>
+          <h3>Candid Photography</h3>
+          <p>Unposed, raw, and deeply emotional. We capture the stolen glances and joyful tears that make your day uniquely yours.</p>
+        </div>
+        <div class="reel-card">
+          <span class="rc-num">02</span>
+          <h3>Cinematic Wedding Films</h3>
+          <p>Hollywood-grade cinematography that transforms your wedding into a breathtaking short film with immersive audio.</p>
+        </div>
+        <div class="reel-card">
+          <span class="rc-num">03</span>
+          <h3>Pre-Wedding Portraits</h3>
+          <p>Conceptualized shoots at stunning locations across India. Let's capture the chemistry before the big day.</p>
+        </div>
+        <div class="reel-card">
+          <span class="rc-num">04</span>
+          <h3>Traditional Ceremonies</h3>
+          <p>Classic, elegantly lit portraits and traditional coverage that honors your family's customs with a premium aesthetic.</p>
+        </div>
+      </div>
+      <div class="film-edge"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POSTCARDS (REVIEWS) ============ -->
+<section class="section postcards" id="postcards">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="mono-tag">◉ POSTCARDS / TESTIMONIALS</span>
+      <h2 class="section-title">Words from <em>our couples.</em></h2>
+    </div>
+
+    <div class="postcard-grid">
+      <div class="postcard reveal-up">
+        <div class="stamp">
+          <span>NAGPUR</span>
+          <small>4.8★</small>
+        </div>
+        <p class="pc-text">"Thakur's Film City completely blew us away. They didn't just take photos; they captured the soul of our wedding. The cinematic film made us cry tears of joy all over again. Absolutely the best in Nagpur!"</p>
+        <div class="pc-author">
+          <strong>Ananya & Rohan</strong>
+          <span>Winter Wedding, Nagpur</span>
+        </div>
+      </div>
+
+      <div class="postcard featured reveal-up" style="--delay: 0.1s">
+        <div class="stamp">
+          <span>UDAIPUR</span>
+          <small>DEST.</small>
+        </div>
+        <p class="pc-text">"From the pre-wedding shoot to the main wedding, the team was phenomenal. They were everywhere but nowhere—capturing every candid moment without being intrusive. The album is a masterpiece."</p>
+        <div class="pc-author">
+          <strong>Priya & Vikram</strong>
+          <span>Destination Wedding</span>
+        </div>
+      </div>
+
+      <div class="postcard reveal-up" style="--delay: 0.2s">
+        <div class="stamp">
+          <span>NAGPUR</span>
+          <small>5.0★</small>
+        </div>
+        <p class="pc-text">"Professional, creative, and incredibly warm. They made us feel so comfortable. The lighting and composition in our portraits are literally magazine-worthy. Highly recommend their team!"</p>
+        <div class="pc-author">
+          <strong>Sneha & Amit</strong>
+          <span>Engagement & Reception</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDEX (FAQ) ============ -->
+<section class="section index" id="index">
+  <div class="container">
+    <div class="index-layout">
+      <div class="index-left reveal-up">
+        <span class="mono-tag">◉ INDEX / INQUIRIES</span>
+        <h2 class="section-title">Frequently <em>asked.</em></h2>
+        <p>Planning a wedding can be overwhelming. Let us make the photography part seamless and stress-free.</p>
+        <a href="https://wa.me/919699161108" class="btn btn-burgundy" target="_blank" rel="noopener">Ask Us Anything</a>
+      </div>
+
+      <div class="index-right">
+        <details class="index-card reveal-up" open>
+          <summary>
+            <span class="ic-q">Q: How far in advance should we book?</span>
+            <span class="ic-icon">+</span>
+          </summary>
+          <div class="ic-a">
+            <p>A: Since we limit the number of weddings we cover each year to ensure premium quality, we recommend booking 6 to 12 months in advance. However, feel free to reach out for last-minute availability!</p>
+          </div>
+        </details>
+
+        <details class="index-card reveal-up" style="--delay: 0.05s">
+          <summary>
+            <span class="ic-q">Q: Do you travel for destination weddings?</span>
+            <span class="ic-icon">+</span>
+          </summary>
+          <div class="ic-a">
+            <p>A: Absolutely! We love traveling and have covered beautiful destination weddings across India and abroad. Travel and accommodation details can be discussed during your consultation.</p>
+          </div>
+        </details>
+
+        <details class="index-card reveal-up" style="--delay: 0.1s">
+          <summary>
+            <span class="ic-q">Q: When do we get the final album?</span>
+            <span class="ic-icon">+</span>
+          </summary>
+          <div class="ic-a">
+            <p>A: We deliver a sneak peek of 30-50 edited images within a week. The complete cinematic film and the final curated premium album typically take 8 to 12 weeks, as we meticulously edit every frame.</p>
+          </div>
+        </details>
+
+        <details class="index-card reveal-up" style="--delay: 0.15s">
+          <summary>
+            <span class="ic-q">Q: Where is your studio located?</span>
+            <span class="ic-icon">+</span>
+          </summary>
+          <div class="ic-a">
+            <p>A: We are located at PLOT NO. 203, Katol Rd, Pension Nagar, Police Line Takli, Nagpur. You can visit us by appointment to discuss your vision and view our physical portfolios.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE STUDIO (CONTACT) ============ -->
+<section class="section studio" id="studio">
+  <div class="container studio-grid">
+    <div class="studio-info reveal-up">
+      <span class="mono-tag">◉ THE DARKROOM / CONTACT</span>
+      <h2 class="section-title">Let's create <em>magic.</em></h2>
+      <p class="studio-desc">Ready to archive your love story? Reach out to the studio and let's start planning your visual legacy.</p>
+      
+      <div class="studio-details">
+        <div class="detail-item">
+          <span class="mono-label">ADDRESS</span>
+          <p>PLOT NO. 203, Katol Rd, Pension Nagar, Police Line Takli, Nagpur, Maharashtra 440013</p>
+        </div>
+        <div class="detail-item">
+          <span class="mono-label">DIRECT LINE</span>
+          <a href="tel:+919699161108">+91 96991 61108</a>
+        </div>
+        <div class="detail-item">
+          <span class="mono-label">STUDIO HOURS</span>
+          <p>Mon - Sun: 10:00 AM - 8:00 PM (By Appointment)</p>
+        </div>
+      </div>
+
+      <div class="studio-btns">
+        <a href="https://wa.me/919699161108" class="btn btn-burgundy" target="_blank" rel="noopener">
+          Send a Postcard (WhatsApp)
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Thakur's%20Film%20City%20-%20Best%20Photographer%20in%20Nagpur&query_place_id=ChIJD1tCOwzB1DsRkroQWFrm7jY" class="btn btn-outline" target="_blank" rel="noopener">
+          Find The Studio
+        </a>
+      </div>
+    </div>
+    
+    <div class="studio-map reveal-up" style="--delay: 0.2s">
+      <iframe src="https://maps.google.com/maps?q=Thakur's%20Film%20City%20Katol%20Rd%20Nagpur&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Thakur's Film City Location"></iframe>
+      <div class="map-stamp">
+        <span>NAGPUR</span>
+        <small>EST. 2015</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-icon">◉</span>
+          <span class="logo-text">Thakur's <em>Film City</em></span>
+        </a>
+        <p>Nagpur's premier wedding photography and cinematography studio. Archiving the raw, the romantic, and the unscripted moments of your love story.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="#archive">The Archive</a></li>
+          <li><a href="#reel">The Reel</a></li>
+          <li><a href="#postcards">Postcards</a></li>
+          <li><a href="#index">Index</a></li>
+          <li><a href="#studio">Studio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#reel">Candid Photography</a></li>
+          <li><a href="#reel">Cinematic Films</a></li>
+          <li><a href="#reel">Pre-Wedding Shoots</a></li>
+          <li><a href="#reel">Destination Weddings</a></li>
+          <li><a href="#reel">Traditional Ceremonies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li>PLOT NO. 203, Katol Rd, Pension Nagar, Nagpur 440013</li>
+          <li><a href="tel:+919699161108">+91 96991 61108</a></li>
+          <li><a href="https://wa.me/919699161108" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Thakur's%20Film%20City%20-%20Best%20Photographer%20in%20Nagpur&query_place_id=ChIJD1tCOwzB1DsRkroQWFrm7jY" target="_blank" rel="noopener">View on Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Thakur's Film City. All rights reserved.</p>
+      <p>Archiving love stories in Nagpur.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/919699161108" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="tel:+919699161108" class="mbtn mbtn-call">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Studio
+  </a>
+  <a href="https://wa.me/919699161108" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    Book Date
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isActive = navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal
+  const revealElements = document.querySelectorAll('.reveal-up');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar Scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>

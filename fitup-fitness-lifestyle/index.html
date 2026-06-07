@@ -1,105 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitup Fitness Lifestyle | Sidebar Layout</title>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fitup Fitness Lifestyle | Premium Gym & Wellness Club in C Scheme, Jaipur</title>
+<meta name="description" content="Elevate your lifestyle at Fitup Fitness — Jaipur's most refined fitness destination in C Scheme. World-class training, holistic wellness, and a community that inspires. Rated 4.9★." />
+<meta name="keywords" content="gym in Jaipur, Fitup Fitness Lifestyle, gym C Scheme Jaipur, premium fitness Ashok Nagar, wellness club Subhash Marg, best gym near Civil Lines Jaipur" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Fitup Fitness Lifestyle | Premium Gym in C Scheme, Jaipur" />
+<meta property="og:description" content="Where fitness meets lifestyle. Rated 4.9★ by 157+ members. Join Jaipur's most refined fitness destination." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:site_name" content="Fitup Fitness Lifestyle" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Fitup Fitness Lifestyle",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "@id": "https://fitupfitnesslifestyle.com",
+  "url": "https://fitupfitnesslifestyle.com",
+  "telephone": "+919571995817",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bhagadiya Bhawan, J-33, Subhash Marg, C Scheme, Ashok Nagar",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302001",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.9124,
+    "longitude": 75.7873
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "157"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "05:30",
+    "closes": "22:30"
+  }]
+}
+</script>
 </head>
 <body>
-  <div class="app-layout">
-    <aside class="sidebar">
-      <div class="sidebar-brand">
-        <h2>Fitup Fitness Lifestyle</h2>
-        <div class="sidebar-rating">★ 4.9 (157 reviews)</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="top">
+  <nav class="nav container" aria-label="Primary">
+    <a href="#top" class="brand" aria-label="Fitup Fitness Lifestyle home">
+      <span class="brand-mark">
+        <span class="brand-letter">F</span>
+        <span class="brand-sub">FITUP</span>
+      </span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#disciplines">Disciplines</a></li>
+      <li><a href="#standard">The Standard</a></li>
+      <li><a href="#voices">Voices</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+919571995817" class="nav-call" aria-label="Call us">
+        <span class="hide-mobile">+91 95719 95817</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="show-mobile"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="https://wa.me/919571995817" class="nav-cta" target="_blank" rel="noopener">Begin Journey</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="container hero-layout">
+    <div class="hero-left reveal-fade">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-num">01</span>
+        <span class="eyebrow-text">C Scheme · Jaipur · Est. Premium</span>
       </div>
-      <nav class="sidebar-menu">
-        <a href="#home">Home</a>
-        <a href="#about">Philosophy</a>
-        <a href="#programs">Experience</a>
-        <a href="#choose">Why Us</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Location</a>
-      </nav>
-      <div class="sidebar-cta">
-        <a href="tel:+919571995817" class="sidebar-btn">Call Clinic</a>
+      <h1 class="hero-title">
+        <span class="title-line">Where</span>
+        <span class="title-line italic">fitness</span>
+        <span class="title-line">becomes</span>
+        <span class="title-line accent">lifestyle.</span>
+      </h1>
+      <p class="hero-sub">
+        A sanctuary for the discerning. Fitup Fitness Lifestyle blends world-class training, holistic wellness, and refined ambiance in the heart of C Scheme — Jaipur's most prestigious address.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/919571995817" class="btn-primary" target="_blank" rel="noopener">
+          <span>Reserve Your Spot</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#philosophy" class="btn-ghost">Discover More</a>
       </div>
-    </aside>
+    </div>
 
-    <main class="main-content">
-      <!-- STATIC HIGHLIGHT STRIP -->
-      <div class="highlight-strip">
-        🔥 EXCLUSIVE C-SCHEME OFFER: REGISTER VIA WHATSAPP TODAY FOR A FREE 3-DAY PASS
+    <div class="hero-right reveal-fade" style="--delay: 0.2s">
+      <div class="hero-image-stack">
+        <div class="hero-img hero-img-1">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Fitup Fitness Lifestyle premium interior" loading="eager" />
+        </div>
+        <div class="hero-img hero-img-2">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80" alt="Personal training session" loading="eager" />
+        </div>
+        <div class="hero-floating-card">
+          <div class="hfc-rating">4.9</div>
+          <div class="hfc-stars">★★★★★</div>
+          <div class="hfc-text">157+ Members</div>
+        </div>
       </div>
-
-      <section id="home" class="hero-section">
-        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-body">
-          <h1>Level Up Your<br><span class="text-gradient">Fitness Lifestyle.</span></h1>
-          <p>C-Scheme's boutique fitness experience. Premium personal training, modern equipment, and a lifestyle-first approach to health.</p>
-          <div class="actions">
-            <a href="tel:+919571995817" class="btn btn-primary">Call Now</a>
-            <a href="https://wa.me/919571995817" class="btn btn-outline">WhatsApp</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="content-section">
-        <h2 class="sec-title">THE PHILOSOPHY</h2>
-        <p class="lead-text">Fitup Fitness Lifestyle stands for bespoke training. Operating out of Subhash Marg, C Scheme, we offer a sanctuary for focused training. Our space limits the active count of trainees, giving you total space to lift.</p>
-        <div class="about-grid">
-          <div class="about-box"><h3>Boutique Setup</h3><p>Never overcrowded. Total control over your environment.</p></div>
-          <div class="about-box"><h3>Personal Design</h3><p>Routines built around your body and metabolic indexes.</p></div>
-        </div>
-      </section>
-
-      <section id="programs" class="content-section bg-dark">
-        <h2 class="sec-title">THE EXPERIENCE</h2>
-        <div class="experience-grid">
-          <div class="card">
-            <h3>Personal Coaching</h3>
-            <p>1-on-1 sessions focusing on strength metrics and posture safety.</p>
-          </div>
-          <div class="card">
-            <h3>Custom Nutrition</h3>
-            <p>Weekly dietary reviews based on biometric parameters.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="choose" class="content-section">
-        <h2 class="sec-title">WHY MEMBERS LEVEL UP WITH US</h2>
-        <ul class="bullet-list">
-          <li><strong>Elite Trainers:</strong> Hand-picked, qualified coaching team.</li>
-          <li><strong>Clean Space:</strong> Sanitized space with premium ventilation setups.</li>
-          <li><strong>Modern Methods:</strong> No outdated generic routines.</li>
-        </ul>
-      </section>
-
-      <section id="reviews" class="content-section bg-dark">
-        <h2 class="sec-title">REVIEWS</h2>
-        <div class="review-box">
-          <p>"Outstanding boutique gym experience. Meticulous gear and amazing guides."</p>
-          <strong>— Rohan Gupta</strong>
-        </div>
-      </section>
-
-      <section id="contact" class="content-section">
-        <h2 class="sec-title">THE STUDIO</h2>
-        <p class="addr-text">Bhagadiya Bhawan, J-33, Subhash Marg, C Scheme, Jaipur 302001</p>
-        <div class="map-container">
-          <iframe src="https://maps.google.com/maps?q=Bhagadiya%20Bhawan%2C%20J-33%2C%20Subhash%20Marg%2C%20C%20Scheme%2C%20Jaipur%20302001&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <p>© 2025 Fitup Fitness Lifestyle. Crafted with focus.</p>
-      </footer>
-    </main>
+    </div>
   </div>
 
-  <a href="https://wa.me/919571995817" class="wa-float-sidebar" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+  <div class="hero-scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="section philosophy" id="philosophy">
+  <div class="container">
+    <div class="philosophy-grid">
+      <div class="phil-left reveal-up">
+        <div class="section-eyebrow">
+          <span class="eyebrow-num">02</span>
+          <span class="eyebrow-line"></span>
+          <span>Our Philosophy</span>
+        </div>
+        <h2 class="section-title">
+          Not just a gym. <br/>
+          <em>A way of living.</em>
+        </h2>
+      </div>
+      <div class="phil-right reveal-up" style="--delay: 0.1s">
+        <p class="lede">
+          At Fitup, we believe fitness is not a destination — it's a daily ritual, a mindset, a lifestyle that elevates every aspect of your existence.
+        </p>
+        <p>
+          Nestled in the prestigious Bhagadiya Bhawan on Subhash Marg, C Scheme, we've crafted an environment where ambition meets elegance. Our members don't just train — they transform. They arrive as individuals seeking change and leave as part of a community that celebrates every milestone, every rep, every breakthrough.
+        </p>
+        <div class="phil-stats">
+          <div class="phil-stat">
+            <div class="phil-stat-num">4.9<span>★</span></div>
+            <div class="phil-stat-label">Google Rating</div>
+          </div>
+          <div class="phil-stat">
+            <div class="phil-stat-num">157<span>+</span></div>
+            <div class="phil-stat-label">Happy Members</div>
+          </div>
+          <div class="phil-stat">
+            <div class="phil-stat-num">100<span>%</span></div>
+            <div class="phil-stat-label">Dedication</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCIPLINES (PROGRAMS) ============ -->
+<section class="section disciplines" id="disciplines">
+  <div class="container">
+    <div class="disc-head reveal-up">
+      <div class="section-eyebrow">
+        <span class="eyebrow-num">03</span>
+        <span class="eyebrow-line"></span>
+        <span>Training Disciplines</span>
+      </div>
+      <h2 class="section-title">
+        Crafted pathways <br/>
+        <em>to your best self.</em>
+      </h2>
+    </div>
+  </div>
+
+  <div class="disc-scroll reveal-up" style="--delay: 0.1s">
+    <div class="disc-track">
+      <a href="https://wa.me/919571995817" class="disc-card" target="_blank" rel="noopener">
+        <div class="disc-num">01</div>
+        <div class="disc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"/><path d="M6.5 6.5L2 2M17.5 6.5L22 2M6.5 17.5L2 22M17.5 17.5L22 22"/></svg>
+        </div>
+        <h3>Strength & Sculpting</h3>
+        <p>Build lean muscle and functional strength with premium biomechanical equipment and expert guidance.</p>
+        <span class="disc-link">Begin →</span>
+      </a>
+
+      <a href="https://wa.me/919571995817" class="disc-card" target="_blank" rel="noopener">
+        <div class="disc-num">02</div>
+        <div class="disc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Personal Training</h3>
+        <p>Bespoke one-on-one coaching tailored to your body, goals, and lifestyle. Results guaranteed.</p>
+        <span class="disc-link">Book →</span>
+      </a>
+
+      <a href="https://wa.me/919571995817" class="disc-card" target="_blank" rel="noopener">
+        <div class="disc-num">03</div>
+        <div class="disc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Functional Fitness</h3>
+        <p>Dynamic movements that enhance real-world strength, mobility, and athletic performance.</p>
+        <span class="disc-link">Explore →</span>
+      </a>
+
+      <a href="https://wa.me/919571995817" class="disc-card" target="_blank" rel="noopener">
+        <div class="disc-num">04</div>
+        <div class="disc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Wellness & Yoga</h3>
+        <p>Holistic sessions combining yoga, meditation, and mindful movement for complete well-being.</p>
+        <span class="disc-link">Join →</span>
+      </a>
+
+      <a href="https://wa.me/919571995817" class="disc-card" target="_blank" rel="noopener">
+        <div class="disc-num">05</div>
+        <div class="disc-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Weight Transformation</h3>
+        <p>Science-backed fat loss programs combining training, nutrition, and accountability coaching.</p>
+        <span class="disc-link">Start →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE STANDARD ============ -->
+<section class="section standard" id="standard">
+  <div class="container standard-grid">
+    <div class="standard-visual reveal-up">
+      <div class="standard-img">
+        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=900&q=80" alt="Premium gym equipment at Fitup" loading="lazy" />
+      </div>
+      <div class="standard-badge">
+        <span class="sb-num">C</span>
+        <span class="sb-text">Scheme<br/>Premium</span>
+      </div>
+    </div>
+
+    <div class="standard-content reveal-up" style="--delay: 0.1s">
+      <div class="section-eyebrow">
+        <span class="eyebrow-num">04</span>
+        <span class="eyebrow-line"></span>
+        <span>The Standard</span>
+      </div>
+      <h2 class="section-title">
+        Excellence in <br/>
+        <em>every detail.</em>
+      </h2>
+      <p>
+        From the moment you step into Bhagadiya Bhawan, you'll understand why Fitup is Jaipur's most talked-about fitness destination. Every element has been thoughtfully curated.
+      </p>
+
+      <div class="standard-features">
+        <div class="std-feature">
+          <div class="std-feature-num">i.</div>
+          <div>
+            <h4>Imported Biomechanical Equipment</h4>
+            <p>Top-tier machines from global leaders, engineered for maximum results and joint safety.</p>
+          </div>
+        </div>
+        <div class="std-feature">
+          <div class="std-feature-num">ii.</div>
+          <div>
+            <h4>Certified Elite Coaching</h4>
+            <p>Internationally certified trainers who combine science with personalized attention.</p>
+          </div>
+        </div>
+        <div class="std-feature">
+          <div class="std-feature-num">iii.</div>
+          <div>
+            <h4>Pristine, Climate-Controlled Space</h4>
+            <p>Fully air-conditioned floors with premium ventilation and immaculate hygiene standards.</p>
+          </div>
+        </div>
+        <div class="std-feature">
+          <div class="std-feature-num">iv.</div>
+          <div>
+            <h4>Nutrition & Lifestyle Guidance</h4>
+            <p>Comprehensive diet plans and lifestyle coaching to accelerate your transformation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEMBER VOICES ============ -->
+<section class="section voices" id="voices">
+  <div class="container">
+    <div class="voices-head reveal-up">
+      <div>
+        <div class="section-eyebrow">
+          <span class="eyebrow-num">05</span>
+          <span class="eyebrow-line"></span>
+          <span>Member Voices</span>
+        </div>
+        <h2 class="section-title">
+          Stories from <br/>
+          <em>our community.</em>
+        </h2>
+      </div>
+      <div class="voices-rating">
+        <div class="vr-big">4.9</div>
+        <div class="vr-stars">★★★★★</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Fitup%20Fitness%20Lifestyle&query_place_id=ChIJ9wBznVG1bTkRLVX367tKOc0" target="_blank" rel="noopener" class="vr-link">Read all 157 reviews →</a>
+      </div>
+    </div>
+
+    <div class="voices-grid">
+      <div class="voice-card reveal-up">
+        <div class="voice-quote">"</div>
+        <p>Fitup completely redefined what I thought a gym could be. The ambiance, the trainers, the community — everything feels premium. I've never felt more motivated in my life.</p>
+        <div class="voice-author">
+          <div class="voice-avatar" style="background: linear-gradient(135deg, #059669, #10B981);">A</div>
+          <div>
+            <strong>Aditya R.</strong>
+            <span>Member · C Scheme</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card reveal-up" style="--delay: 0.1s">
+        <div class="voice-quote">"</div>
+        <p>As a working professional, I needed a gym that respected my time and delivered results. Fitup's personal trainers are exceptional — they designed a program that fits perfectly into my schedule.</p>
+        <div class="voice-author">
+          <div class="voice-avatar" style="background: linear-gradient(135deg, #D97706, #F59E0B);">M</div>
+          <div>
+            <strong>Meera S.</strong>
+            <span>Member · Ashok Nagar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card reveal-up" style="--delay: 0.2s">
+        <div class="voice-quote">"</div>
+        <p>The location in C Scheme is perfect, but what truly sets Fitup apart is the culture. It's not just about working out — it's about becoming the best version of yourself. Highly recommend!</p>
+        <div class="voice-author">
+          <div class="voice-avatar" style="background: linear-gradient(135deg, #7C3AED, #A855F7);">R</div>
+          <div>
+            <strong>Rohan K.</strong>
+            <span>Member · Civil Lines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-layout">
+    <div class="faq-left reveal-up">
+      <div class="section-eyebrow">
+        <span class="eyebrow-num">06</span>
+        <span class="eyebrow-line"></span>
+        <span>Questions</span>
+      </div>
+      <h2 class="section-title">
+        Everything you <br/>
+        <em>need to know.</em>
+      </h2>
+      <p>Can't find your answer? Our team is just a WhatsApp message away.</p>
+      <a href="https://wa.me/919571995817" class="btn-outline" target="_blank" rel="noopener">Chat with Us</a>
+    </div>
+
+    <div class="faq-right">
+      <details class="faq-item reveal-up" open>
+        <summary>
+          <span>What membership plans do you offer?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>We offer flexible monthly, quarterly, half-yearly, and annual membership plans designed to suit every commitment level. We also have specialized packages for personal training, group classes, and wellness programs. Reach out on WhatsApp for our current pricing and any ongoing introductory offers.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.05s">
+        <summary>
+          <span>Do you provide personal training sessions?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Absolutely. Our certified personal trainers offer bespoke one-on-one coaching with customized workout plans, form correction, progress tracking, and complete nutrition guidance. We have specialists in strength training, weight loss, and athletic performance.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.1s">
+        <summary>
+          <span>What are your operating hours?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>We're open 7 days a week from 5:30 AM to 10:30 PM, including weekends and most holidays. This flexible schedule ensures you can train whenever it fits your lifestyle — whether you're an early riser or prefer evening sessions.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.15s">
+        <summary>
+          <span>Is parking available at Bhagadiya Bhawan?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, Bhagadiya Bhawan offers dedicated parking space for both two-wheelers and four-wheelers. Located on the prominent Subhash Marg in C Scheme, we're easily accessible from all major parts of Jaipur including Civil Lines, Ashok Nagar, and Raja Park.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.2s">
+        <summary>
+          <span>Do you have women-specific facilities and timings?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, we have separate, clean, and well-maintained changing rooms for women. We also offer dedicated women-only batch timings and specialized programs including yoga, Zumba, and strength training in a comfortable, empowering environment.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.25s">
+        <summary>
+          <span>Can I try before committing to a membership?</span>
+          <span class="faq-toggle"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Of course! We offer a complimentary trial session so you can experience our facility, meet our trainers, and see if Fitup Fitness Lifestyle is the right fit for you. Simply WhatsApp us to book your free visit — no obligations.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT / LOCATION ============ -->
+<section class="section visit" id="visit">
+  <div class="container">
+    <div class="visit-wrap reveal-up">
+      <div class="visit-info">
+        <div class="section-eyebrow light">
+          <span class="eyebrow-num">07</span>
+          <span class="eyebrow-line light"></span>
+          <span>Visit Us</span>
+        </div>
+        <h2 class="section-title light">
+          Find your <br/>
+          <em>new sanctuary.</em>
+        </h2>
+
+        <div class="visit-details">
+          <div class="visit-item">
+            <div class="visit-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <p>Bhagadiya Bhawan, J-33, Subhash Marg,<br/>C Scheme, Ashok Nagar, Jaipur 302001</p>
+            </div>
+          </div>
+
+          <div class="visit-item">
+            <div class="visit-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919571995817">+91 95719 95817</a>
+            </div>
+          </div>
+
+          <div class="visit-item">
+            <div class="visit-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <p>Monday – Sunday · 5:30 AM to 10:30 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit-actions">
+          <a href="https://wa.me/919571995817" class="btn-primary light" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Fitup%20Fitness%20Lifestyle&query_place_id=ChIJ9wBznVG1bTkRLVX367tKOc0" class="btn-outline light" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <iframe src="https://maps.google.com/maps?q=Fitup%20Fitness%20Lifestyle%20C%20Scheme%20Jaipur&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fitup Fitness Lifestyle Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="cta-grain" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-content reveal-up">
+      <div class="cta-eyebrow">Your Journey Begins</div>
+      <h2 class="cta-title">
+        Ready to elevate <br/>
+        <em>your lifestyle?</em>
+      </h2>
+      <p>Join a community of individuals who refuse to settle. Claim your complimentary consultation and discover the Fitup difference.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/919571995817" class="btn-primary btn-lg" target="_blank" rel="noopener">
+          Claim Free Consultation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+919571995817" class="btn-outline btn-lg">Call +91 95719 95817</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">
+            <span class="brand-letter">F</span>
+            <span class="brand-sub">FITUP</span>
+          </span>
+        </a>
+        <p>Jaipur's most refined fitness destination. Elevating lifestyles in C Scheme through world-class training, holistic wellness, and a community that inspires.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#disciplines">Disciplines</a></li>
+          <li><a href="#standard">The Standard</a></li>
+          <li><a href="#voices">Member Voices</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Disciplines</h5>
+        <ul>
+          <li><a href="#disciplines">Strength & Sculpting</a></li>
+          <li><a href="#disciplines">Personal Training</a></li>
+          <li><a href="#disciplines">Functional Fitness</a></li>
+          <li><a href="#disciplines">Wellness & Yoga</a></li>
+          <li><a href="#disciplines">Weight Transformation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact">
+          <li>Bhagadiya Bhawan, J-33, Subhash Marg, C Scheme, Ashok Nagar, Jaipur 302001</li>
+          <li><a href="tel:+919571995817">+91 95719 95817</a></li>
+          <li><a href="https://wa.me/919571995817" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Fitup%20Fitness%20Lifestyle&query_place_id=ChIJ9wBznVG1bTkRLVX367tKOc0" target="_blank" rel="noopener">View on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Fitup Fitness Lifestyle. All rights reserved.</p>
+      <p>Crafted for those who demand more.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/919571995817" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bottom-bar">
+  <a href="tel:+919571995817" class="mbtn mbtn-call">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/919571995817" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    Begin Journey
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isActive = navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal Animation
+  const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar background on scroll
+  const navWrap = document.querySelector('.nav-wrap');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navWrap.classList.add('scrolled');
+    } else {
+      navWrap.classList.remove('scrolled');
+    }
+  });
+
+  // Horizontal scroll for disciplines
+  const discTrack = document.querySelector('.disc-track');
+  if (discTrack) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    discTrack.addEventListener('mousedown', (e) => {
+      isDown = true;
+      discTrack.style.cursor = 'grabbing';
+      startX = e.pageX - discTrack.offsetLeft;
+      scrollLeft = discTrack.scrollLeft;
+    });
+    discTrack.addEventListener('mouseleave', () => {
+      isDown = false;
+      discTrack.style.cursor = 'grab';
+    });
+    discTrack.addEventListener('mouseup', () => {
+      isDown = false;
+      discTrack.style.cursor = 'grab';
+    });
+    discTrack.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - discTrack.offsetLeft;
+      const walk = (x - startX) * 2;
+      discTrack.scrollLeft = scrollLeft - walk;
+    });
+  }
+</script>
+
 </body>
 </html>

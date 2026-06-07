@@ -1,108 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>METROFLEX GYM | Brutalist Gym</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>METROFLEX GYM JAIPUR | Premium Fitness & Bodybuilding in Vaishali Nagar</title>
+<meta name="description" content="Join Jaipur's most hardcore, results-driven fitness fortress. Elite equipment, expert coaches, and a premium training environment at Vaibhav Complex, Vaishali Nagar." />
+<meta name="keywords" content="gym in Jaipur, best gym Vaishali Nagar, Metroflex Gym Jaipur, personal training Jaipur, bodybuilding gym Jaipur, fitness center Amrapali Marg" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="METROFLEX GYM JAIPUR | Forge Your Strongest Self" />
+<meta property="og:description" content="Jaipur's premier hardcore fitness facility. Elite equipment, expert coaches, and unmatched vibe." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:site_name" content="Metroflex Gym Jaipur" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "METROFLEX GYM JAIPUR",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "@id": "https://metroflexgymjaipur.com",
+  "url": "https://metroflexgymjaipur.com",
+  "telephone": "+919772914999",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vaibhav Complex, 7th floor, Amrapali Marg, Block C, Vaishali Nagar",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302021",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.9124,
+    "longitude": 75.7873
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "325"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "05:00",
+    "closes": "23:00"
+  }]
+}
+</script>
 </head>
 <body>
-  <!-- TEXT MARQUEE PROMO -->
-  <div class="marquee-strip">
-    <span>METROFLEX GYM • METROFLEX NO-FLUFF ZONE • METROFLEX GYM • METROFLEX NO-FLUFF ZONE</span>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="top">
+  <nav class="nav container">
+    <a href="#top" class="brand" aria-label="Metroflex Gym Home">
+      METROFLEX <span>JAIPUR</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#standard">Why Us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+919772914999" class="btn btn-ghost">CALL</a>
+      <a href="https://wa.me/919772914999" class="btn btn-primary" target="_blank" rel="noopener">JOIN NOW</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg-text" aria-hidden="true">METROFLEX</div>
+  <div class="container hero-grid">
+    <div class="hero-content reveal">
+      <div class="hero-badge">// PREMIUM FITNESS FACILITY · VAISHALI NAGAR</div>
+      <h1 class="hero-title">
+        FORGE YOUR <br>
+        <span class="outline">STRONGEST</span> <br>
+        SELF.
+      </h1>
+      <p class="hero-sub">
+        Jaipur's most hardcore, results-driven fitness fortress. No excuses. Just iron, sweat, and elite coaching on the 7th floor of Vaibhav Complex.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/919772914999" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          JOIN THE ELITE <span>→</span>
+        </a>
+        <a href="#programs" class="btn btn-outline btn-lg">EXPLORE PROGRAMS</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4.7</span>
+          <span class="stat-label">★ GOOGLE RATING</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">325+</span>
+          <span class="stat-label">VERIFIED REVIEWS</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-img-wrap">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Metroflex Gym Jaipur Interior" loading="eager" />
+        <div class="hero-img-overlay"></div>
+      </div>
+      <div class="floating-tag tag-1">24/7 VIBE</div>
+      <div class="floating-tag tag-2">ELITE COACHES</div>
+    </div>
   </div>
+</section>
 
-  <header class="header">
-    <div class="brand">METROFLEX GYM</div>
-    <nav class="nav">
-      <a href="#about">[ABOUT]</a>
-      <a href="#programs">[PROGRAMS]</a>
-      <a href="#why">[WHY_US]</a>
-      <a href="#reviews">[REVIEWS]</a>
-      <a href="#contact">[FIND_US]</a>
-    </nav>
-  </header>
+<!-- ============ MARQUEE ============ -->
+<section class="marquee" aria-label="Gym Features">
+  <div class="marquee-track">
+    <span>★ NO EXCUSES</span>
+    <span>★ ELITE EQUIPMENT</span>
+    <span>★ VAISHALI NAGAR</span>
+    <span>★ RESULTS DRIVEN</span>
+    <span>★ PREMIUM FACILITY</span>
+    <span>★ NO EXCUSES</span>
+    <span>★ ELITE EQUIPMENT</span>
+    <span>★ VAISHALI NAGAR</span>
+    <span>★ RESULTS DRIVEN</span>
+    <span>★ PREMIUM FACILITY</span>
+  </div>
+</section>
 
-  <main class="main">
-    <section class="hero">
-      <div class="hero-left">
-        <div class="rating-strip">GOOGLE RATING: 4.7 / 325 FEEDBACKS</div>
-        <h1>BUILT FOR<BR><SPAN CLASS="TEXT-GRADIENT">SERIOUS LIFTERS.</SPAN></h1>
-        <p>Vaishali Nagar's hardcore training ground. No-nonsense equipment, intense atmosphere, and the kind of gym that breeds champions.</p>
-        <div class="btn-wrap">
-          <a href="tel:+919772914999" class="brutal-btn">JOIN OR GO HOME</a>
-          <a href="https://wa.me/919772914999" class="brutal-btn outline">WHATSAPP</a>
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800&q=80" alt="Heavy dumbbells at Metroflex" loading="lazy" />
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">// ABOUT METROFLEX</span>
+      <h2 class="section-title">WE DON'T SELL <br><span class="accent">MEMBERSHIPS.</span></h2>
+      <p class="lede">
+        We build athletes. Located on the 7th floor of Vaibhav Complex, Metroflex is a sanctuary for the dedicated. 
+      </p>
+      <p>
+        Equipped with premium biomechanical machines, a dedicated powerlifting zone, and an atmosphere that demands your best, we provide the ultimate environment for physical transformation. Whether you're a competitive bodybuilder or starting your fitness journey, our elite coaches and hardcore culture will push you past your perceived limits.
+      </p>
+      <div class="about-points">
+        <div class="point">
+          <span class="point-icon">+</span>
+          <div>
+            <h4>Imported Machinery</h4>
+            <p>Top-tier biomechanical equipment for maximum muscle activation.</p>
+          </div>
+        </div>
+        <div class="point">
+          <span class="point-icon">+</span>
+          <div>
+            <h4>Zero Intimidation</h4>
+            <p>A focused, respectful environment where everyone earns their place.</p>
+          </div>
         </div>
       </div>
-      <div class="hero-right">
-        <img src="assets/hero.png" alt="Hardcore Gym Equipment">
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- FLOATING HIGH CONTRAST BANNER -->
-    <section class="ticker-box">
-      💥 WAR ZONE DISCOUNT: SHOW THIS SCREEN & GET 10% OFF ANNUAL MEMBERSHIP INSTANTLY
-    </section>
-
-    <section class="about" id="about">
-      <h2>[01_THE_STATION]</h2>
-      <p>METROFLEX is Jaipur's primary hardcore lifting station. Located in Vaishali Nagar, we focus on raw strength. Heavy dumbbells, iron plates, and power cages. If you want a wellness spa, go elsewhere. If you want results, welcome home.</p>
-      <div class="brutal-stats">
-        <div class="stat-unit"><h3>4.7★</h3><p>RATING</p></div>
-        <div class="stat-unit"><h3>300+</h3><p>MEMBERS</p></div>
-        <div class="stat-unit"><h3>100%</h3><p>GRIT</p></div>
-      </div>
-    </section>
-
-    <section class="programs" id="programs">
-      <h2>[02_THE_ARSENAL]</h2>
-      <div class="prog-list">
-        <div class="prog-box">
-          <h3>[01] POWERLIFTING</h3>
-          <p>Deadlift platforms, chalk allowed, heavy barbells, solid cages.</p>
+<!-- ============ PROGRAMS ============ -->
+<section class="section programs" id="programs">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">// WHAT WE OFFER</span>
+      <h2 class="section-title">TRAINING <span class="accent">PROGRAMS</span></h2>
+    </div>
+    <div class="program-list reveal">
+      <a href="https://wa.me/919772914999" class="program-item" target="_blank" rel="noopener">
+        <span class="prog-num">01</span>
+        <div class="prog-content">
+          <h3>STRENGTH & HYPERTROPHY</h3>
+          <p>Build raw muscle and functional strength with our premium free weights and biomechanical machines.</p>
         </div>
-        <div class="prog-box">
-          <h3>[02] BODYBUILDING</h3>
-          <p>Plate-loaded machinery to target micro-muscle growth efficiently.</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="https://wa.me/919772914999" class="program-item" target="_blank" rel="noopener">
+        <span class="prog-num">02</span>
+        <div class="prog-content">
+          <h3>PERSONAL TRAINING</h3>
+          <p>One-on-one coaching with certified experts who design bespoke programs for your specific goals.</p>
         </div>
-        <div class="prog-box">
-          <h3>[03] STRONGMAN</h3>
-          <p>Sled push tracks, farmer walk handles, kettlebells.</p>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="https://wa.me/919772914999" class="program-item" target="_blank" rel="noopener">
+        <span class="prog-num">03</span>
+        <div class="prog-content">
+          <h3>FUNCTIONAL FITNESS</h3>
+          <p>High-intensity functional training to improve agility, endurance, and overall athletic performance.</p>
+        </div>
+        <span class="prog-arrow">→</span>
+      </a>
+      <a href="https://wa.me/919772914999" class="program-item" target="_blank" rel="noopener">
+        <span class="prog-num">04</span>
+        <div class="prog-content">
+          <h3>NUTRITION COACHING</h3>
+          <p>Customized diet plans and macro tracking guidance to fuel your workouts and accelerate results.</p>
+        </div>
+        <span class="prog-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STANDARD (WHY US) ============ -->
+<section class="section standard" id="standard">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">// THE METROFLEX STANDARD</span>
+      <h2 class="section-title">WHY WE ARE <span class="accent">DIFFERENT</span></h2>
+    </div>
+    <div class="standard-grid reveal">
+      <div class="standard-item">
+        <div class="std-num">01</div>
+        <h3>ELITE EQUIPMENT</h3>
+        <p>Imported biomechanical machines, Olympic plates, and a dedicated powerlifting zone built for serious lifters.</p>
+      </div>
+      <div class="standard-item">
+        <div class="std-num">02</div>
+        <h3>EXPERT COACHES</h3>
+        <p>Certified trainers who actually lift. We focus on biomechanics, progressive overload, and injury prevention.</p>
+      </div>
+      <div class="standard-item">
+        <div class="std-num">03</div>
+        <h3>PRIME LOCATION</h3>
+        <p>7th Floor, Vaibhav Complex. Ample parking, premium amenities, and an atmosphere that demands your best.</p>
+      </div>
+      <div class="standard-item">
+        <div class="std-num">04</div>
+        <h3>RESULTS CULTURE</h3>
+        <p>Surround yourself with iron addicts. Our community keeps you accountable, motivated, and pushing past limits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" aria-label="Gym Statistics">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat-item">
+        <div class="stat-num">4.7</div>
+        <div class="stat-label">★ GOOGLE RATING</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">325+</div>
+        <div class="stat-label">HAPPY MEMBERS</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">PREMIUM MACHINES</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10K</div>
+        <div class="stat-label">SQ FT TRAINING</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <div class="rating-block">
+        <div class="big-rating">4.7</div>
+        <div class="stars">★★★★★</div>
+        <p>Based on 325+ Google Reviews</p>
+      </div>
+      <h2 class="section-title">WHAT THE <span class="accent">IRON ADDICTS</span> SAY</h2>
+    </div>
+    <div class="review-grid reveal">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Metroflex completely changed my approach to fitness. The equipment is world-class and the vibe is unmatched in Jaipur. Best decision I ever made."</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>Google Review</span>
         </div>
       </div>
-    </section>
-
-    <section class="why" id="why">
-      <h2>[03_THE_CODE]</h2>
-      <ul class="code-list">
-        <li>👉 RULE 01: Re-rack your weights. Always.</li>
-        <li>👉 RULE 02: Support your squad. No egos.</li>
-        <li>👉 RULE 03: Work hard. No excuses.</li>
-      </ul>
-    </section>
-
-    <section class="reviews" id="reviews">
-      <h2>[04_THE_TALK]</h2>
-      <div class="quote-card">
-        <p>"Hardcore gym. Iron plates clanging, high motivation, zero distractions. Best gym in Jaipur."</p>
-        <strong>— Amit Yadav</strong>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Best gym in Vaishali Nagar. The coaches actually know what they are doing and the powerlifting zone is exactly what I needed for my deadlifts."</p>
+        <div class="review-author">
+          <strong>Fitness Enthusiast</strong>
+          <span>Google Review</span>
+        </div>
       </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>[05_THE_GRID]</h2>
-      <p class="addr">Vaibhav Complex, 7th floor, Amrapali Marg, Vaishali Nagar, Jaipur 302021</p>
-      <div class="map-wrapper">
-        <iframe src="https://maps.google.com/maps?q=Vaibhav%20Complex%2C%207th%20floor%2C%20Amrapali%20Marg%2C%20Vaishali%20Nagar%2C%20Jaipur%20302021&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Clean, well-maintained, and never overly crowded. The 7th-floor view while running on the treadmill is a great bonus. Highly recommend!"</p>
+        <div class="review-author">
+          <strong>Verified Member</strong>
+          <span>Google Review</span>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
-  <footer class="footer">
-    <p>© 2025 METROFLEX GYM. [NO RIGHTS RESERVED. KEEP LIFTING.]</p>
-  </footer>
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">// GOT QUESTIONS?</span>
+      <h2 class="section-title">FREQUENTLY <span class="accent">ASKED</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>What are the membership plans and pricing? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>We offer flexible monthly, quarterly, and annual plans tailored to your goals. We also offer specialized personal training packages. Walk in or WhatsApp us for the latest pricing and ongoing offers.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer personal training sessions? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Yes. Our certified personal trainers provide one-on-one coaching, customized workout splits, form correction, and complete nutrition guidance to ensure you hit your goals faster.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What are the operating hours? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>We are open 7 days a week from 5:00 AM to 11:00 PM to accommodate your schedule, whether you're an early bird or a night owl.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Is parking available at Vaibhav Complex? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Yes, Vaibhav Complex offers ample dedicated parking space for both two-wheelers and four-wheelers, making your visit hassle-free.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide diet and nutrition guidance? <span class="faq-icon">+</span></summary>
+        <div class="faq-answer">
+          <p>Absolutely. We believe training is only half the battle. Our coaches provide customized diet charts, macro tracking guidance, and supplement advice tailored to your body type and objectives.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
 
-  <a href="https://wa.me/919772914999" class="wa-btn" target="_blank">CHAT_WA</a>
+<!-- ============ LOCATION & MAP ============ -->
+<section class="section location" id="contact">
+  <div class="container">
+    <div class="location-grid reveal">
+      <div class="location-info">
+        <span class="eyebrow">// FIND THE FORTRESS</span>
+        <h2 class="section-title" style="text-align:left;">COME <span class="accent">TRAIN</span></h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <h4>ADDRESS</h4>
+            <p>Vaibhav Complex, 7th floor, Amrapali Marg, Block C, Vaishali Nagar, Jaipur, Rajasthan 302021</p>
+          </div>
+          <div class="contact-item">
+            <h4>PHONE</h4>
+            <a href="tel:+919772914999">+91 97729 14999</a>
+          </div>
+          <div class="contact-item">
+            <h4>WHATSAPP</h4>
+            <a href="https://wa.me/919772914999" target="_blank" rel="noopener">Chat with us →</a>
+          </div>
+        </div>
+        <div class="location-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=METROFLEX%20GYM%20JAIPUR&query_place_id=ChIJIxFCQQS1bTkRJ-bt0MY1oP4" target="_blank" rel="noopener" class="btn btn-primary">GET DIRECTIONS</a>
+          <a href="tel:+919772914999" class="btn btn-outline">CALL NOW</a>
+        </div>
+      </div>
+      <div class="location-map">
+        <iframe src="https://maps.google.com/maps?q=METROFLEX%20GYM%20JAIPUR%20Vaibhav%20Complex%20Vaishali%20Nagar%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Metroflex Gym Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="container reveal">
+    <h2>READY TO <span class="outline-dark">EVOLVE</span>?</h2>
+    <p>Stop waiting for Monday. Your transformation starts the moment you walk through our doors.</p>
+    <a href="https://wa.me/919772914999" class="btn btn-dark btn-lg" target="_blank" rel="noopener">CLAIM YOUR FREE PASS →</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <h3>METROFLEX</h3>
+        <p>Jaipur's premier hardcore fitness facility. Forging strong bodies and unbreakable minds in Vaishali Nagar since day one.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#standard">Why Choose Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>PROGRAMS</h4>
+        <ul>
+          <li><a href="#programs">Strength Training</a></li>
+          <li><a href="#programs">Personal Training</a></li>
+          <li><a href="#programs">Functional Fitness</a></li>
+          <li><a href="#programs">Nutrition Coaching</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <ul class="footer-contact">
+          <li>Vaibhav Complex, 7th Fl, Vaishali Nagar, Jaipur, 302021</li>
+          <li><a href="tel:+919772914999">+91 97729 14999</a></li>
+          <li><a href="https://wa.me/919772914999" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=METROFLEX%20GYM%20JAIPUR&query_place_id=ChIJIxFCQQS1bTkRJ-bt0MY1oP4" target="_blank" rel="noopener">View on Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Metroflex Gym Jaipur. All Rights Reserved.</p>
+      <p>Designed for Iron Addicts.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/919772914999" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bottom-bar">
+  <a href="tel:+919772914999" class="btn btn-outline">CALL US</a>
+  <a href="https://wa.me/919772914999" class="btn btn-primary" target="_blank" rel="noopener">WHATSAPP</a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal Animation
+  const revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+</script>
+
 </body>
 </html>

@@ -1,99 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Island Gym | Neumorphic Fitness</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>_fitness island_ | Exclusive Fitness Sanctuary in Lalkothi, Jaipur</title>
+<meta name="description" content="Experience physical mastery at fitness island. Jaipur's most exclusive training sanctuary on Nehru Path, Lalkothi. Elite coaching, premium infrastructure, and a community of achievers." />
+<meta name="keywords" content="premium gym Jaipur, fitness island Lalkothi, luxury gym Nehru Path, personal training Jaipur, elite fitness center Friends Colony" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="fitness island | Exclusive Fitness Sanctuary in Lalkothi" />
+<meta property="og:description" content="Where ambition meets iron. Jaipur's premier training destination on Nehru Path." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Fitness Island Gym (Lalkothi)",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "url": "https://fitnessislandgym.in",
+  "telephone": "+918639736126",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "A1, Nehru Path, Satya Vihar, Friends Colony, Krishna Nagar II, Lalkothi",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302015",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "149"
+  }
+}
+</script>
 </head>
 <body>
-  <div class="neu-wrapper">
-    <header class="neu-header neu-outer">
-      <div class="neu-logo">Fitness Island Gym</div>
-      <a href="tel:+918639736126" class="neu-btn small-btn">Call Us</a>
-    </header>
 
-    <!-- FLOATING TOP BANNER -->
-    <div class="neu-promo-bar neu-inner">
-      🎁 EXCLUSIVE WEEKLY HIGHLIGHT: REGISTER A TRIAL PASS & GET FREE NUTRITIONAL ADVISORY INSTANTLY
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-glass" id="nav">
+  <nav class="nav-inner container">
+    <a href="#top" class="logo">
+      <span class="logo-mark">f</span>
+      <span class="logo-text">fitness island</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#disciplines">Disciplines</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#journal">Journal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+918639736126" class="nav-link-desktop">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="hide-mobile">+91 86397 36126</span>
+      </a>
+      <a href="https://wa.me/918639736126" class="btn-glass" target="_blank" rel="noopener">Reserve Entry</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
     </div>
+  </nav>
+</header>
 
-    <section class="neu-hero neu-outer">
-      <div class="hero-split">
-        <div class="hero-left">
-          <div class="neu-badge neu-inner">★ 4.8 (149 reviews)</div>
-          <h1>Your Fitness<br><span class="text-gradient">Paradise.</span></h1>
-          <p>Lalkothi's favorite neighborhood gym. Great equipment, friendly trainers, and an atmosphere that makes working out a joy.</p>
-          <div class="actions">
-            <a href="tel:+918639736126" class="neu-btn">Call Now</a>
-            <a href="https://wa.me/918639736126" class="neu-btn btn-inset">WhatsApp</a>
-          </div>
-        </div>
-        <div class="hero-right neu-inner">
-          <img src="assets/hero.png" alt="Clean Neumorphic Gym View">
-        </div>
-      </div>
-    </section>
-
-    <section class="neu-about neu-outer">
-      <h2>ABOUT US</h2>
-      <p>Fitness Island Gym at Satya Vihar, Lalkothi provides a soft-toned paradise environment for workout enthusiasts. We keep it extremely hygienic, properly ventilated, and highly centered around professional trainer consultations.</p>
-      <div class="stats-row">
-        <div class="stat-card neu-inner"><h3>4.8★</h3><span>Rating</span></div>
-        <div class="stat-card neu-inner"><h3>12+</h3><span>Coaches</span></div>
-        <div class="stat-card neu-inner"><h3>100%</h3><span>Focus</span></div>
-      </div>
-    </section>
-
-    <section class="neu-services neu-outer">
-      <h2>PROGRAMS</h2>
-      <div class="services-grid">
-        <div class="svc-box neu-inner">
-          <h3>Aerobics & HIIT</h3>
-          <p>Group classes designed to burn calories in high tempo.</p>
-        </div>
-        <div class="svc-box neu-inner">
-          <h3>Personal Advisory</h3>
-          <p>Strict structural programs focused on body posture guides.</p>
-        </div>
-        <div class="svc-box neu-inner">
-          <h3>Modern Weights</h3>
-          <p>Curated plate loaded machinery and cable modules.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="neu-choose neu-outer">
-      <h2>WHY US</h2>
-      <ul class="neu-list">
-        <li class="neu-inner">✨ Top-Tier Sanitary Environment.</li>
-        <li class="neu-inner">✨ Decent community crowd.</li>
-        <li class="neu-inner">✨ Transparent plans without hidden taxes.</li>
-      </ul>
-    </section>
-
-    <section class="neu-reviews neu-outer">
-      <h2>REVIEWS</h2>
-      <div class="review-box neu-inner">
-        <p>"Perfect neighborhood gym. Professional guides, neat, and highly friendly."</p>
-        <strong>— Aditya Rawat</strong>
-      </div>
-    </section>
-
-    <section class="neu-location neu-outer">
-      <h2>OUR SHORE</h2>
-      <p class="addr-text">A1, Nehru Path, Satya Vihar, Friends Colony, Lalkothi, Jaipur 302015</p>
-      <div class="map-frame neu-inner">
-        <iframe src="https://maps.google.com/maps?q=A1%2C%20Nehru%20Path%2C%20Satya%20Vihar%2C%20Friends%20Colony%2C%20Lalkothi%2C%20Jaipur%20302015&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
-
-    <footer class="neu-footer neu-outer">
-      <p>© 2025 Fitness Island Gym. Paradise Fitness.</p>
-    </footer>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80" alt="Fitness Island Interior" loading="eager" />
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
   </div>
 
-  <a href="https://wa.me/918639736126" class="wa-float-neu" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+  <div class="container hero-grid">
+    <div class="hero-content reveal-fade">
+      <div class="hero-tag">
+        <span class="tag-line"></span>
+        <span>Lalkothi's Exclusive Fitness Sanctuary</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">The Art of</span>
+        <span class="title-line italic">Physical</span>
+        <span class="title-line">Mastery.</span>
+      </h1>
+      <p class="hero-sub">
+        Nestled on the iconic Nehru Path, fitness island transcends the conventional gym experience. We have curated an elite environment where world-class infrastructure meets uncompromising dedication.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/918639736126" class="btn-primary" target="_blank" rel="noopener">
+          Request Private Tour
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#philosophy" class="btn-ghost">Explore the Island</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-fade" style="--delay: 0.2s">
+      <div class="hero-card-stack">
+        <div class="h-card h-card-main">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="Personal Training" loading="eager" />
+          <div class="h-card-overlay"></div>
+        </div>
+        <div class="h-card h-card-float">
+          <div class="hcf-content">
+            <span class="hcf-label">Google Rating</span>
+            <div class="hcf-rating">
+              <span class="hcf-num">4.8</span>
+              <div class="hcf-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+            <span class="hcf-sub">Based on 149+ Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<section class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Elite Coaching</span>
+    <span class="marquee-dot">✦</span>
+    <span>Nehru Path</span>
+    <span class="marquee-dot">✦</span>
+    <span>Premium Infrastructure</span>
+    <span class="marquee-dot">✦</span>
+    <span>Physical Mastery</span>
+    <span class="marquee-dot">✦</span>
+    <span>Elite Coaching</span>
+    <span class="marquee-dot">✦</span>
+    <span>Nehru Path</span>
+    <span class="marquee-dot">✦</span>
+    <span>Premium Infrastructure</span>
+    <span class="marquee-dot">✦</span>
+    <span>Physical Mastery</span>
+    <span class="marquee-dot">✦</span>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="section philosophy" id="philosophy">
+  <div class="container phil-grid">
+    <div class="phil-visual reveal-up">
+      <div class="phil-img-wrap">
+        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=900&q=80" alt="Premium Gym Equipment" loading="lazy" />
+        <div class="phil-img-border"></div>
+      </div>
+      <div class="phil-stat-card">
+        <span class="psc-num">149<span>+</span></span>
+        <span class="psc-text">Dedicated Members</span>
+      </div>
+    </div>
+
+    <div class="phil-content reveal-up" style="--delay: 0.1s">
+      <span class="section-tag">
+        <span class="tag-line"></span>
+        Our Philosophy
+      </span>
+      <h2 class="section-title">
+        Not just a gym. <br/>
+        <em>A sanctuary for the driven.</em>
+      </h2>
+      <p class="lede">
+        At fitness island, we believe your environment dictates your results. We have cultivated a space that transcends the ordinary, offering a refined atmosphere where focus meets luxury.
+      </p>
+      <p>
+        Located in the heart of Lalkothi, our facility is designed for those who refuse to compromise. From our biomechanically optimized equipment to our pristine, climate-controlled floors, every detail is engineered to elevate your standard of living.
+      </p>
+      
+      <div class="phil-features">
+        <div class="pf-item">
+          <div class="pf-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h4>World-Class Infrastructure</h4>
+            <p>Imported machines and premium flooring for ultimate performance.</p>
+          </div>
+        </div>
+        <div class="pf-item">
+          <div class="pf-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4>Elite Coaching Staff</h4>
+            <p>Certified experts dedicated to your personalized transformation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCIPLINES ============ -->
+<section class="section disciplines" id="disciplines">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="section-tag">
+        <span class="tag-line"></span>
+        Training Disciplines
+      </span>
+      <h2 class="section-title">
+        Curated pathways <br/>
+        <em>to your peak.</em>
+      </h2>
+    </div>
+  </div>
+
+  <div class="disc-scroll reveal-up" style="--delay: 0.1s">
+    <div class="disc-track">
+      <a href="https://wa.me/918639736126" class="disc-card" target="_blank" rel="noopener">
+        <span class="dc-num">01</span>
+        <h3>Strength & Hypertrophy</h3>
+        <p>Build raw power and sculpt your physique with our premium free weights and biomechanical machines.</p>
+        <span class="dc-link">Explore →</span>
+      </a>
+
+      <a href="https://wa.me/918639736126" class="disc-card" target="_blank" rel="noopener">
+        <span class="dc-num">02</span>
+        <h3>Bespoke Personal Training</h3>
+        <p>One-on-one coaching tailored to your unique physiology, goals, and lifestyle. Results guaranteed.</p>
+        <span class="dc-link">Book Session →</span>
+      </a>
+
+      <a href="https://wa.me/918639736126" class="disc-card" target="_blank" rel="noopener">
+        <span class="dc-num">03</span>
+        <h3>Functional Mobility</h3>
+        <p>Enhance real-world strength, agility, and joint health through dynamic, science-backed protocols.</p>
+        <span class="dc-link">Discover →</span>
+      </a>
+
+      <a href="https://wa.me/918639736126" class="disc-card" target="_blank" rel="noopener">
+        <span class="dc-num">04</span>
+        <h3>Weight Transformation</h3>
+        <p>Comprehensive fat loss programs combining precision training, nutrition, and accountability.</p>
+        <span class="dc-link">Start Journey →</span>
+      </a>
+
+      <a href="https://wa.me/918639736126" class="disc-card" target="_blank" rel="noopener">
+        <span class="dc-num">05</span>
+        <h3>Women's Exclusive Fitness</h3>
+        <p>A comfortable, empowering environment with dedicated timings and specialized programs.</p>
+        <span class="dc-link">Join Us →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="container exp-grid">
+    <div class="exp-left reveal-up">
+      <span class="section-tag light">
+        <span class="tag-line light"></span>
+        The Experience
+      </span>
+      <h2 class="section-title light">
+        Excellence in <br/>
+        <em>every detail.</em>
+      </h2>
+      <p>From the moment you step onto Nehru Path, you'll understand why fitness island is Jaipur's most talked-about destination. Every element has been thoughtfully curated.</p>
+      <a href="https://wa.me/918639736126" class="btn-primary light" target="_blank" rel="noopener">
+        Schedule a Visit
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="exp-right">
+      <div class="exp-card reveal-up" style="--delay: 0.05s">
+        <div class="ec-num">i.</div>
+        <h4>Pristine Ambience</h4>
+        <p>Fully air-conditioned floors with premium ventilation and immaculate hygiene standards.</p>
+      </div>
+      <div class="exp-card reveal-up" style="--delay: 0.1s">
+        <div class="ec-num">ii.</div>
+        <h4>Prime Location</h4>
+        <p>Situated at A1, Nehru Path, Lalkothi. Ample parking and seamless connectivity.</p>
+      </div>
+      <div class="exp-card reveal-up" style="--delay: 0.15s">
+        <div class="ec-num">iii.</div>
+        <h4>Flexible Timings</h4>
+        <p>Open 5:30 AM to 10:30 PM, 7 days a week. Train on your schedule, without compromise.</p>
+      </div>
+      <div class="exp-card reveal-up" style="--delay: 0.2s">
+        <div class="ec-num">iv.</div>
+        <h4>Community & Culture</h4>
+        <p>Surround yourself with driven individuals. Our society thrives on mutual respect and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNAL (REVIEWS) ============ -->
+<section class="section journal" id="journal">
+  <div class="container">
+    <div class="journal-head reveal-up">
+      <div>
+        <span class="section-tag">
+          <span class="tag-line"></span>
+          Member Journal
+        </span>
+        <h2 class="section-title">
+          Voices from <br/>
+          <em>the island.</em>
+        </h2>
+      </div>
+      <div class="journal-rating">
+        <div class="jr-big">4.8</div>
+        <div class="jr-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Fitness%20island%20gym%20(Lalkothi)&query_place_id=ChIJGWsvW8O1bTkRJX_VPyZdXlk" target="_blank" rel="noopener" class="jr-link">Read all 149 reviews on Google →</a>
+      </div>
+    </div>
+
+    <div class="journal-grid">
+      <div class="j-card reveal-up">
+        <div class="j-quote">"</div>
+        <p>An absolute sanctuary for fitness in Jaipur. The ambiance is unmatched, and the trainers truly understand the science of body transformation. Best decision I've made.</p>
+        <div class="j-author">
+          <strong>Verified Member</strong>
+          <span>Lalkothi, Jaipur</span>
+        </div>
+      </div>
+
+      <div class="j-card reveal-up" style="--delay: 0.1s">
+        <div class="j-quote">"</div>
+        <p>Finally, a gym in Jaipur that feels premium. The equipment is top-tier, the floors are always clean, and the community is incredibly motivating. Highly recommend fitness island.</p>
+        <div class="j-author">
+          <strong>Fitness Enthusiast</strong>
+          <span>Friends Colony</span>
+        </div>
+      </div>
+
+      <div class="j-card reveal-up" style="--delay: 0.2s">
+        <div class="j-quote">"</div>
+        <p>Fitness island lives up to its name. It's a society of dedicated individuals pushing each other to be better. The personal training sessions are worth every penny.</p>
+        <div class="j-author">
+          <strong>Verified Member</strong>
+          <span>Satya Vihar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-layout">
+    <div class="faq-left reveal-up">
+      <span class="section-tag">
+        <span class="tag-line"></span>
+        Inquiries
+      </span>
+      <h2 class="section-title">
+        Frequently <br/>
+        <em>asked questions.</em>
+      </h2>
+      <p>Can't find the answer you're looking for? Our concierge is available on WhatsApp to assist you.</p>
+      <a href="https://wa.me/918639736126" class="btn-ghost" target="_blank" rel="noopener">Chat with Concierge</a>
+    </div>
+
+    <div class="faq-right">
+      <details class="faq-item reveal-up" open>
+        <summary>
+          <span>What are the membership options at fitness island?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>We offer flexible monthly, quarterly, and annual membership plans tailored to your commitment level. We also provide specialized packages for personal training and group sessions. Reach out to us for our current pricing and any ongoing introductory offers.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.05s">
+        <summary>
+          <span>Do you provide certified personal training?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Absolutely. Our personal trainers are certified experts who design bespoke workout and nutrition plans. They focus on biomechanics, progressive overload, and injury prevention to ensure you achieve your goals safely and efficiently.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.1s">
+        <summary>
+          <span>Are there specific timings for women?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, we have dedicated women-only batch timings to ensure a comfortable and empowering environment. We also offer specialized programs tailored specifically for women's fitness goals, including strength, toning, and flexibility.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.15s">
+        <summary>
+          <span>Is parking available at the facility?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Yes, our location on Nehru Path offers ample dedicated parking space for both two-wheelers and four-wheelers. We ensure a hassle-free arrival experience for all our members.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.2s">
+        <summary>
+          <span>What makes fitness island different from other gyms?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Our focus on a curated, premium environment. From our imported biomechanical equipment and pristine hygiene standards to our elite coaching staff and respectful community, every detail is designed to elevate your fitness journey beyond the ordinary.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / MAP ============ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal-up">
+      <div class="contact-info">
+        <span class="section-tag light">
+          <span class="tag-line light"></span>
+          Visit The Island
+        </span>
+        <h2 class="section-title light">
+          Find your <br/>
+          <em>new standard.</em>
+        </h2>
+
+        <div class="contact-details">
+          <div class="cd-item">
+            <div class="cd-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <p>A1, Nehru Path, Satya Vihar, Friends Colony,<br/>Krishna Nagar II, Lalkothi, Jaipur 302015</p>
+            </div>
+          </div>
+
+          <div class="cd-item">
+            <div class="cd-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+918639736126">+91 86397 36126</a>
+            </div>
+          </div>
+
+          <div class="cd-item">
+            <div class="cd-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Operating Hours</strong>
+              <p>Monday – Sunday · 5:30 AM to 10:30 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a href="https://wa.me/918639736126" class="btn-primary light" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+            WhatsApp Concierge
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Fitness%20island%20gym%20(Lalkothi)&query_place_id=ChIJGWsvW8O1bTkRJX_VPyZdXlk" class="btn-ghost light" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe src="https://maps.google.com/maps?q=Fitness%20island%20gym%20Lalkothi%20Jaipur&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fitness Island Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark">f</span>
+          <span class="logo-text">fitness island</span>
+        </a>
+        <p>Jaipur's most exclusive fitness sanctuary. Elevating standards in Lalkothi through world-class infrastructure and elite coaching.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#disciplines">Disciplines</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Disciplines</h5>
+        <ul>
+          <li><a href="#disciplines">Strength & Hypertrophy</a></li>
+          <li><a href="#disciplines">Personal Training</a></li>
+          <li><a href="#disciplines">Functional Mobility</a></li>
+          <li><a href="#disciplines">Weight Transformation</a></li>
+          <li><a href="#disciplines">Women's Fitness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact">
+          <li>A1, Nehru Path, Satya Vihar, Friends Colony, Lalkothi, Jaipur 302015</li>
+          <li><a href="tel:+918639736126">+91 86397 36126</a></li>
+          <li><a href="https://wa.me/918639736126" target="_blank" rel="noopener">WhatsApp Concierge</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Fitness%20island%20gym%20(Lalkothi)&query_place_id=ChIJGWsvW8O1bTkRJX_VPyZdXlk" target="_blank" rel="noopener">View on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 fitness island. All rights reserved.</p>
+      <p>Crafted for excellence in Jaipur.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/918639736126" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="tel:+918639736126" class="mbtn mbtn-call">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/918639736126" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    Reserve Entry
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navBurger = document.getElementById('navBurger');
+  const navMenu = document.getElementById('navMenu');
+  
+  if (navBurger && navMenu) {
+    navBurger.addEventListener('click', () => {
+      const isActive = navBurger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navBurger.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal
+  const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar Scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>

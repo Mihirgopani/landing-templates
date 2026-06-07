@@ -1,107 +1,745 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lifetime Fitness Club | Asymmetrical Club</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lifetime Fitness Club | Premium Gym in Malviya Nagar, Jaipur</title>
+<meta name="description" content="Transform your body at Lifetime Fitness Club — Jaipur's top-rated gym in Malviya Nagar. 4.9★ rated by 738+ members. World-class equipment, expert trainers, and results-driven programs." />
+<meta name="keywords" content="gym in Jaipur, Lifetime Fitness Club, gym Malviya Nagar, best gym near Gaurav Tower, fitness club Jaipur, personal training Jaipur" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Lifetime Fitness Club | Premium Gym in Malviya Nagar, Jaipur" />
+<meta property="og:description" content="4.9★ rated by 738+ members. Join Jaipur's most loved fitness destination in Malviya Nagar." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:site_name" content="Lifetime Fitness Club" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Lifetime Fitness Club | Premium Gym in Jaipur" />
+<meta name="twitter:description" content="Transform your body at Jaipur's top-rated fitness destination." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Lifetime Fitness Club",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200",
+  "@id": "https://lifetimefitnessclub.in",
+  "url": "https://lifetimefitnessclub.in",
+  "telephone": "+919950550885",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3rd Floor, V Cube, Plot no. 1-6, opp. Gaurav Tower, Malviya Nagar",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302017",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.8544,
+    "longitude": 75.8090
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "738"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "05:30",
+    "closes": "22:30"
+  }]
+}
+</script>
 </head>
 <body>
-  <div class="grid-layout">
-    <!-- Row 1 -->
-    <header class="card head-card">
-      <div class="logo-space">Lifetime Fitness Club</div>
-      <nav class="grid-nav">
-        <a href="#about">Philosophy</a>
-        <a href="#programs">Programs</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Find Us</a>
-      </nav>
-    </header>
 
-    <!-- Row 2 -->
-    <div class="card img-card">
-      <img src="assets/hero.png" alt="Gym Dynamic Shot">
-    </div>
-
-    <div class="card title-card">
-      <span class="stars">★★★★★ 4.9 (738 reviews)</span>
-      <h1>Your Fitness.<br><span class="text-gradient">Your Lifetime.</span></h1>
-    </div>
-
-    <!-- Row 3 -->
-    <div class="card desc-card">
-      <p>Malviya Nagar's premier gym experience at V Cube. Cutting-edge equipment, dedicated trainers, and a community committed to results.</p>
-    </div>
-
-    <div class="card promo-card">
-      <div class="promo-text">JOIN NOW FOR EXCLUSIVE BENEFITS</div>
-      <div class="sub-promo">FIRST WEEK COMPLETELY COMPLIMENTARY</div>
-    </div>
-
-    <div class="card cta-card">
-      <a href="tel:+919950550885">CALL NOW ↗</a>
-    </div>
-
-    <!-- Row 4 -->
-    <div class="card about-card" id="about">
-      <h2>ABOUT US</h2>
-      <p>We are a high-performance club situated in Malviya Nagar. We believe in custom structural setups rather than standard machinery loops. We track progress daily.</p>
-      <div class="stats-row">
-        <div><strong>20+</strong><span>Trainers</span></div>
-        <div><strong>24/7</strong><span>Access</span></div>
-      </div>
-    </div>
-
-    <!-- Row 5 -->
-    <div class="card services-card" id="programs">
-      <h2>PROGRAMS</h2>
-      <div class="service-box">
-        <h3>01 / STRENGTH TRAINING</h3>
-        <p>Dynamic olympic weights, free turf, high-spec rigs.</p>
-      </div>
-      <div class="service-box">
-        <h3>02 / HIIT CIRCUIT</h3>
-        <p>Intense calorie burns led by certified community coaches.</p>
-      </div>
-    </div>
-
-    <!-- Row 6 -->
-    <div class="card choose-card">
-      <h2>WHY US</h2>
-      <ul>
-        <li>★ Structured routines adjusted weekly.</li>
-        <li>★ Clean, custom, elite-level equipment only.</li>
-        <li>★ Extremely supportive community vibes.</li>
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrap" id="top">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Lifetime Fitness Club home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Lifetime<span class="brand-accent">.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Visit</a></li>
       </ul>
-    </div>
-
-    <!-- Row 7 -->
-    <div class="card review-card" id="reviews">
-      <h2>REVIEWS</h2>
-      <blockquote>"Highly elite setup in Malviya Nagar. The trainers know their biology and the community keeps you pushes forward."</blockquote>
-      <cite>— Rohan Verma</cite>
-    </div>
-
-    <!-- Row 8 -->
-    <div class="card contact-card" id="contact">
-      <h2>CONTACT US</h2>
-      <p class="addr-box">3rd Floor, V Cube, Plot no. 1-6, Malviya Nagar, Jaipur 302017</p>
-      <div class="map-box">
-        <iframe src="https://maps.google.com/maps?q=3rd%20Floor%2C%20V%20Cube%2C%20Plot%20no.%201-6%2C%20Malviya%20Nagar%2C%20Jaipur%20302017&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="nav-actions">
+        <a href="tel:+919950550885" class="nav-call" aria-label="Call us">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="hide-mobile">+91 99505 50885</span>
+        </a>
+        <a href="https://wa.me/919950550885" class="btn-primary-nav" target="_blank" rel="noopener">Join Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
       </div>
-      <div class="card-btn-row">
-        <a href="https://wa.me/919950550885" class="card-btn">WhatsApp Us</a>
-      </div>
-    </div>
-
-    <!-- Row 9 -->
-    <footer class="card footer-card">
-      <p>© 2025 Lifetime Fitness Club. All Rights Reserved.</p>
-    </footer>
+    </nav>
   </div>
+</header>
 
-  <a href="https://wa.me/919950550885" class="wa-bubble" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+<!-- ============ HERO BENTO ============ -->
+<section class="hero">
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-bento">
+      <!-- Main Headline Card -->
+      <div class="bento-card bento-main reveal-up">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          Malviya Nagar's #1 Fitness Destination
+        </div>
+        <h1 class="hero-title">
+          Train smarter.<br/>
+          <span class="gradient-text">Live stronger.</span><br/>
+          Lifetime.
+        </h1>
+        <p class="hero-sub">
+          Where Jaipur's most dedicated community transforms their bodies, minds, and lifestyles — backed by world-class equipment and coaches who actually care.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/919950550885" class="btn-primary" target="_blank" rel="noopener">
+            Start Free Trial
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#programs" class="btn-ghost">Explore Programs</a>
+        </div>
+      </div>
+
+      <!-- Rating Card -->
+      <div class="bento-card bento-rating reveal-up" style="--delay:0.1s">
+        <div class="rating-big">4.9</div>
+        <div class="rating-stars">★★★★★</div>
+        <div class="rating-meta">
+          <strong>738+ Reviews</strong>
+          <span>on Google</span>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="bento-card bento-image reveal-up" style="--delay:0.2s">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Lifetime Fitness Club training area" loading="eager" />
+        <div class="bento-image-label">
+          <span class="live-dot"></span>
+          Open Now · 5:30 AM – 10:30 PM
+        </div>
+      </div>
+
+      <!-- Members Card -->
+      <div class="bento-card bento-members reveal-up" style="--delay:0.3s">
+        <div class="members-avatars">
+          <div class="avatar" style="background: linear-gradient(135deg, #FF6B35, #F7931E);">R</div>
+          <div class="avatar" style="background: linear-gradient(135deg, #A855F7, #EC4899);">S</div>
+          <div class="avatar" style="background: linear-gradient(135deg, #06B6D4, #3B82F6);">A</div>
+          <div class="avatar" style="background: linear-gradient(135deg, #10B981, #84CC16);">+</div>
+        </div>
+        <div class="members-text">
+          <strong>2,500+</strong>
+          <span>Active Members</span>
+        </div>
+      </div>
+
+      <!-- Location Card -->
+      <div class="bento-card bento-location reveal-up" style="--delay:0.4s">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <strong>Malviya Nagar</strong>
+          <span>Opp. Gaurav Tower</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST MARQUEE ============ -->
+<section class="trust-strip" aria-label="Trust indicators">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">◉</span>
+        <span>ISO Certified Facility</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">◉</span>
+        <span>AC Training Floors</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">◉</span>
+        <span>Certified Trainers</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">◉</span>
+        <span>Premium Equipment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-up">
+        <div class="about-img-stack">
+          <div class="about-img main">
+            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800&q=80" alt="Premium gym equipment" loading="lazy" />
+          </div>
+          <div class="about-img secondary">
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=500&q=80" alt="Personal training session" loading="lazy" />
+          </div>
+          <div class="about-badge-float">
+            <div class="badge-num">10+</div>
+            <div class="badge-text">Years of<br/>Excellence</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content reveal-up">
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          About Lifetime Fitness
+        </span>
+        <h2 class="section-title">More than a gym.<br/><span class="gradient-text">A lifestyle.</span></h2>
+        <p class="lede">
+          For over a decade, Lifetime Fitness Club has been the heartbeat of fitness in Malviya Nagar — a place where ambition meets accountability.
+        </p>
+        <p>
+          Located on the 3rd floor of V Cube, opposite the iconic Gaurav Tower, we've built more than just a gym. We've built a community of 2,500+ members who show up, push limits, and celebrate every rep, every PR, and every transformation.
+        </p>
+
+        <div class="about-features">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11v11h-11z"/><path d="M6.5 6.5L2 2M17.5 6.5L22 2M6.5 17.5L2 22M17.5 17.5L22 22"/></svg>
+            </div>
+            <div>
+              <h4>Imported Equipment</h4>
+              <p>Top-tier machines from global brands for maximum results.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <h4>Expert Coaching</h4>
+              <p>Certified trainers who design programs around YOUR goals.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Flexible Hours</h4>
+              <p>Open 5:30 AM to 10:30 PM — train on your schedule.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMS BENTO ============ -->
+<section class="section programs" id="programs">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">
+        <span class="eyebrow-line"></span>
+        What We Offer
+      </span>
+      <h2 class="section-title">Programs built for<br/><span class="gradient-text">real results.</span></h2>
+    </div>
+
+    <div class="programs-bento">
+      <a href="https://wa.me/919950550885" class="prog-card prog-large reveal-up" target="_blank" rel="noopener">
+        <div class="prog-num">01</div>
+        <div class="prog-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"/><path d="M6.5 6.5L2 2M17.5 6.5L22 2M6.5 17.5L2 22M17.5 17.5L22 22"/></svg>
+        </div>
+        <h3>Strength & Muscle Building</h3>
+        <p>Build raw strength and sculpt your physique with our premium free weights, cable machines, and dedicated powerlifting zone. Programs designed for all levels.</p>
+        <span class="prog-link">Start training →</span>
+      </a>
+
+      <a href="https://wa.me/919950550885" class="prog-card reveal-up" style="--delay:0.1s" target="_blank" rel="noopener">
+        <div class="prog-num">02</div>
+        <h3>Personal Training</h3>
+        <p>One-on-one coaching with certified experts. Customized workouts, form correction, and accountability.</p>
+        <span class="prog-link">Book session →</span>
+      </a>
+
+      <a href="https://wa.me/919950550885" class="prog-card reveal-up" style="--delay:0.2s" target="_blank" rel="noopener">
+        <div class="prog-num">03</div>
+        <h3>Weight Loss Program</h3>
+        <p>Science-backed fat loss combining cardio, strength, and nutrition coaching for sustainable results.</p>
+        <span class="prog-link">Transform now →</span>
+      </a>
+
+      <a href="https://wa.me/919950550885" class="prog-card reveal-up" style="--delay:0.3s" target="_blank" rel="noopener">
+        <div class="prog-num">04</div>
+        <h3>Functional Fitness</h3>
+        <p>Improve mobility, agility, and real-world strength with dynamic functional training sessions.</p>
+        <span class="prog-link">Get moving →</span>
+      </a>
+
+      <a href="https://wa.me/919950550885" class="prog-card prog-wide reveal-up" style="--delay:0.4s" target="_blank" rel="noopener">
+        <div class="prog-num">05</div>
+        <div class="prog-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="prog-wide-content">
+          <h3>Group Classes & Zumba</h3>
+          <p>High-energy group sessions including Zumba, Yoga, CrossFit, and aerobics — led by passionate instructors who make fitness fun and social.</p>
+        </div>
+        <span class="prog-link">Join class →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE / WHY US ============ -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="experience-grid">
+      <div class="experience-left reveal-up">
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          The Lifetime Experience
+        </span>
+        <h2 class="section-title">Why 2,500+ members<br/><span class="gradient-text">choose us.</span></h2>
+        <p>Every detail at Lifetime Fitness Club is designed with one goal — to make your fitness journey seamless, effective, and genuinely enjoyable.</p>
+        <a href="https://wa.me/919950550885" class="btn-primary" target="_blank" rel="noopener">
+          Book a Free Tour
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="experience-right">
+        <div class="exp-card reveal-up">
+          <div class="exp-num">01</div>
+          <h4>Premium Infrastructure</h4>
+          <p>3 floors of fully air-conditioned training space with premium imported equipment, clean changing rooms, and ample parking.</p>
+        </div>
+        <div class="exp-card reveal-up" style="--delay:0.1s">
+          <div class="exp-num">02</div>
+          <h4>Results-Driven Trainers</h4>
+          <p>Our certified coaches don't just count reps — they design science-backed programs tailored to your body, goals, and lifestyle.</p>
+        </div>
+        <div class="exp-card reveal-up" style="--delay:0.2s">
+          <div class="exp-num">03</div>
+          <h4>Nutrition Guidance</h4>
+          <p>Get customized diet plans, macro guidance, and supplement advice from in-house nutrition experts to accelerate your progress.</p>
+        </div>
+        <div class="exp-card reveal-up" style="--delay:0.3s">
+          <div class="exp-num">04</div>
+          <h4>Supportive Community</h4>
+          <p>Join a motivating community of members who lift each other up — from beginners to competitive athletes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS STRIP ============ -->
+<section class="stats-strip" aria-label="Our numbers">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-block reveal-up">
+        <div class="stat-number">4.9<span>★</span></div>
+        <div class="stat-label">Google Rating</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block reveal-up" style="--delay:0.1s">
+        <div class="stat-number">738<span>+</span></div>
+        <div class="stat-label">Happy Reviews</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block reveal-up" style="--delay:0.2s">
+        <div class="stat-number">2.5K<span>+</span></div>
+        <div class="stat-label">Active Members</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block reveal-up" style="--delay:0.3s">
+        <div class="stat-number">10<span>+</span></div>
+        <div class="stat-label">Years Strong</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-head reveal-up">
+      <div>
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Member Stories
+        </span>
+        <h2 class="section-title">Loved by <span class="gradient-text">738+ members.</span></h2>
+      </div>
+      <div class="reviews-rating-block">
+        <div class="big-rating">4.9</div>
+        <div class="big-stars">★★★★★</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lifetime%20Fitness%20Club&query_place_id=ChIJHbm90MS1bTkRE9SeHR4P6DE" target="_blank" rel="noopener" class="reviews-link">Read all reviews on Google →</a>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal-up">
+        <div class="review-head">
+          <div class="review-avatar" style="background: linear-gradient(135deg, #FF6B35, #F7931E);">AK</div>
+          <div>
+            <strong>Amit K.</strong>
+            <span>Member · 2 years</span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Best gym in Malviya Nagar, hands down. The equipment is top-notch, trainers are knowledgeable, and the vibe is incredibly motivating. Lost 15kg in 6 months!"</p>
+      </div>
+
+      <div class="review-card reveal-up" style="--delay:0.1s">
+        <div class="review-head">
+          <div class="review-avatar" style="background: linear-gradient(135deg, #A855F7, #EC4899);">PS</div>
+          <div>
+            <strong>Priya S.</strong>
+            <span>Member · 1 year</span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"As a woman, I was nervous about joining a gym. But Lifetime made me feel so welcome. The Zumba classes are amazing and the trainers are super respectful."</p>
+      </div>
+
+      <div class="review-card reveal-up" style="--delay:0.2s">
+        <div class="review-head">
+          <div class="review-avatar" style="background: linear-gradient(135deg, #06B6D4, #3B82F6);">RG</div>
+          <div>
+            <strong>Rahul G.</strong>
+            <span>Member · 3 years</span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Clean, well-maintained, and never too crowded. The personal trainers actually know their stuff. Gained 8kg of muscle in a year. Highly recommend!"</p>
+      </div>
+
+      <div class="review-card reveal-up" style="--delay:0.3s">
+        <div class="review-head">
+          <div class="review-avatar" style="background: linear-gradient(135deg, #10B981, #84CC16);">SM</div>
+          <div>
+            <strong>Sneha M.</strong>
+            <span>Member · 8 months</span>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"The location opposite Gaurav Tower is super convenient. AC floors, great music, and trainers who push you just the right amount. Love it here!"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="faq-left reveal-up">
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Questions?
+        </span>
+        <h2 class="section-title">Everything you<br/><span class="gradient-text">need to know.</span></h2>
+        <p>Can't find what you're looking for? Our team is just a WhatsApp message away.</p>
+        <a href="https://wa.me/919950550885" class="btn-primary" target="_blank" rel="noopener">Chat with us</a>
+      </div>
+
+      <div class="faq-right">
+        <details class="faq-item reveal-up" open>
+          <summary>
+            <span>What are the membership plans and pricing?</span>
+            <span class="faq-toggle"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>We offer flexible monthly, quarterly, half-yearly, and annual membership plans to suit every budget and commitment level. We also have specialized packages for personal training and group classes. Reach out on WhatsApp for our current pricing and any ongoing offers.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal-up" style="--delay:0.05s">
+          <summary>
+            <span>Do you provide personal training?</span>
+            <span class="faq-toggle"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes! Our certified personal trainers offer one-on-one coaching with customized workout plans, form correction, progress tracking, and nutrition guidance. We have trainers specialized in strength, weight loss, and sports performance.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal-up" style="--delay:0.1s">
+          <summary>
+            <span>What are your operating hours?</span>
+            <span class="faq-toggle"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>We're open 7 days a week from 5:30 AM to 10:30 PM, including all weekends and most holidays. This flexible schedule ensures you can train whenever it fits your lifestyle — early morning or late evening.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal-up" style="--delay:0.15s">
+          <summary>
+            <span>Is there parking available at V Cube?</span>
+            <span class="faq-toggle"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes, V Cube has dedicated parking space for both two-wheelers and four-wheelers. Being located opposite Gaurav Tower on Malviya Nagar's main Marg, we're also easily accessible by public transport.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal-up" style="--delay:0.2s">
+          <summary>
+            <span>Do you have women-specific facilities?</span>
+            <span class="faq-toggle"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Absolutely. We have separate, clean, and well-maintained changing rooms and washrooms for women. We also run dedicated women-only batch timings and specialized Zumba & yoga classes to ensure a comfortable environment.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal-up" style="--delay:0.25s">
+          <summary>
+            <span>Can I try before I join?</span>
+            <span class="faq-toggle"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Of course! We offer a free trial session so you can experience our facility, meet our trainers, and see if Lifetime Fitness Club is the right fit for you. Just WhatsApp us to book your free visit.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION / MAP ============ -->
+<section class="section location" id="contact">
+  <div class="container">
+    <div class="location-wrap reveal-up">
+      <div class="location-info">
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Visit Us
+        </span>
+        <h2 class="section-title">Find your <span class="gradient-text">new home.</span></h2>
+
+        <div class="location-details">
+          <div class="loc-item">
+            <div class="loc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <p>3rd Floor, V Cube, Plot no. 1-6,<br/>opp. Gaurav Tower, Malviya Nagar,<br/>Jaipur, Rajasthan 302017</p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919950550885">+91 99505 50885</a>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon – Sun · 5:30 AM to 10:30 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-actions">
+          <a href="https://wa.me/919950550885" class="btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Lifetime%20Fitness%20Club&query_place_id=ChIJHbm90MS1bTkRE9SeHR4P6DE" class="btn-outline" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="location-map">
+        <iframe src="https://maps.google.com/maps?q=Lifetime%20Fitness%20Club%20Malviya%20Nagar%20Jaipur&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lifetime Fitness Club Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="cta-mesh" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-content reveal-up">
+      <div class="cta-badge">🔥 Limited Free Trials Available</div>
+      <h2>Your transformation<br/><span class="gradient-text">starts today.</span></h2>
+      <p>Join 2,500+ members who chose to invest in themselves. Claim your free trial session and experience the Lifetime difference.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/919950550885" class="btn-primary btn-lg" target="_blank" rel="noopener">
+          Claim Free Trial
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+919950550885" class="btn-outline btn-lg">Call +91 99505 50885</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Lifetime<span class="brand-accent">.</span></span>
+        </a>
+        <p>Jaipur's most loved fitness destination. Transforming bodies and lives in Malviya Nagar for over a decade.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Programs</h5>
+        <ul>
+          <li><a href="#programs">Strength Training</a></li>
+          <li><a href="#programs">Personal Training</a></li>
+          <li><a href="#programs">Weight Loss</a></li>
+          <li><a href="#programs">Group Classes</a></li>
+          <li><a href="#programs">Zumba & Yoga</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <ul class="footer-contact">
+          <li>3rd Floor, V Cube, opp. Gaurav Tower, Malviya Nagar, Jaipur 302017</li>
+          <li><a href="tel:+919950550885">+91 99505 50885</a></li>
+          <li><a href="https://wa.me/919950550885" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Lifetime%20Fitness%20Club&query_place_id=ChIJHbm90MS1bTkRE9SeHR4P6DE" target="_blank" rel="noopener">View on Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Lifetime Fitness Club. All rights reserved.</p>
+      <p>Crafted for fitness enthusiasts in Jaipur.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/919950550885" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bottom-bar">
+  <a href="tel:+919950550885" class="mbtn mbtn-call">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/919950550885" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    Join Now
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isActive = navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal Animation
+  const revealElements = document.querySelectorAll('.reveal-up');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Navbar background on scroll
+  const navWrap = document.querySelector('.nav-wrap');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      navWrap.classList.add('scrolled');
+    } else {
+      navWrap.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>
