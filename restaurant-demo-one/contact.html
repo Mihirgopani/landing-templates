@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us | Lumière Bistro</title>
+<meta name="description" content="Get in touch with Lumière Bistro. Find our location, operating hours, and send us a message for inquiries, private events, or feedback." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Lumière <span class="text-gold">Bistro</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="reservation.html" class="nav-link">Reservations</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="reservation.html" class="btn btn-gold">Reserve Table</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container text-center reveal-up">
+      <span class="section-tag">Get in Touch</span>
+      <h1 class="page-title">Contact <span class="text-gold">Us</span></h1>
+      <p class="page-subtitle">We would love to hear from you. Reach out for general inquiries, private event bookings, or feedback.</p>
+    </div>
+  </section>
+
+  <!-- Contact Layout -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid-layout">
+        
+        <!-- Left Column: Info & Map -->
+        <div class="contact-info-side reveal-up">
+          <div class="info-cards-wrapper">
+            <div class="contact-info-card">
+              <div class="cic-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="cic-content">
+                <h3>Visit Us</h3>
+                <p>128 Culinary Avenue, Suite 100<br/>Metropolis, NY 10012</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="cic-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="cic-content">
+                <h3>Call Us</h3>
+                <a href="tel:+12125551234">(212) 555-1234</a>
+                <p style="font-size: 0.85rem; margin-top: 4px;">Available during business hours</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="cic-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="cic-content">
+                <h3>Email Us</h3>
+                <a href="mailto:info@lumierebistro.com">info@lumierebistro.com</a>
+                <p style="font-size: 0.85rem; margin-top: 4px;">We reply within 24 hours</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container reveal-up" style="--delay: 0.2s">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Right Column: Contact Form -->
+        <div class="contact-form-side reveal-up" style="--delay: 0.1s">
+          <div class="form-wrapper">
+            <h3>Send Us a Message</h3>
+            <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">Fill out the form below and our team will get back to you shortly.</p>
+            
+            <form class="reservation-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic...</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="events">Private Events & Catering</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="careers">Careers</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Info / Hours -->
+  <section class="section bg-darker">
+    <div class="container text-center reveal-up">
+      <span class="section-tag">Plan Your Visit</span>
+      <h2 class="section-title">Opening <span class="text-gold">Hours</span></h2>
+      <div class="hours-display-grid">
+        <div class="hours-box">
+          <h4>Tuesday - Thursday</h4>
+          <p class="time">5:00 PM - 10:00 PM</p>
+        </div>
+        <div class="hours-box highlight">
+          <h4>Friday - Saturday</h4>
+          <p class="time">5:00 PM - 11:00 PM</p>
+        </div>
+        <div class="hours-box">
+          <h4>Sunday</h4>
+          <p class="time">4:00 PM - 9:00 PM</p>
+        </div>
+        <div class="hours-box closed">
+          <h4>Monday</h4>
+          <p class="time">Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-text">Lumière <span class="text-gold">Bistro</span></span></a>
+        <p>Elevating the art of dining through passion, precision, and the finest seasonal ingredients.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <ul class="hours-list">
+          <li><span>Tue - Thu</span> <strong>5:00 PM - 10:00 PM</strong></li>
+          <li><span>Fri - Sat</span> <strong>5:00 PM - 11:00 PM</strong></li>
+          <li><span>Sun</span> <strong>4:00 PM - 9:00 PM</strong></li>
+          <li><span>Monday</span> <strong>Closed</strong></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li>128 Culinary Avenue, Suite 100<br/>Metropolis, NY 10012</li>
+          <li><a href="tel:+12125551234">(212) 555-1234</a></li>
+          <li><a href="mailto:reservations@lumierebistro.com">reservations@lumierebistro.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Lumière Bistro. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Contact Form Mock Submission
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      setTimeout(() => {
+        alert('Thank you for your message! Our team will get back to you within 24 hours.');
+        contactForm.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 1500);
+    });
+  }
+</script>
+</body>
+</html>

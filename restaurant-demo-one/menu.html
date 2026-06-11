@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Menu | Lumière Bistro</title>
+<meta name="description" content="Explore the seasonal, locally sourced menu at Lumière Bistro. Fine dining featuring artisanal pastas, premium steaks, and craft cocktails." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="logo-text">Lumière <span class="text-gold">Bistro</span></span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link active">Menu</a>
+      <a href="reservation.html" class="nav-link">Reservations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="reservation.html" class="btn btn-gold">Reserve Table</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header menu-hero">
+    <div class="container text-center reveal-up">
+      <span class="section-tag">Culinary Artistry</span>
+      <h1 class="page-title">Our <span class="text-gold">Menu</span></h1>
+      <p class="page-subtitle">A celebration of seasonal ingredients, crafted with passion and precision. <br/>Please inform your server of any allergies or dietary restrictions.</p>
+    </div>
+  </section>
+
+  <!-- Sticky Category Navigation -->
+  <nav class="menu-sticky-nav">
+    <div class="container">
+      <ul class="menu-tabs">
+        <li><a href="#starters" class="menu-tab active">To Begin</a></li>
+        <li><a href="#mains" class="menu-tab">Main Courses</a></li>
+        <li><a href="#desserts" class="menu-tab">Desserts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section bg-darker">
+    <div class="container">
+      
+      <!-- Starters -->
+      <div id="starters" class="menu-category-section reveal-up">
+        <div class="category-header">
+          <h2 class="category-title">To Begin</h2>
+          <p class="category-subtitle">Light, vibrant, and designed to awaken the palate.</p>
+        </div>
+        <div class="menu-cards-grid">
+          <a href="dish-detail.html" class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Tuna Tartare" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Yellowfin Tuna Tartare</h3>
+                <span class="card-price">$28</span>
+              </div>
+              <p class="card-desc">Sushi-grade yellowfin, avocado mousse, sesame-soy vinaigrette, wonton crisps.</p>
+              <div class="card-tags"><span class="tag gf">Gluten-Free</span></div>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+
+          <a href="dish-detail.html" class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1529312266912-b33cf6227e24?auto=format&fit=crop&w=600&q=80" alt="Burrata" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Heirloom Burrata</h3>
+                <span class="card-price">$24</span>
+              </div>
+              <p class="card-desc">Creamy burrata, vine-ripened heirloom tomatoes, fresh basil oil, aged balsamic glaze.</p>
+              <div class="card-tags"><span class="tag v">Vegetarian</span></div>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+
+          <a href="dish-detail.html" class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80" alt="French Onion Soup" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Classic French Onion Soup</h3>
+                <span class="card-price">$18</span>
+              </div>
+              <p class="card-desc">Slow-caramelized onions, rich beef broth, toasted brioche, melted Gruyère cheese.</p>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Visual Break -->
+      <div class="menu-visual-break reveal-up">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Elegant plating" loading="lazy" />
+        <div class="break-overlay">
+          <span class="break-text">"Cooking is an art, and the plate is the canvas."</span>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div id="mains" class="menu-category-section reveal-up">
+        <div class="category-header">
+          <h2 class="category-title">Main Courses</h2>
+          <p class="category-subtitle">The heart of our kitchen, featuring premium cuts and ocean-fresh seafood.</p>
+        </div>
+        <div class="menu-cards-grid">
+          <a href="dish-detail.html" class="menu-card featured-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Wagyu Beef" loading="lazy" />
+              <span class="card-badge">Chef's Recommendation</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Pan-Seared A5 Wagyu Beef</h3>
+                <span class="card-price">$85</span>
+              </div>
+              <p class="card-desc">Japanese A5 Wagyu, truffle pomme purée, roasted bone marrow, red wine reduction.</p>
+              <div class="card-tags"><span class="tag gf">Gluten-Free</span></div>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+
+          <a href="dish-detail.html" class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Lobster Risotto" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Maine Lobster Risotto</h3>
+                <span class="card-price">$62</span>
+              </div>
+              <p class="card-desc">Carnaroli rice, butter-poached lobster tail, saffron, aged parmesan crisp.</p>
+              <div class="card-tags"><span class="tag gf">Gluten-Free</span></div>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+
+          <a href="dish-detail.html" class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Rack of Lamb" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Herb-Crusted Rack of Lamb</h3>
+                <span class="card-price">$58</span>
+              </div>
+              <p class="card-desc">Colorado lamb, mint-pea purée, roasted root vegetables, rosemary jus.</p>
+              <div class="card-tags"><span class="tag gf">Gluten-Free</span></div>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+
+          <a href="dish-detail.html" class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80" alt="Truffle Pasta" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="card-header">
+                <h3 class="card-title">Black Truffle Tagliatelle</h3>
+                <span class="card-price">$42</span>
+              </div>
+              <p class="card-desc">Fresh handmade pasta, black winter truffle, brown butter, shaved Parmigiano.</p>
+              <div class="card-tags"><span class="tag v">Vegetarian</span></div>
+              <span class="card-link">View Details →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center reveal-up" style="margin-top: 4rem;">
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; font-style: italic;">* A 20% gratuity will be added to parties of 6 or more.</p>
+        <a href="reservation.html" class="btn btn-gold btn-lg">Reserve Your Table</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-text">Lumière <span class="text-gold">Bistro</span></span></a>
+        <p>Elevating the art of dining through passion, precision, and the finest seasonal ingredients.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="reservation.html">Reservations</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <ul class="hours-list">
+          <li><span>Tue - Thu</span> <strong>5:00 PM - 10:00 PM</strong></li>
+          <li><span>Fri - Sat</span> <strong>5:00 PM - 11:00 PM</strong></li>
+          <li><span>Sun</span> <strong>4:00 PM - 9:00 PM</strong></li>
+          <li><span>Monday</span> <strong>Closed</strong></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li>128 Culinary Avenue, Suite 100<br/>Metropolis, NY 10012</li>
+          <li><a href="tel:+12125551234">(212) 555-1234</a></li>
+          <li><a href="mailto:reservations@lumierebistro.com">reservations@lumierebistro.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Lumière Bistro. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order History | Devasya Organics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- (Include same Header as account.html) -->
+  <div class="top-bar">Free shipping on all orders over $50 | 100% Organic & Cruelty-Free</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="menu-toggle"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo">Devasya.</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Shop</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions"><a href="cart.html" class="nav-link">Cart (0)</a></div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="account-layout">
+        <aside class="sidebar-nav">
+          <a href="account.html" class="sidebar-link">Dashboard</a>
+          <a href="order-history.html" class="sidebar-link active">Order History</a>
+          <a href="profile.html" class="sidebar-link">Profile Details</a>
+          <a href="index.html" class="sidebar-link" style="color: var(--black); margin-top: 20px; border-top: 1px solid var(--light-gray); padding-top: 20px;">Log Out</a>
+        </aside>
+
+        <div class="account-content">
+          <h2>Order History</h2>
+          <p>A complete record of your past purchases with Devasya Organics.</p>
+          
+          <table class="orders-table" style="margin-top: 32px;">
+            <thead>
+              <tr>
+                <th>Order Number</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#DEV-8832</td>
+                <td>October 24, 2024</td>
+                <td><span class="status-badge status-processing">Processing</span></td>
+                <td>$165.24</td>
+                <td><a href="order-details.html" class="btn btn-outline btn-sm">View Details</a></td>
+              </tr>
+              <tr>
+                <td>#DEV-8710</td>
+                <td>September 12, 2024</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+                <td>$85.00</td>
+                <td><a href="order-details.html" class="btn btn-outline btn-sm">View Details</a></td>
+              </tr>
+              <tr>
+                <td>#DEV-8401</td>
+                <td>August 05, 2024</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+                <td>$120.50</td>
+                <td><a href="order-details.html" class="btn btn-outline btn-sm">View Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-bottom">© 2024 Devasya Organics. All rights reserved.</div></div>
+  </footer>
+</body>
+</html>

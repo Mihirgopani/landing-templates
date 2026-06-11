@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurelia | Modern Fine Dining Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">AURELIA</a>
+      <button class="menu-toggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="reservation.html" class="btn btn-primary">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section style="height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+      <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1600" alt="Restaurant Interior" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+      <div class="container reveal" style="position: relative; z-index: 2; text-align: center; max-width: 800px;">
+        <p style="letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); margin-bottom: 24px; font-size: 0.9rem;">Est. 2018 • Michelin Recognized</p>
+        <h1 style="font-size: clamp(3rem, 8vw, 6rem); color: var(--text); margin-bottom: 32px; line-height: 1;">The Art of <br><span class="text-accent">Modern Gastronomy</span></h1>
+        <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 48px; line-height: 1.8;">An immersive culinary journey where seasonal ingredients meet masterful technique in an atmosphere of understated elegance.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="menu.html" class="btn btn-primary">Explore the Menu</a>
+          <a href="reservation.html" class="btn btn-outline">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Introduction / Philosophy -->
+    <section class="section">
+      <div class="container grid-2">
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" alt="Chef plating" style="width: 100%; border-radius: var(--radius);">
+        </div>
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">Our Philosophy</p>
+          <h2 style="font-size: 2.5rem; margin-bottom: 24px; color: var(--text);">Rooted in <span class="text-accent">Excellence</span></h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 1.1rem; line-height: 1.8;">Founded in 2018 by Executive Chef Elena Rostova, Aurelia was born from a singular vision: to create a dining experience that transcends the ordinary. We believe that true luxury lies in the details.</p>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">We partner directly with local farmers, sustainable fisheries, and artisanal producers to ensure that every ingredient on your plate is of the highest caliber.</p>
+          <a href="about.html" class="btn btn-outline">Discover Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Featured Menu Highlights -->
+    <section class="section" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-header reveal">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">Culinary Artistry</p>
+          <h2 class="section-title">Seasonal <span class="text-accent">Highlights</span></h2>
+          <p class="section-subtitle">A curated selection of our chef's most celebrated creations, crafted from the finest local and foraged ingredients.</p>
+        </div>
+        <div class="grid-3">
+          <a href="dish-detail.html" class="card reveal">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="Wagyu"></div>
+            <div class="card-body">
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px;">A5 Wagyu Tenderloin</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Truffle pomme purée, roasted bone marrow, and a rich red wine reduction.</p>
+              <span class="dietary-tag">Chef's Selection</span>
+            </div>
+          </a>
+          <a href="dish-detail.html" class="card reveal" style="transition-delay: 0.1s;">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600" alt="Scallops"></div>
+            <div class="card-body">
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Hokkaido Scallops</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Pan-seared, served with cauliflower purée, Oscietra caviar, and brown butter.</p>
+              <span class="dietary-tag">Gluten-Free</span>
+            </div>
+          </a>
+          <a href="dish-detail.html" class="card reveal" style="transition-delay: 0.2s;">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600" alt="Dessert"></div>
+            <div class="card-body">
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Valrhona Chocolate Sphere</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Molten dark chocolate, Madagascar vanilla bean ice cream, edible gold leaf.</p>
+              <span class="dietary-tag">Vegetarian</span>
+            </div>
+          </a>
+        </div>
+        <div class="text-center reveal" style="margin-top: 48px;">
+          <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Chef's Message -->
+    <section class="section">
+      <div class="container grid-2">
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">The Chef</p>
+          <h2 style="font-size: 2.5rem; margin-bottom: 24px; color: var(--text);">A Word from <span class="text-accent">Chef Elena</span></h2>
+          <blockquote style="font-family: var(--font-heading); font-size: 1.5rem; font-style: italic; color: var(--text); margin-bottom: 24px; line-height: 1.4; border-left: 2px solid var(--accent); padding-left: 24px;">"Cooking is not merely about sustenance; it is a dialogue between the earth, the artisan, and the guest. At Aurelia, we strive to make every bite a memorable conversation."</p>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">With over 15 years of experience in Michelin-starred kitchens across Europe, Chef Elena brings a deeply personal touch to every dish, letting high-quality, seasonal ingredients speak for themselves.</p>
+          <a href="about.html" class="btn btn-outline">Meet the Team</a>
+        </div>
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=800" alt="Chef Elena Rostova" style="width: 100%; border-radius: var(--radius);">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. The Experience / Atmosphere -->
+    <section class="section" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-header reveal">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">The Ambiance</div>
+          <h2 class="section-title">An Unforgettable <span class="text-accent">Experience</span></h2>
+          <p class="section-subtitle">From the warm glow of our custom lighting to the attentive, unobtrusive service, every detail is designed to make your evening truly special.</p>
+        </div>
+        <div class="gallery-grid reveal">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=400" alt="Dining Room">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400" alt="Bar Area">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="Private Dining">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=400" alt="Wine Cellar">
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimonials & Press -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">Acclaim</p>
+          <h2 class="section-title">Words of <span class="text-accent">Praise</span></h2>
+        </div>
+        <div class="grid-3">
+          <div class="testimonial-card reveal">
+            <p class="testimonial-quote">"A triumph of modern gastronomy. The tasting menu is a masterclass in flavor and texture."</p>
+            <p class="testimonial-author">— The Culinary Chronicle</p>
+          </div>
+          <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+            <p class="testimonial-quote">"Impeccable service and an atmosphere of refined elegance. The Wagyu is simply unmatched in the city."</p>
+            <p class="testimonial-author">— James & Sarah T., Guests</p>
+          </div>
+          <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+            <p class="testimonial-quote">"A mandatory destination for any serious food lover visiting the region. Pure culinary poetry."</p>
+            <p class="testimonial-author">— Gourmet Magazine</p>
+          </div>
+        </div>
+        <div class="press-logos reveal">
+          <span>Michelin Guide</span>
+          <span>Eater</span>
+          <span>Bon Appétit</span>
+          <span>New York Times</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Final Reservation CTA -->
+    <section class="section" style="background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600') center/cover fixed; text-align: center;">
+      <div class="container reveal">
+        <h2 class="section-title" style="color: var(--text);">Ready for an Unforgettable Evening?</h2>
+        <p class="section-subtitle" style="color: var(--text-muted); margin-bottom: 2rem;">Tables fill up quickly. Secure your spot for an evening of exceptional food, wine, and hospitality.</p>
+        <a href="reservation.html" class="btn btn-primary btn-lg">Make a Reservation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Comprehensive Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="logo" style="margin-bottom: 24px;">AURELIA</h3>
+          <p style="color: var(--text-muted); line-height: 1.8;">Redefining fine dining through a commitment to sustainability, artistic presentation, and unforgettable flavor profiles.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul><li><a href="about.html">Our Story</a></li><li><a href="menu.html">The Menu</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul style="color: var(--text-muted);">
+            <li>Tue - Thu: 5pm - 10pm</li>
+            <li>Fri - Sat: 5pm - 11pm</li>
+            <li>Sun: 4pm - 9pm</li>
+            <li>Mon: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul style="color: var(--text-muted);">
+            <li>128 Culinary Avenue, Suite 100</li>
+            <li>Metropolis, NY 10012</li>
+            <li><a href="tel:+12125551234" style="color: var(--accent);">(212) 555-1234</a></li>
+            <li><a href="mailto:reservations@aurelia.com" style="color: var(--accent);">reservations@aurelia.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 Aurelia Restaurant. All rights reserved. | <a href="#" style="color: var(--text-muted);">Privacy Policy</a> | <a href="#" style="color: var(--text-muted);">Terms of Service</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

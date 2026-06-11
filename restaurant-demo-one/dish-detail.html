@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pan-Seared A5 Wagyu Beef | Lumière Bistro</title>
+<meta name="description" content="Experience our signature Pan-Seared A5 Wagyu Beef with truffle pomme purée and red wine reduction at Lumière Bistro." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="logo-text">Lumière <span class="text-gold">Bistro</span></span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link active">Menu</a>
+      <a href="reservation.html" class="nav-link">Reservations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="reservation.html" class="btn btn-gold">Reserve Table</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Breadcrumb -->
+  <div class="container" style="padding-top: 120px; padding-bottom: 20px;">
+    <nav class="breadcrumb reveal-up">
+      <a href="index.html">Home</a> <span>/</span> <a href="menu.html">Menu</a> <span>/</span> <span class="current">Pan-Seared A5 Wagyu Beef</span>
+    </nav>
+  </div>
+
+  <!-- Dish Detail Hero -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="dish-detail-grid">
+        <!-- Left: Gallery -->
+        <div class="dish-gallery reveal-up">
+          <div class="main-image">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Pan-Seared A5 Wagyu Beef" id="mainDishImage" />
+          </div>
+          <div class="thumbnail-row">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=200&q=80" alt="Wagyu Thumb 1" class="thumb active" onclick="changeImage(this)" />
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=200&q=80" alt="Wagyu Thumb 2" class="thumb" onclick="changeImage(this)" />
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=200&q=80" alt="Wagyu Thumb 3" class="thumb" onclick="changeImage(this)" />
+          </div>
+        </div>
+
+        <!-- Right: Info (Sticky on desktop) -->
+        <div class="dish-info reveal-up" style="--delay: 0.1s">
+          <span class="section-tag">Main Course</span>
+          <h1 class="dish-title">Pan-Seared A5 Wagyu Beef</h1>
+          <div class="dish-price-row">
+            <span class="dish-price-large">$85</span>
+            <div class="card-tags" style="margin: 0;">
+              <span class="tag chef">Chef's Recommendation</span>
+              <span class="tag gf">Gluten-Free</span>
+            </div>
+          </div>
+          <p class="dish-description">
+            An unparalleled culinary experience. Our Japanese A5 Wagyu is lightly seared to perfection, melting in your mouth. Served alongside a silky truffle pomme purée, roasted bone marrow, and a rich, reduced red wine sauce.
+          </p>
+          
+          <div class="dish-actions">
+            <a href="reservation.html" class="btn btn-gold btn-lg">Reserve a Table to Enjoy</a>
+          </div>
+
+          <!-- Accordions for Details -->
+          <div class="dish-details-accordion">
+            <details class="detail-item" open>
+              <summary class="detail-summary">
+                <span>🌿 Premium Ingredients</span>
+                <span class="detail-icon">+</span>
+              </summary>
+              <div class="detail-content">
+                <p>Japanese A5 Wagyu Beef (Miyazaki Prefecture), Yukon Gold Potatoes, Black Winter Truffle, Beef Bone Marrow, Shallots, Thyme, Rosemary, Premium Cabernet Sauvignon.</p>
+              </div>
+            </details>
+
+            <details class="detail-item">
+              <summary class="detail-summary">
+                <span>⚠️ Allergen Information</span>
+                <span class="detail-icon">+</span>
+              </summary>
+              <div class="detail-content">
+                <div class="allergen-warning">
+                  <strong>Contains:</strong> Dairy (Butter, Cream), Sulfites (Wine). 
+                  <br/><em>Prepared in a kitchen that handles gluten, nuts, and shellfish.</em>
+                </div>
+              </div>
+            </details>
+
+            <details class="detail-item">
+              <summary class="detail-summary">
+                <span>📊 Nutrition Facts (Per Serving)</span>
+                <span class="detail-icon">+</span>
+              </summary>
+              <div class="detail-content">
+                <table class="nutrition-table">
+                  <tr><td>Calories</td><td><strong>680 kcal</strong></td></tr>
+                  <tr><td>Protein</td><td><strong>42g</strong></td></tr>
+                  <tr><td>Total Fat</td><td><strong>54g</strong></td></tr>
+                  <tr><td>Carbohydrates</td><td><strong>18g</strong></td></tr>
+                </table>
+              </div>
+            </details>
+
+            <details class="detail-item">
+              <summary class="detail-summary">
+                <span>🍷 Chef's Pairing Recommendation</span>
+                <span class="detail-icon">+</span>
+              </summary>
+              <div class="detail-content">
+                <p>Chef Antoine recommends pairing this dish with our <strong>2018 Château Margaux</strong> or a bold <strong>Napa Valley Cabernet Sauvignon</strong> to complement the rich marbling of the Wagyu.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Dishes -->
+  <section class="section bg-darker">
+    <div class="container">
+      <div class="section-header text-center reveal-up">
+        <span class="section-tag">Continue Your Journey</span>
+        <h2 class="section-title">You May Also <span class="text-gold">Enjoy</span></h2>
+      </div>
+      <div class="menu-cards-grid">
+        <a href="dish-detail.html" class="menu-card reveal-up">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Lobster Risotto" loading="lazy" /></div>
+          <div class="menu-card-body">
+            <div class="card-header"><h3 class="card-title">Maine Lobster Risotto</h3><span class="card-price">$62</span></div>
+            <p class="card-desc">Carnaroli rice, butter-poached lobster tail, saffron.</p>
+            <span class="card-link">View Details →</span>
+          </div>
+        </a>
+        <a href="dish-detail.html" class="menu-card reveal-up" style="--delay: 0.1s">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Rack of Lamb" loading="lazy" /></div>
+          <div class="menu-card-body">
+            <div class="card-header"><h3 class="card-title">Herb-Crusted Rack of Lamb</h3><span class="card-price">$58</span></div>
+            <p class="card-desc">Colorado lamb, mint-pea purée, rosemary jus.</p>
+            <span class="card-link">View Details →</span>
+          </div>
+        </a>
+        <a href="dish-detail.html" class="menu-card reveal-up" style="--delay: 0.2s">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Chocolate Fondant" loading="lazy" /></div>
+          <div class="menu-card-body">
+            <div class="card-header"><h3 class="card-title">Valrhona Chocolate Fondant</h3><span class="card-price">$24</span></div>
+            <p class="card-desc">Molten dark chocolate, vanilla bean ice cream.</p>
+            <span class="card-link">View Details →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-text">Lumière <span class="text-gold">Bistro</span></span></a>
+        <p>Elevating the art of dining through passion, precision, and the finest seasonal ingredients.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="reservation.html">Reservations</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <ul class="hours-list">
+          <li><span>Tue - Thu</span> <strong>5:00 PM - 10:00 PM</strong></li>
+          <li><span>Fri - Sat</span> <strong>5:00 PM - 11:00 PM</strong></li>
+          <li><span>Sun</span> <strong>4:00 PM - 9:00 PM</strong></li>
+          <li><span>Monday</span> <strong>Closed</strong></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li>128 Culinary Avenue, Suite 100<br/>Metropolis, NY 10012</li>
+          <li><a href="tel:+12125551234">(212) 555-1234</a></li>
+          <li><a href="mailto:reservations@lumierebistro.com">reservations@lumierebistro.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Lumière Bistro. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Dish Detail Image Gallery Script
+  function changeImage(thumbnail) {
+    document.getElementById('mainDishImage').src = thumbnail.src.replace('w=200', 'w=800');
+    document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+    thumbnail.classList.add('active');
+  }
+</script>
+</body>
+</html>

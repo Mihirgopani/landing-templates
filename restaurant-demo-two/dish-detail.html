@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A5 Wagyu Tenderloin | Aurelia</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-Specific Enhancements for Dish Detail */
+    .dish-hero { padding: 140px 0 60px; background: var(--surface); border-bottom: 1px solid var(--border); }
+    .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px; letter-spacing: 0.05em; }
+    .breadcrumb a { color: var(--text-muted); transition: var(--transition); }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { margin: 0 8px; color: var(--border); }
+    
+    .dish-main-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; padding: 80px 0; }
+    
+    .dish-gallery { position: sticky; top: 120px; }
+    .main-image-container { position: relative; overflow: hidden; border-radius: var(--radius); aspect-ratio: 4/3; }
+    .main-image-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .main-image-container:hover img { transform: scale(1.03); }
+    
+    .thumb-row { display: flex; gap: 16px; margin-top: 20px; }
+    .thumb { width: 100px; height: 100px; object-fit: cover; border-radius: var(--radius); cursor: pointer; opacity: 0.5; border: 2px solid transparent; transition: var(--transition); }
+    .thumb.active, .thumb:hover { opacity: 1; border-color: var(--accent); }
+
+    .dish-info-header { margin-bottom: 32px; }
+    .dish-category { font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block; }
+    .dish-title { font-size: clamp(2.5rem, 4vw, 3.5rem); color: var(--text); margin-bottom: 16px; line-height: 1.1; }
+    .dish-price { font-family: var(--font-heading); font-size: 2rem; color: var(--accent); font-weight: 600; margin-bottom: 24px; }
+    .dish-description { font-size: 1.15rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 32px; }
+    
+    .chef-note { background: rgba(197, 160, 89, 0.05); border-left: 3px solid var(--accent); padding: 24px 32px; margin: 40px 0; border-radius: 0 var(--radius) var(--radius) 0; }
+    .chef-note p { font-family: var(--font-heading); font-size: 1.25rem; font-style: italic; color: var(--text); line-height: 1.5; margin-bottom: 12px; }
+    .chef-note cite { font-size: 0.9rem; color: var(--accent); font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; }
+
+    .detail-accordion { margin-top: 40px; border-top: 1px solid var(--border); }
+    .detail-accordion details { border-bottom: 1px solid var(--border); padding: 24px 0; }
+    .detail-accordion summary { font-family: var(--font-heading); font-size: 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--text); transition: var(--transition); }
+    .detail-accordion summary:hover { color: var(--accent); }
+    .detail-accordion summary::after { content: '+'; font-size: 1.5rem; color: var(--accent); font-family: var(--font-body); font-weight: 300; transition: var(--transition); }
+    .detail-accordion details[open] summary::after { content: '−'; transform: rotate(180deg); }
+    .detail-accordion p { padding-top: 16px; color: var(--text-muted); line-height: 1.8; }
+    
+    .nutrition-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    .nutrition-table td { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+    .nutrition-table td:first-child { color: var(--text-muted); }
+    .nutrition-table td:last-child { text-align: right; color: var(--text); font-weight: 500; }
+
+    .allergen-warning { background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: var(--radius); padding: 20px; color: #FCA5A5; margin-top: 8px; }
+    .allergen-warning strong { color: #F87171; display: block; margin-bottom: 4px; }
+
+    .related-section { padding: 80px 0; background: var(--surface); border-top: 1px solid var(--border); }
+    
+    @media (max-width: 1024px) {
+      .dish-main-grid { grid-template-columns: 1fr; gap: 40px; }
+      .dish-gallery { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">AURELIA</a>
+      <button class="menu-toggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav">
+       <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="reservation.html" class="btn btn-primary">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumb & Header -->
+    <div class="dish-hero">
+      <div class="container reveal">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <a href="menu.html">The Menu</a> <span>/</span> <span style="color: var(--text);">A5 Wagyu Tenderloin</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Dish Content -->
+    <section>
+      <div class="container dish-main-grid">
+        
+        <!-- Left: Image Gallery -->
+        <div class="dish-gallery reveal">
+          <div class="main-image-container">
+            <img id="mainDishImg" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="A5 Wagyu Tenderloin">
+          </div>
+          <div class="thumb-row">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=150" class="thumb active" onclick="changeDishImage(this)" alt="Wagyu main view">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=150" class="thumb" onclick="changeDishImage(this)" alt="Wagyu side view">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=150" class="thumb" onclick="changeDishImage(this)" alt="Wagyu plating detail">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=150" class="thumb" onclick="changeDishImage(this)" alt="Wagyu wine pairing">
+          </div>
+        </div>
+
+        <!-- Right: Dish Information -->
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <div class="dish-info-header">
+            <span class="dish-category">Main Course • Chef's Selection</span>
+            <h1 class="dish-title">A5 Wagyu Tenderloin</h1>
+            <div class="dish-price">$85</div>
+            <p class="dish-description">
+              An unparalleled culinary experience. Our authentic Japanese A5 Wagyu is lightly seared over binchotan charcoal to preserve its delicate marbling, melting in your mouth. Served alongside a silky black truffle pomme purée, roasted bone marrow, and a rich, reduced Cabernet Sauvignon sauce.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px;">
+              <span class="dietary-tag">Gluten-Free</span>
+              <span class="dietary-tag">Dairy-Free Option</span>
+            </div>
+            <a href="reservation.html" class="btn btn-primary" style="width: 100%;">Reserve a Table to Enjoy This</a>
+          </div>
+
+          <!-- Chef's Note -->
+          <div class="chef-note">
+            <p>"The secret to this dish is restraint. The Wagyu speaks for itself; our role is merely to elevate its natural richness with the earthy depth of black truffle and the acidity of a fine wine reduction."</p>
+            <cite>— Executive Chef Elena Rostova</cite>
+          </div>
+
+          <!-- Accordions -->
+          <div class="detail-accordion">
+            <details open>
+              <summary>Premium Ingredients</summary>
+              <p>Miyazaki Prefecture A5 Wagyu Beef, Yukon Gold Potatoes, Périgord Black Winter Truffle, Beef Bone Marrow, Shallots, Fresh Thyme, Rosemary, Premium Cabernet Sauvignon.</p>
+            </details>
+            <details>
+              <summary>Allergen Information</summary>
+              <div class="allergen-warning">
+                <strong>Contains:</strong> Dairy (Butter, Cream), Sulfites (Wine). 
+                <br><em>Please note: Prepared in a kitchen that handles gluten, nuts, and shellfish. Please inform your server of any severe allergies.</em>
+              </div>
+            </details>
+            <details>
+              <summary>Nutrition Facts (Per Serving)</summary>
+              <table class="nutrition-table">
+                <tr><td>Calories</td><td>680 kcal</td></tr>
+                <tr><td>Protein</td><td>42g</td></tr>
+                <tr><td>Total Fat</td><td>54g</td></tr>
+                <tr><td>Saturated Fat</td><td>22g</td></tr>
+                <tr><td>Carbohydrates</td><td>18g</td></tr>
+              </table>
+            </details>
+            <details>
+              <summary>Sommelier Pairing Recommendation</summary>
+              <p>Our Head Sommelier recommends pairing this dish with our <strong>2018 Château Margaux</strong> or a bold, structured <strong>Napa Valley Cabernet Sauvignon</strong> to beautifully complement the rich marbling and savory notes of the Wagyu.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Dishes -->
+    <section class="related-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">Continue Your Journey</p>
+          <h2 class="section-title">You May Also <span class="text-accent">Enjoy</span></h2>
+        </div>
+        <div class="grid-3">
+          <a href="dish-detail.html" class="card reveal">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600" alt="Scallops"></div>
+            <div class="card-body">
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Hokkaido Scallops</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Pan-seared, served with cauliflower purée, Oscietra caviar, and brown butter.</p>
+              <span class="dietary-tag">Gluten-Free</span>
+            </div>
+          </a>
+          <a href="dish-detail.html" class="card reveal" style="transition-delay: 0.1s;">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600" alt="Lamb"></div>
+            <div class="card-body">
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Herb-Crusted Rack of Lamb</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Fondant potatoes, seasonal greens, and a fragrant rosemary jus.</p>
+            </div>
+          </a>
+          <a href="dish-detail.html" class="card reveal" style="transition-delay: 0.2s;">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600" alt="Dessert"></div>
+            <div class="card-body">
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Valrhona Chocolate Sphere</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Molten dark chocolate, Madagascar vanilla bean ice cream, edible gold leaf.</p>
+              <span class="dietary-tag">Vegetarian</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="logo" style="margin-bottom: 24px;">AURELIA</h3>
+          <p style="color: var(--text-muted); line-height: 1.8;">Redefining fine dining through a commitment to sustainability, artistic presentation, and unforgettable flavor profiles.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">Our Story</a></li><li><a href="menu.html">The Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul style="color: var(--text-muted);">
+            <li>Tue - Thu: 5pm - 10pm</li>
+            <li>Fri - Sat: 5pm - 11pm</li>
+            <li>Sun: 4pm - 9pm</li>
+            <li>Mon: Closed</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul style="color: var(--text-muted);">
+            <li>128 Culinary Avenue, Suite 100</li>
+            <li>Metropolis, NY 10012</li>
+            <li><a href="tel:+12125551234" style="color: var(--accent);">(212) 555-1234</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 Aurelia Restaurant. All rights reserved.</div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

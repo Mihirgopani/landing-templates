@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lumière Bistro | Modern Fine Dining & Culinary Excellence</title>
+<meta name="description" content="Experience modern fine dining at Lumière Bistro. Locally sourced ingredients, masterful culinary artistry, and an unforgettable ambiance." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Lumière <span class="text-gold">Bistro</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="reservation.html" class="nav-link">Reservations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="reservation.html" class="btn btn-gold">Reserve Table</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1600&q=80" alt="Elegant restaurant interior" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content reveal-up">
+      <span class="hero-subtitle">Est. 2018 • Modern Fine Dining</span>
+      <h1 class="hero-title">Taste the Art of <br/><span class="text-gold">Culinary Excellence</span></h1>
+      <p class="hero-desc">A symphony of locally sourced ingredients, masterful techniques, and an unforgettable ambiance. Join us for an evening where every dish tells a story.</p>
+      <div class="hero-btns">
+        <a href="menu.html" class="btn btn-outline-light btn-lg">Explore Menu</a>
+        <a href="reservation.html" class="btn btn-gold btn-lg">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="section">
+    <div class="container split-grid">
+      <div class="split-image reveal-up">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Chef preparing a dish" loading="lazy" />
+        <div class="experience-badge">
+          <span class="exp-num">15+</span>
+          <span class="exp-text">Years of<br/>Mastery</span>
+        </div>
+      </div>
+      <div class="split-content reveal-up" style="--delay: 0.1s">
+        <span class="section-tag">Welcome to Lumière</span>
+        <h2 class="section-title">Where Tradition Meets <span class="text-gold">Innovation</span></h2>
+        <p>At Lumière Bistro, dining is not just about sustenance; it is an experience. Founded by Executive Chef Antoine Moreau, our kitchen is a canvas where seasonal, locally sourced ingredients are transformed into modern masterpieces.</p>
+        <p>From our hand-selected wine pairings to our meticulously plated desserts, every detail is designed to transport you.</p>
+        <a href="about.html" class="btn btn-gold" style="margin-top: 1rem;">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Menu Cards -->
+  <section class="section bg-darker">
+    <div class="container">
+      <div class="section-header text-center reveal-up">
+        <span class="section-tag">Chef's Selections</span>
+        <h2 class="section-title">Signature <span class="text-gold">Creations</span></h2>
+        <p class="section-subtitle">A curated glimpse into the dishes that have made Lumière Bistro a destination for food lovers.</p>
+      </div>
+      
+      <div class="menu-cards-grid">
+        <!-- Card 1 -->
+        <a href="dish-detail.html" class="menu-card reveal-up">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Wagyu Beef" loading="lazy" />
+            <span class="card-badge">Chef's Pick</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="card-header">
+              <h3 class="card-title">Pan-Seared A5 Wagyu</h3>
+              <span class="card-price">$85</span>
+            </div>
+            <p class="card-desc">Japanese A5 Wagyu, truffle pomme purée, roasted bone marrow, and a rich red wine reduction.</p>
+            <div class="card-tags">
+              <span class="tag gf">Gluten-Free</span>
+            </div>
+            <span class="card-link">View Details →</span>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="dish-detail.html" class="menu-card reveal-up" style="--delay: 0.1s">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Lobster Risotto" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="card-header">
+              <h3 class="card-title">Maine Lobster Risotto</h3>
+              <span class="card-price">$62</span>
+            </div>
+            <p class="card-desc">Carnaroli rice, butter-poached lobster tail, saffron, and aged parmesan crisp.</p>
+            <div class="card-tags">
+              <span class="tag gf">Gluten-Free</span>
+            </div>
+            <span class="card-link">View Details →</span>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="dish-detail.html" class="menu-card reveal-up" style="--delay: 0.2s">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Chocolate Fondant" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="card-header">
+              <h3 class="card-title">Valrhona Chocolate Fondant</h3>
+              <span class="card-price">$24</span>
+            </div>
+            <p class="card-desc">Molten dark chocolate cake, Madagascar vanilla bean ice cream, and edible gold leaf.</p>
+            <div class="card-tags">
+              <span class="tag v">Vegetarian</span>
+            </div>
+            <span class="card-link">View Details →</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="menu.html" class="btn btn-outline-light btn-lg">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atmosphere / Parallax -->
+  <section class="parallax-section">
+    <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1600&q=80');"></div>
+    <div class="parallax-overlay">
+      <div class="container text-center reveal-up">
+        <span class="section-tag text-gold">The Atmosphere</span>
+        <h2 class="section-title text-white">An Unforgettable <span class="text-gold">Ambiance</span></h2>
+        <p class="section-subtitle text-white" style="max-width: 700px; margin: 0 auto 2rem;">Dim lighting, soft jazz, and impeccable service. Every element of our dining room is designed to make your evening truly special.</p>
+        <a href="reservation.html" class="btn btn-gold btn-lg">Book Your Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center reveal-up">
+        <span class="section-tag">Guest Experiences</span>
+        <h2 class="section-title">Words from Our <span class="text-gold">Patrons</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-up">
+          <div class="stars">★★★★★</div>
+          <p>"An absolutely transcendent dining experience. The Wagyu was cooked to absolute perfection, and the sommelier's wine pairing was impeccable."</p>
+          <div class="tc-author"><strong>James & Sarah T.</strong><span>Anniversary Dinner</span></div>
+        </div>
+        <div class="testimonial-card reveal-up" style="--delay: 0.1s">
+          <div class="stars">★★★★★</div>
+          <p>"The ambiance is unmatched. Dim lighting, soft jazz, and a menu that reads like poetry. The lobster risotto is the best I've had outside of Italy."</p>
+          <div class="tc-author"><strong>Elena R.</strong><span>Food Critic</span></div>
+        </div>
+        <div class="testimonial-card reveal-up" style="--delay: 0.2s">
+          <div class="stars">★★★★★</div>
+          <p>"Impeccable service from the moment we walked in. The staff made our corporate dinner feel intimate and special. A true gem in the city."</p>
+          <div class="tc-author"><strong>Michael D.</strong><span>Corporate Event</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation CTA -->
+  <section class="section cta-section bg-darker">
+    <div class="container text-center reveal-up">
+      <h2 class="section-title text-white">Ready for an Unforgettable Evening?</h2>
+      <p class="section-subtitle text-white" style="margin-bottom: 2rem;">Tables fill up quickly. Secure your spot for an evening of exceptional food, wine, and hospitality.</p>
+      <a href="reservation.html" class="btn btn-gold btn-lg">Make a Reservation</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-text">Lumière <span class="text-gold">Bistro</span></span></a>
+        <p>Elevating the art of dining through passion, precision, and the finest seasonal ingredients.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="reservation.html">Reservations</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <ul class="hours-list">
+          <li><span>Tue - Thu</span> <strong>5:00 PM - 10:00 PM</strong></li>
+          <li><span>Fri - Sat</span> <strong>5:00 PM - 11:00 PM</strong></li>
+          <li><span>Sun</span> <strong>4:00 PM - 9:00 PM</strong></li>
+          <li><span>Monday</span> <strong>Closed</strong></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li>128 Culinary Avenue, Suite 100<br/>Metropolis, NY 10012</li>
+          <li><a href="tel:+12125551234">(212) 555-1234</a></li>
+          <li><a href="mailto:reservations@lumierebistro.com">reservations@lumierebistro.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Lumière Bistro. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

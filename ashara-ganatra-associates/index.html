@@ -1,96 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashara Ganatra & Associates | Modern CA Firm Rajkot</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ashara Ganatra & Associates | Premier Chartered Accountants in Rajkot</title>
+<meta name="description" content="Ashara Ganatra & Associates offers expert GST, Income Tax, Audit, and NRI advisory services in Rajkot. Trusted by 500+ clients with a perfect 5.0★ rating." />
+<meta name="keywords" content="chartered accountant in Rajkot, Ashara Ganatra, CA firm Rajkot, GST consultant Rajkot, income tax Rajkot, statutory audit Rajkot, best CA Arya Nagar" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ashara Ganatra & Associates | Premier Chartered Accountants in Rajkot" />
+<meta property="og:description" content="Strategic financial clarity for your business. Expert CA, GST, and Tax services in Rajkot." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_IN" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Ashara Ganatra & Associates",
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200",
+  "@id": "asharaganatra.in",
+  "url": "https://asharaganatra.in",
+  "telephone": "+918866728979",
+  "priceRange": "₹₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "404, Forth Floor, Pramukh Darshan Complex, Pedak Rd, above Kotak Bank, Arya Nagar",
+    "addressLocality": "Rajkot",
+    "addressRegion": "Gujarat",
+    "postalCode": "360003",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "198"
+  }
+}
+</script>
 </head>
 <body>
-  <!-- ALERTS TOP BAR -->
-  <div class="trust-promo-strip">
-    ⚡ TAX REPORT: INCOME TAX ITR SUBMISSION CHANNELS OPEN. SCHEDULE ASSISTED FILE WORK WITH OUR SPECIALISTS.
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="Ashara Ganatra & Associates Home">
+      <span class="logo-mark">AG</span>
+      <span class="logo-text">Ashara Ganatra <em>& Associates</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#expertise">Expertise</a>
+      <a href="#about">About Us</a>
+      <a href="#reviews">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+918866728979" class="btn-text hide-mobile">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 88667 28979
+      </a>
+      <a href="https://wa.me/918866728979" class="btn-primary" target="_blank" rel="noopener">Book Consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
+</header>
 
-  <div class="trust-layout">
-    <header class="trust-head">
-      <div class="brand">🏛️ undefined</div>
-      <nav class="links">
-        <a href="#about">Philosophy</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Location</a>
-      </nav>
-      <a href="tel:+918866728979" class="t-btn-top">Call Now</a>
-    </header>
-
-    <main class="trust-main" id="home">
-      <div class="content-left">
-        <div class="rating-pill">★ 5 Rating | 198 Reviews</div>
-        <h1>Your Financial<br><span class="text-gradient">Growth Partners.</span></h1>
-        <p class="subtitle">Rajkot's dynamic CA firm offering comprehensive taxation, audit, and business advisory services with a modern approach.</p>
-        <div class="trust-points">
-          <span>✓ GST Certified</span><span>✓ NRI Experts</span><span>✓ Audit Assured</span>
-        </div>
-        <div class="actions">
-          <a href="tel:+918866728979" class="t-btn">Speak to an Expert</a>
-          <a href="https://wa.me/918866728979" class="t-btn outline">WhatsApp</a>
-        </div>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-content reveal-up">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        Chartered Accountants & Financial Advisors
       </div>
-      <div class="image-right">
-        <img src="assets/hero.png" alt="Accounting Workspace Team">
+      <h1 class="hero-title">
+        Strategic Financial <br/>
+        <span class="text-accent">Clarity</span> for Your <br/>
+        Business.
+      </h1>
+      <p class="hero-subtitle">
+        Ashara Ganatra & Associates delivers precision-driven accounting, tax, and advisory services. We empower businesses and individuals in Rajkot with compliance, growth, and absolute peace of mind.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/918866728979" class="btn-primary btn-lg" target="_blank" rel="noopener">
+          Schedule Consultation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#expertise" class="btn-outline btn-lg">Our Expertise</a>
       </div>
-    </main>
-
-    <section class="about container" id="about">
-      <h2>OUR MISSION</h2>
-      <p>Ashara Ganatra & Associates provides expert business taxation and audit consultation in Rajkot. Operating out of Pedak Road, we specialize in helping SMEs launch compliance frameworks, submit regular ITR filings, and optimize accounting structures.</p>
-    </section>
-
-    <section class="services container" id="services">
-      <h2>CURATED CA SERVICES</h2>
-      <div class="services-grid">
-        <div class="svc-card">
-          <h3>ITR Tax Planning</h3>
-          <p>Strategic individual and corporate tax planning for legal deductions.</p>
+      <div class="hero-trust">
+        <div class="trust-rating">
+          <span class="trust-score">5.0</span>
+          <div class="trust-stars">★★★★★</div>
         </div>
-        <div class="svc-card">
-          <h3>Business Incorporation</h3>
-          <p>LLP setups, company registration, and startup regulatory compliance.</p>
+        <div class="trust-divider"></div>
+        <div class="trust-text">
+          <strong>198+ Verified Reviews</strong>
+          <span>Trusted by Rajkot's Enterprises</span>
         </div>
       </div>
-    </section>
-
-    <section class="why container" id="why">
-      <h2>WHY US</h2>
-      <ul class="bullet-list">
-        <li>👉 <strong>Modern Tech:</strong> Secure file shares and digital bookkeeping tools.</li>
-        <li>👉 <strong>Transparent Fees:</strong> Upfront pricing cards with zero hidden additions.</li>
-        <li>👉 <strong>Tax Optimization:</strong> Proactive optimization strategies.</li>
-      </ul>
-    </section>
-
-    <section class="reviews container" id="reviews">
-      <h2>CLIENTS FEEDBACK</h2>
-      <blockquote>"Highly responsive CA team. They handled our firm registration and GST filings with absolute speed."</blockquote>
-      <cite>— Suresh Ganatra</cite>
-    </section>
-
-    <section class="contact container" id="contact">
-      <h2>THE OFFICE</h2>
-      <p class="addr">404, Fourth Floor, Pramukh Darshan Complex, Pedak Rd, Rajkot 360003</p>
-      <div class="map-wrap">
-        <iframe src="https://maps.google.com/maps?q=404%2C%20Fourth%20Floor%2C%20Pramukh%20Darshan%20Complex%2C%20Pedak%20Rd%2C%20Rajkot%20360003&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <div class="hero-visual reveal-up" style="--delay: 0.2s">
+      <div class="hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Professional Financial Consulting" loading="eager" />
+        <div class="hero-image-overlay"></div>
       </div>
-    </section>
-
-    <footer class="footer">
-      <p>© 2025 Ashara Ganatra & Associates. Growth and Trust.</p>
-    </footer>
+      <div class="hero-floating-card">
+        <div class="floating-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div>
+          <strong>100% Confidential</strong>
+          <span>Secure Financial Advisory</span>
+        </div>
+      </div>
+      <div class="hero-geometric geo-1"></div>
+      <div class="hero-geometric geo-2"></div>
+    </div>
   </div>
+</section>
 
-  <a href="https://wa.me/918866728979" class="wa-float-trust" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#25D366" stroke="#25D366"/></svg></a>
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>GST Compliance</span><span class="dot">◆</span>
+    <span>Income Tax Planning</span><span class="dot">◆</span>
+    <span>Statutory Audit</span><span class="dot">◆</span>
+    <span>NRI Advisory</span><span class="dot">◆</span>
+    <span>Business Consulting</span><span class="dot">◆</span>
+    <span>GST Compliance</span><span class="dot">◆</span>
+    <span>Income Tax Planning</span><span class="dot">◆</span>
+    <span>Statutory Audit</span><span class="dot">◆</span>
+    <span>NRI Advisory</span><span class="dot">◆</span>
+    <span>Business Consulting</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- ============ EXPERTISE (SERVICES) ============ -->
+<section class="section expertise bg-alt" id="expertise">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Our Practice Areas</span>
+      <h2 class="section-title">Comprehensive financial <br/><em>solutions tailored to you.</em></h2>
+      <p class="section-subtitle">From startups to established enterprises, we provide end-to-end financial management, ensuring strict compliance and maximizing sustainable growth.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal-up">
+        <span class="sc-num">01</span>
+        <h3>GST Registration & Compliance</h3>
+        <p>End-to-end GST registration, return filing, reconciliation, and strategic planning to ensure seamless compliance and optimize tax liabilities.</p>
+        <span class="sc-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </span>
+      </div>
+
+      <div class="service-card reveal-up" style="--delay: 0.05s">
+        <span class="sc-num">02</span>
+        <h3>Income Tax Planning & Filing</h3>
+        <p>Strategic tax planning for individuals, HUFs, and corporations. Accurate ITR filing, tax saving investments, and representation before authorities.</p>
+        <span class="sc-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </span>
+      </div>
+
+      <div class="service-card reveal-up" style="--delay: 0.1s">
+        <span class="sc-num">03</span>
+        <h3>Corporate & Statutory Audit</h3>
+        <p>Meticulous financial statement preparation, internal audits, and statutory compliance that provide stakeholders with absolute confidence and clarity.</p>
+        <span class="sc-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </span>
+      </div>
+
+      <div class="service-card reveal-up" style="--delay: 0.15s">
+        <span class="sc-num">04</span>
+        <h3>NRI Taxation & Advisory</h3>
+        <p>Specialized financial guidance for Non-Resident Indians. We handle Indian tax compliance, property transactions, and repatriation of funds with ease.</p>
+        <span class="sc-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </span>
+      </div>
+
+      <div class="service-card reveal-up" style="--delay: 0.2s">
+        <span class="sc-num">05</span>
+        <h3>Business Advisory & Consulting</h3>
+        <p>Guiding entrepreneurs through company incorporation, LLP registration, MSME/Udyam registration, and ongoing strategic business advisory.</p>
+        <span class="sc-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </span>
+      </div>
+
+      <div class="service-card reveal-up" style="--delay: 0.25s">
+        <span class="sc-num">06</span>
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Accurate, timely, and transparent bookkeeping services. We maintain your financial records meticulously so you can focus on scaling your business.</p>
+        <span class="sc-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / WHY US ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-content reveal-up">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title">Built on integrity. <br/><em>Driven by results.</em></h2>
+      <p class="lead-text">
+        At Ashara Ganatra & Associates, we believe that a Chartered Accountant's role extends far beyond mere compliance. 
+      </p>
+      <p>
+        We are strategic partners dedicated to understanding your unique financial landscape. By combining deep regulatory expertise with a proactive approach, we transform complex financial data into actionable insights, ensuring your wealth is protected and your business is positioned for sustainable growth.
+      </p>
+      <a href="https://wa.me/918866728979" class="btn-primary" target="_blank" rel="noopener">
+        Partner With Us
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="about-features reveal-up" style="--delay: 0.1s">
+      <div class="feature-item">
+        <div class="fi-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div>
+          <h4>Uncompromising Integrity</h4>
+          <p>We adhere to the highest ethical standards, ensuring your financial data and strategies remain 100% confidential and secure.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <div>
+          <h4>Strategic Insight</h4>
+          <p>We don't just crunch numbers; we provide forward-thinking financial strategies that align with your long-term business goals.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4>Timely Compliance</h4>
+          <p>Never miss a deadline. We ensure all your GST, TDS, and Income Tax filings are completed accurately and well before due dates.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+        <div>
+          <h4>Client-Centric Approach</h4>
+          <p>Your success is our success. We provide personalized attention and clear communication, making complex financial jargon easy to understand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-item reveal-up" style="--delay: 0.1s">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Clients Empowered</span>
+      </div>
+      <div class="stat-item reveal-up" style="--delay: 0.2s">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Compliance Rate</span>
+      </div>
+      <div class="stat-item reveal-up" style="--delay: 0.3s">
+        <span class="stat-number">5.0</span>
+        <span class="stat-label">Perfect Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews bg-alt" id="reviews">
+  <div class="container">
+    <div class="section-header text-center reveal-up">
+      <span class="section-tag">Client Testimonials</span>
+      <h2 class="section-title">Trusted by Rajkot's <br/><em>leading enterprises.</em></h2>
+      <p class="section-subtitle">Our commitment to excellence is reflected in the lasting relationships we build with our clients. Here is what they say about us.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal-up">
+        <div class="review-quote">"</div>
+        <p class="review-text">Ashara Ganatra & Associates transformed our GST compliance process. Their team is incredibly knowledgeable, proactive, and always available to clarify doubts. Truly the best CA firm in Rajkot.</p>
+        <div class="review-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <strong>Mehta Industries</strong>
+            <span>Manufacturing Sector</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card featured reveal-up" style="--delay: 0.1s">
+        <div class="review-quote">"</div>
+        <p class="review-text">As an NRI, managing my Indian tax liabilities and property transactions was a nightmare until I found Ashara Ganatra. They handled everything with absolute professionalism and transparency. Highly recommended!</p>
+        <div class="review-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <strong>Rajesh Patel</strong>
+            <span>NRI Client, USA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal-up" style="--delay: 0.2s">
+        <div class="review-quote">"</div>
+        <p class="review-text">Their strategic tax planning saved our startup significant funds during our initial years. The team goes above and beyond to ensure we are compliant while optimizing our financial health. Exceptional service.</p>
+        <div class="review-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <strong>Sneha Shah</strong>
+            <span>Tech Startup Founder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reviews-cta reveal-up">
+      <a href="https://www.google.com/maps/search/?api=1&query=Ashara%20Ganatra%20%26%20Associates&query_place_id=ChIJy9hyI-a1WTkR8bX9wjPwCDc" class="btn-outline" target="_blank" rel="noopener">
+        Read All 198 Reviews on Google
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container faq-layout">
+    <div class="faq-left reveal-up">
+      <span class="section-tag">Common Inquiries</span>
+      <h2 class="section-title">Frequently <br/><em>asked questions.</em></h2>
+      <p>Navigating financial regulations can be complex. We have compiled answers to the most common questions we receive from our clients.</p>
+      <a href="https://wa.me/918866728979" class="btn-primary" target="_blank" rel="noopener">Ask a Question</a>
+    </div>
+
+    <div class="faq-right">
+      <details class="faq-item reveal-up" open>
+        <summary>
+          <span>How can Ashara Ganatra help my business grow?</span>
+          <span class="faq-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>We act as your strategic financial partners. By optimizing your tax liabilities, ensuring strict compliance to avoid penalties, and providing data-driven financial insights, we free up your resources to focus entirely on scaling your core business operations.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.05s">
+        <summary>
+          <span>Do you provide specialized services for NRI clients?</span>
+          <span class="faq-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>Absolutely. We have a dedicated desk for NRI taxation. We assist with Indian income tax filing, TDS exemptions, repatriation of funds, and tax implications on property sales or investments in India, ensuring full compliance with FEMA and Income Tax Act regulations.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.1s">
+        <summary>
+          <span>What is the process for GST registration and compliance?</span>
+          <span class="faq-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>We handle the entire lifecycle. From determining your liability and gathering documentation to filing the application on the GST portal. Post-registration, we manage your monthly/quarterly return filings, reconciliation of GSTR-2A/2B, and annual returns to ensure zero disruptions.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal-up" style="--delay: 0.15s">
+        <summary>
+          <span>Is my financial data kept strictly confidential?</span>
+          <span class="faq-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>Uncompromising confidentiality is the cornerstone of our practice. As Chartered Accountants, we are bound by a strict code of ethics. Your financial data, business strategies, and personal information are secured with the highest levels of privacy and data protection protocols.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact bg-alt" id="contact">
+  <div class="container">
+    <div class="section-header text-center reveal-up">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title">Schedule a <br/><em>consultation today.</em></h2>
+      <p class="section-subtitle">Visit our office in Rajkot or reach out to us digitally. We are ready to assist you with your financial and compliance needs.</p>
+    </div>
+
+    <div class="contact-grid reveal-up">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div>
+            <h4>Office Address</h4>
+            <p>404, Forth Floor, Pramukh Darshan Complex, Pedak Rd, above Kotak Bank, Arya Nagar, Rajkot, Gujarat 360003</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div>
+            <h4>Direct Line</h4>
+            <a href="tel:+918866728979">+91 88667 28979</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 10:00 AM – 7:00 PM <br/> Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a href="https://wa.me/918866728979" class="btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Ashara%20Ganatra%20%26%20Associates&query_place_id=ChIJy9hyI-a1WTkR8bX9wjPwCDc" class="btn-outline" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe src="https://maps.google.com/maps?q=Ashara%20Ganatra%20%26%20Associates%20Rajkot&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ashara Ganatra & Associates Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark">AG</span>
+          <span class="logo-text">Ashara Ganatra <em>& Associates</em></span>
+        </a>
+        <p>Rajkot's premier Chartered Accountancy firm. Delivering precision, compliance, and strategic financial advisory with uncompromising integrity.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#expertise">Our Expertise</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h5>Practice Areas</h5>
+        <ul>
+          <li><a href="#expertise">GST Compliance</a></li>
+          <li><a href="#expertise">Income Tax Planning</a></li>
+          <li><a href="#expertise">Statutory Audit</a></li>
+          <li><a href="#expertise">NRI Advisory</a></li>
+          <li><a href="#expertise">Business Consulting</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h5>Contact Info</h5>
+        <ul class="footer-contact">
+          <li>404, Pramukh Darshan Complex, Pedak Rd, Arya Nagar, Rajkot 360003</li>
+          <li><a href="tel:+918866728979">+91 88667 28979</a></li>
+          <li><a href="https://wa.me/918866728979" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Ashara%20Ganatra%20%26%20Associates&query_place_id=ChIJy9hyI-a1WTkR8bX9wjPwCDc" target="_blank" rel="noopener">View on Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 Ashara Ganatra & Associates. All rights reserved.</p>
+      <p>Chartered Accountants | Rajkot, Gujarat</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ELEMENTS ============ -->
+<a href="https://wa.me/918866728979" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a href="tel:+918866728979" class="mbtn mbtn-call">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Firm
+  </a>
+  <a href="https://wa.me/918866728979" class="mbtn mbtn-wa" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+  // Mobile Navigation
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', () => {
+      const isActive = menuToggle.classList.toggle('active');
+      mainNav.classList.toggle('active');
+      document.body.style.overflow = isActive ? 'hidden' : '';
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        mainNav.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  // Scroll Reveal
+  const revealElements = document.querySelectorAll('.reveal-up');
+  if (revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Header Scroll
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>

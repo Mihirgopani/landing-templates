@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olive & Vine | Premium Mediterranean Dining</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Olive & Vine</a>
+      <button class="menu-toggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="reservation.html" class="btn btn-primary">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600" alt="Restaurant Interior" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6);">
+      <div class="container reveal" style="position: relative; z-index: 2; text-align: center; max-width: 800px; color: white;">
+        <p style="letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 24px; font-size: 0.9rem; color: #FFD700;">Est. 2015 • Coastal Mediterranean Cuisine</p>
+        <h1 style="font-size: clamp(3rem, 7vw, 5rem); margin-bottom: 32px; line-height: 1.1;">Taste the Sun,<br>Feel the <span style="font-style: italic; color: #FFD700;">Tradition</span></h1>
+        <p style="font-size: 1.2rem; margin-bottom: 48px; line-height: 1.8; opacity: 0.9;">An immersive culinary journey featuring wood-fired specialties, fresh coastal catches, and sun-ripened produce in a warm, inviting atmosphere.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+          <a href="reservation.html" class="btn" style="background: white; color: var(--text);">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Chef's <span class="text-accent">Signatures</span></h2>
+          <p class="section-subtitle">A curated selection of our most beloved dishes, crafted from the finest local and imported Mediterranean ingredients.</p>
+        </div>
+        <div class="grid-3">
+          <a href="menu.html" class="card reveal">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="Wood Fired Steak"></div>
+            <div class="card-body">
+              <h3>Wood-Fired Ribeye</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin: 12px 0;">Charred to perfection, served with roasted garlic mashed potatoes and red wine reduction.</p>
+              <span class="dietary-tag">Gluten-Free</span>
+            </div>
+          </a>
+          <a href="menu.html" class="card reveal" style="transition-delay: 0.1s;">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600" alt="Seafood Pasta"></div>
+            <div class="card-body">
+              <h3>Linguine allo Scoglio</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin: 12px 0;">Fresh mussels, clams, and shrimp in a vibrant white wine, garlic, and cherry tomato sauce.</p>
+            </div>
+          </a>
+          <a href="menu.html" class="card reveal" style="transition-delay: 0.2s;">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600" alt="Tiramisu"></div>
+            <div class="card-body">
+              <h3>Classic Tiramisu</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin: 12px 0;">Espresso-soaked ladyfingers layered with rich mascarpone cream and dark cocoa.</p>
+              <span class="dietary-tag">Vegetarian</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background: var(--surface); border-top: 1px solid var(--border);">
+      <div class="container grid-2">
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" alt="Chef preparing food" style="width: 100%;">
+        </div>
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; font-weight: 600;">Our Philosophy</p>
+          <h2 style="font-size: 2.5rem; margin-bottom: 24px;">Rooted in <span class="text-accent">Tradition</span></h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 1.1rem; line-height: 1.8;">At Olive & Vine, we believe that the best meals are born from the best ingredients. We partner directly with local farmers and sustainable fisheries to bring the vibrant flavors of the Mediterranean coast to your table.</p>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">Our wood-fired oven is the heart of our kitchen, imparting a unique, smoky depth to our breads, vegetables, and meats that cannot be replicated.</p>
+          <a href="about.html" class="btn btn-outline">Read Our Full Story</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="logo" style="color: white; margin-bottom: 24px;">Olive & Vine</h3>
+          <p style="color: rgba(253, 252, 248, 0.7); line-height: 1.8;">Celebrating the bounty of the earth and sea through thoughtful, sustainable, and deeply flavorful Mediterranean cuisine.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul><li><a href="about.html">Our Story</a></li><li><a href="menu.html">The Menu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul style="color: rgba(253, 252, 248, 0.7);">
+            <li>Mon - Thu: 5pm - 10pm</li>
+            <li>Fri - Sat: 5pm - 11pm</li>
+            <li>Sun: 4pm - 9pm</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul style="color: rgba(253, 252, 248, 0.7);">
+            <li>456 Coastal Highway, Suite 2</li>
+            <li>Seaside Village, CA 90210</li>
+            <li><a href="tel:+13105551234" style="color: var(--accent);">(310) 555-1234</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 Olive & Vine Restaurant. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

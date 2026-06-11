@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Aurelia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">AURELIA</a>
+      <button class="menu-toggle"><span></span><span></span><span></span></button>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="reservation.html" class="btn btn-primary">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header reveal">
+      <div class="container">
+        <p style="letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px;">Get in Touch</p>
+        <h1 class="page-title">Contact <span class="text-accent">Us</span></h1>
+        <p class="section-subtitle" style="margin-bottom: 0;">We welcome your inquiries, feedback, and private event requests.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container grid-2" style="align-items: start;">
+        <div class="reveal">
+          <div style="margin-bottom: 40px;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 12px; color: var(--accent);">Visit Us</h3>
+            <p style="color: var(--text-muted); line-height: 1.8;">128 Culinary Avenue, Suite 100<br>Metropolis, NY 10012</p>
+          </div>
+          <div style="margin-bottom: 40px;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 12px; color: var(--accent);">Contact</h3>
+            <p style="color: var(--text-muted); line-height: 1.8;">
+              <a href="tel:+12125551234" style="color: var(--text); display: block; margin-bottom: 8px;">(212) 555-1234</a>
+              <a href="mailto:hello@aurelia.com" style="color: var(--text);">hello@aurelia.com</a>
+            </p>
+          </div>
+          <div style="border-radius: var(--radius); overflow: hidden; height: 350px; border: 1px solid var(--border);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0; filter: grayscale(1) invert(0.9) contrast(0.9);" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="form-wrapper reveal" style="transition-delay: 0.1s;">
+          <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 8px; color: var(--text);">Send a Message</h3>
+          <p style="color: var(--text-muted); margin-bottom: 32px;">Fill out the form below and our team will respond within 24 hours.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group"><label>Name *</label><input type="text" required></div>
+              <div class="form-group"><label>Email *</label><input type="email" required></div>
+            </div>
+            <div class="form-group">
+              <label>Subject *</label>
+              <select required>
+                <option value="">Select a topic...</option>
+                <option>General Inquiry</option>
+                <option>Private Events & Catering</option>
+                <option>Feedback</option>
+                <option>Careers</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message *</label>
+              <textarea rows="5" required placeholder="How can we assist you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-bottom">© 2024 Aurelia Restaurant. All rights reserved.</div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
